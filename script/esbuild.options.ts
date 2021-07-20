@@ -28,7 +28,8 @@ export function createOptions(): BuildOptions {
         ],
         external: [
             ...builtinModules.filter(x => !/^_|^(internal|v8|node-inspect)\/|\//.test(x)),
-            'electron'
+            'electron',
+            '@nestjs'
         ]
     };
 };

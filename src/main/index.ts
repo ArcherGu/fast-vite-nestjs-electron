@@ -1,14 +1,24 @@
-import 'reflect-metadata';
-import { join } from 'path';
+import { NestFactory } from '@nestjs/core';
 import { app, BrowserWindow } from 'electron';
-import { bootstrap, destroy } from './bootstrap';
+import { MicroserviceOptions } from '@nestjs/microservices';
+import { join } from 'path';
+import { ElectronIPCTransport } from './transport';
+import { AppModule } from './app.module';
 
 const isDev = !app.isPackaged;
-
 process.env['ELECTRON_DISABLE_SECURITY_WARNINGS'] = 'true';
 
-async function createWindow() {
+async function bootstrap() {
     try {
+        const nestApp = await NestFactory.createMicroservice<MicroserviceOptions>(
+            AppModule,
+            {
+                strategy: new ElectronIPCTransport(),
+            },
+        );
+
+        await nestApp.listen();
+
         const win = new BrowserWindow({
             width: 1000,
             height: 800,
@@ -23,8 +33,6 @@ async function createWindow() {
 
         win.maximize();
 
-        await bootstrap(win.webContents);
-
         const URL = isDev
             ? `http://localhost:${process.env.PORT}`
             : `file://${join(app.getAppPath(), 'dist/render/index.html')}`;
@@ -36,7 +44,6 @@ async function createWindow() {
         }
 
         win.on('closed', () => {
-            destroy();
             win.destroy();
         });
     } catch (error) {
@@ -52,11 +59,11 @@ app.on('window-all-closed', () => {
 });
 
 app.on('activate', () => {
-    if (BrowserWindow.getAllWindows().length === 0) createWindow();
+    if (BrowserWindow.getAllWindows().length === 0) bootstrap();
 });
 
 app.on('ready', async () => {
-    createWindow();
+    bootstrap();
 });
 
 if (isDev) {
