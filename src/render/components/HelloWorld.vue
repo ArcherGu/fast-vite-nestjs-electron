@@ -1,5 +1,5 @@
 <template>
-    <h1>{{ title }}</h1>
+    <h1>{{ props.title }}</h1>
 
     <textarea cols="60" rows="10" v-model="log" disabled />
     <div style="margin-top: 20px">
@@ -9,20 +9,19 @@
 </template>
 
 <script setup lang="ts">
-import { EVENTS } from "@common/events";
-import { sendMsgToMainProcess } from "@render/api";
-import { useIpc } from "@render/plugins/ipc";
-import { ref, onBeforeUnmount } from "vue";
+import { sendMsgToMainProcess } from '@render/api';
+import { useIpc } from '@render/plugins/ipc';
+import { ref, onBeforeUnmount } from 'vue';
 
 const props = defineProps({
     title: {
         type: String,
-        default: "Vite + Electron & Esbuild"
-    }
+        default: 'Vite + Electron & Esbuild',
+    },
 });
 
-const log = ref("");
-const msg = ref("");
+const log = ref('');
+const msg = ref('');
 
 const sendMsg = async () => {
     try {
@@ -32,18 +31,17 @@ const sendMsg = async () => {
     } catch (error) {
         console.error(error);
     }
-}
+};
 
 const ipc = useIpc();
 
-ipc.on(EVENTS.REPLY_MSG, (msg: string) => {
+ipc.on('reply-msg', (msg: string) => {
     log.value += `[main]: ${msg}  \n`;
 });
 
 onBeforeUnmount(() => {
-    ipc.off(EVENTS.REPLY_MSG)
+    ipc.off('reply-msg');
 });
 </script>
 
-<style>
-</style>
+<style></style>

@@ -1,0 +1,67 @@
+import { Module } from '@nestjs/common';
+import { app, BrowserWindow } from 'electron';
+import { join } from 'path';
+
+const isDev = !app.isPackaged;
+process.env['ELECTRON_DISABLE_SECURITY_WARNINGS'] = 'true';
+
+app.on('window-all-closed', () => {
+    if (process.platform !== 'darwin') {
+        app.quit();
+    }
+});
+
+if (isDev) {
+    if (process.platform === 'win32') {
+        process.on('message', (data) => {
+            if (data === 'graceful-exit') {
+                app.quit();
+            }
+        });
+    } else {
+        process.on('SIGTERM', () => {
+            app.quit();
+        });
+    }
+}
+
+@Module({
+    providers: [{
+        provide: 'WEB_CONTENTS',
+        useFactory: async () => {
+            await app.whenReady();
+
+            const win = new BrowserWindow({
+                width: 1000,
+                height: 800,
+                webPreferences: {
+                    nodeIntegration: true,
+                    webSecurity: false,
+                    enableRemoteModule: true,
+                    contextIsolation: false,
+                },
+                autoHideMenuBar: isDev ? false : true,
+            });
+
+            win.maximize();
+
+            const URL = isDev
+                ? `http://localhost:${process.env.PORT}`
+                : `file://${join(app.getAppPath(), 'dist/render/index.html')}`;
+
+            win.loadURL(URL);
+
+            if (isDev) {
+                win.webContents.openDevTools();
+            }
+
+            win.on('closed', () => {
+                win.destroy();
+            });
+
+            return win.webContents;
+        },
+    }],
+    exports: ['WEB_CONTENTS']
+})
+export class WinModule { }
