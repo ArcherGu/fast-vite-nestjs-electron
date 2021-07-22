@@ -2,13 +2,12 @@ import { Module } from '@nestjs/common';
 import { app, BrowserWindow } from 'electron';
 import { join } from 'path';
 
-const isDev = !app.isPackaged;
 process.env['ELECTRON_DISABLE_SECURITY_WARNINGS'] = 'true';
 
 @Module({
     providers: [{
         provide: 'WEB_CONTENTS',
-        useFactory: async () => {
+        async useFactory(isDev: boolean) {
             app.on('window-all-closed', () => {
                 if (process.platform !== 'darwin') {
                     app.quit();
@@ -61,6 +60,7 @@ process.env['ELECTRON_DISABLE_SECURITY_WARNINGS'] = 'true';
 
             return win.webContents;
         },
+        inject: ['IS_DEV']
     }],
     exports: ['WEB_CONTENTS']
 })
