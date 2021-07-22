@@ -5,30 +5,30 @@ import { join } from 'path';
 const isDev = !app.isPackaged;
 process.env['ELECTRON_DISABLE_SECURITY_WARNINGS'] = 'true';
 
-app.on('window-all-closed', () => {
-    if (process.platform !== 'darwin') {
-        app.quit();
-    }
-});
-
-if (isDev) {
-    if (process.platform === 'win32') {
-        process.on('message', (data) => {
-            if (data === 'graceful-exit') {
-                app.quit();
-            }
-        });
-    } else {
-        process.on('SIGTERM', () => {
-            app.quit();
-        });
-    }
-}
-
 @Module({
     providers: [{
         provide: 'WEB_CONTENTS',
         useFactory: async () => {
+            app.on('window-all-closed', () => {
+                if (process.platform !== 'darwin') {
+                    app.quit();
+                }
+            });
+
+            if (isDev) {
+                if (process.platform === 'win32') {
+                    process.on('message', (data) => {
+                        if (data === 'graceful-exit') {
+                            app.quit();
+                        }
+                    });
+                } else {
+                    process.on('SIGTERM', () => {
+                        app.quit();
+                    });
+                }
+            }
+
             await app.whenReady();
 
             const win = new BrowserWindow({

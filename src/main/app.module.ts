@@ -1,10 +1,10 @@
 import { Module } from '@nestjs/common';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
-import { WinModule } from './win/win.module';
+import { GlobalModule } from './global/global.module';
 
 @Module({
-    imports: [WinModule],
+    imports: [GlobalModule],
     controllers: [AppController],
     providers: [AppService],
 })
