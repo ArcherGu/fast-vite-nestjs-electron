@@ -11,7 +11,7 @@ for (const k in process.env) {
     define[`process.env.${k}`] = JSON.stringify(process.env[k]);
 }
 
-export function createOptions(): BuildOptions {
+export function createOptions(env = 'production'): BuildOptions {
     return {
         entryPoints: [join(__dirname, '../src/main/index.ts')],
         target: 'es2020',
@@ -19,6 +19,7 @@ export function createOptions(): BuildOptions {
         format: 'cjs',
         bundle: true,
         platform: 'node',
+        minifyWhitespace: env === 'production',
         define,
         tsconfig: join(__dirname, '../tsconfig.main.json'),
         plugins: [

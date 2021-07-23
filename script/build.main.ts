@@ -12,7 +12,7 @@ import { createOptions } from "./esbuild.options";
 dotenv.config({ path: join(__dirname, '../.env') });
 
 const argv = minimist(process.argv.slice(2));
-const options = createOptions();
+const options = createOptions(argv.env);
 const TAG = '[script/build.main.ts]';
 const spinner = ora(`${TAG} Main Process Building...`);
 
