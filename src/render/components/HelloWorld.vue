@@ -11,7 +11,7 @@
 <script setup lang="ts">
 import { sendMsgToMainProcess } from '@render/api';
 import { useIpc } from '@render/plugins/ipc';
-import { ref, onBeforeUnmount } from 'vue';
+import { ref } from 'vue';
 
 const props = defineProps({
     title: {
@@ -38,10 +38,7 @@ const ipc = useIpc();
 ipc.on('reply-msg', (msg: string) => {
     log.value += `[main]: ${msg}  \n`;
 });
-
-onBeforeUnmount(() => {
-    ipc.off('reply-msg');
-});
 </script>
 
-<style></style>
+<style>
+</style>

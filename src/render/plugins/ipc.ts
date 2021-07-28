@@ -1,11 +1,10 @@
 import { IpcResponse } from '@common/types';
-import { toRaw } from 'vue';
+import { getCurrentInstance, onUnmounted, toRaw } from 'vue';
 const { ipcRenderer } = window.require('electron');
 
 interface IpcInstance {
     send: <T = any>(target: string, ...args: any[]) => Promise<IpcResponse<T>>;
     on: (event: string, callback: (...args: any[]) => void) => void;
-    off: (event: string) => void;
 }
 
 export const ipcInstance: IpcInstance = {
@@ -18,10 +17,19 @@ export const ipcInstance: IpcInstance = {
 
         return response;
     },
-    on: (event, callback) => ipcRenderer.on(event.toString(), (event, ...args) => {
-        callback(...args);
-    }),
-    off: (event) => ipcRenderer.removeAllListeners(event.toString()),
+    on: (event, callback) => {
+        ipcRenderer.on(event, (e, ...args) => {
+            callback(...args);
+
+        });
+
+        // Use tryOnUnmounted if use @vueuse https://vueuse.org/shared/tryOnUnmounted/
+        if (getCurrentInstance()) {
+            onUnmounted(() => {
+                ipcRenderer.removeAllListeners(event)
+            });
+        }
+    },
 };
 
 export function useIpc() {
