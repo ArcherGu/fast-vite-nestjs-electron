@@ -27,7 +27,7 @@ export class ElectronIpcTransport extends Server implements CustomTransportStrat
         } catch (error) {
             this.logger.error(error);
             return {
-                error: error,
+                error,
             };
         }
     }

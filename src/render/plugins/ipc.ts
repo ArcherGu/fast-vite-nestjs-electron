@@ -12,7 +12,7 @@ export const ipcInstance: IpcInstance = {
         const payloads: any[] = args.map((e) => toRaw(e));
         const response: IpcResponse<T> = await ipcRenderer.invoke(target, ...payloads);
         if (response.hasOwnProperty('error')) {
-            throw response;
+            throw response.error;
         }
 
         return response;
