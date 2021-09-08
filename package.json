@@ -20,7 +20,7 @@
         "@nestjs/microservices": "^8.0.4",
         "reflect-metadata": "^0.1.13",
         "rxjs": "^7.2.0",
-        "vue": "^3.0.5"
+        "vue": "^3.2.4"
     },
     "devDependencies": {
         "@anatine/esbuild-decorators": "^0.2.12",
