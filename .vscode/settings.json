@@ -1,7 +1,9 @@
 {
     "cSpell.words": [
+        "anatine",
         "Microservice",
         "microservices",
-        "nestjs"
+        "nestjs",
+        "postuninstall"
     ]
 }
