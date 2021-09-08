@@ -15,7 +15,7 @@ export class ElectronIpcTransport extends Server implements CustomTransportStrat
             this.logger.debug(`Process message ${messageChannel}`);
 
             const [ipcMainEventObject, payload] = args;
-            const data = payload.length === 0 ? undefined : payload.length === 1 ? payload[0] : payload;
+            const data = (!payload || payload.length === 0) ? undefined : payload.length === 1 ? payload[0] : payload;
 
             const result = await handler(data, {
                 evt: ipcMainEventObject,
