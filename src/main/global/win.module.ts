@@ -36,7 +36,6 @@ process.env['ELECTRON_DISABLE_SECURITY_WARNINGS'] = 'true';
                 webPreferences: {
                     nodeIntegration: true,
                     webSecurity: false,
-                    enableRemoteModule: true,
                     contextIsolation: false,
                 },
                 autoHideMenuBar: isDev ? false : true,
