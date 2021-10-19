@@ -1,4 +1,5 @@
 import { join } from 'path';
+import { writeFileSync } from 'fs';
 import dotenv from 'dotenv';
 import { spawn, ChildProcess } from 'child_process';
 import electron from 'electron';
@@ -9,6 +10,7 @@ import waitOn from "wait-on";
 import { build } from "esbuild";
 import { main } from '../package.json';
 import { createOptions } from "./esbuild.options";
+import { compileFile } from 'bytenode';
 dotenv.config({ path: join(__dirname, '../.env') });
 
 const argv = minimist(process.argv.slice(2));
@@ -55,6 +57,14 @@ if (argv.watch) {
 } else {
     spinner.start();
     build(options).then(() => {
+        compileFile({
+            filename: './dist/main/index.js',
+            output: './dist/main/main.jsc',
+            electron: true,
+        });
+
+        writeFileSync('./dist/main/index.js', "require('bytenode');require('./main.jsc')");
+
         console.log(TAG, chalk.green('Main Process Build Succeeded.'));
     }).catch(error => {
         console.log(`\n${TAG} ${chalk.red('Main Process Build Failed')}\n`, error, '\n');
