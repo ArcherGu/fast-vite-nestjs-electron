@@ -37,8 +37,9 @@ process.env['ELECTRON_DISABLE_SECURITY_WARNINGS'] = 'true';
                     nodeIntegration: true,
                     webSecurity: false,
                     contextIsolation: false,
+                    devTools: isDev,
                 },
-                autoHideMenuBar: isDev ? false : true,
+                autoHideMenuBar: !isDev,
             });
 
             win.maximize();
@@ -51,6 +52,9 @@ process.env['ELECTRON_DISABLE_SECURITY_WARNINGS'] = 'true';
 
             if (isDev) {
                 win.webContents.openDevTools();
+            }
+            else {
+                win.removeMenu();
             }
 
             win.on('closed', () => {
