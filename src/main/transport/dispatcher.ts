@@ -1,8 +1,7 @@
 import { EventEmitter } from 'events';
 
 class IPCMessageDispatcher extends EventEmitter {
-    // @ts-ignore
-    async emit(messageChannel: string, ...args: any[]): Promise<any> {
+    emit(messageChannel: string, ...args: any[]): any {
         const [ipcHandler] = this.listeners('ipc-message');
 
         if (ipcHandler) {
