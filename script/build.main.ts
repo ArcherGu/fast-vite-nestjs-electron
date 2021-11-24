@@ -5,7 +5,6 @@ import { spawn, ChildProcess } from 'child_process';
 import electron from 'electron';
 import minimist from "minimist";
 import chalk from 'chalk';
-import ora from 'ora';
 import waitOn from "wait-on";
 import { build } from "esbuild";
 import { main } from '../package.json';
@@ -16,7 +15,6 @@ dotenv.config({ path: join(__dirname, '../.env') });
 const argv = minimist(process.argv.slice(2));
 const options = createOptions(argv.env);
 const TAG = '[script/build.main.ts]';
-const spinner = ora(`${TAG} Main Process Building...`);
 
 const runApp = () => {
     return spawn(electron as any, [join(__dirname, `../${main}`)], { stdio: 'inherit' });
@@ -55,7 +53,6 @@ if (argv.watch) {
         }
     });
 } else {
-    spinner.start();
     build(options).then(() => {
         compileFile({
             filename: './dist/main/index.js',
@@ -68,7 +65,5 @@ if (argv.watch) {
         console.log(TAG, chalk.green('Main Process Build Succeeded.'));
     }).catch(error => {
         console.log(`\n${TAG} ${chalk.red('Main Process Build Failed')}\n`, error, '\n');
-    }).finally(() => {
-        spinner.stop();
     });
 }
