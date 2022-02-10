@@ -5,6 +5,7 @@
         "Microservice",
         "microservices",
         "nestjs",
+        "outfile",
         "postuninstall"
     ]
 }

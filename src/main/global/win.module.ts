@@ -45,7 +45,7 @@ process.env['ELECTRON_DISABLE_SECURITY_WARNINGS'] = 'true';
             win.maximize();
 
             const URL = isDev
-                ? `http://localhost:${process.env.PORT}`
+                ? process.env.DEV_SERVER_URL
                 : `file://${join(app.getAppPath(), 'dist/render/index.html')}`;
 
             win.loadURL(URL);

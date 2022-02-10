@@ -36,10 +36,5 @@
         "src/**/*.d.ts",
         "src/**/*.tsx",
         "src/**/*.vue"
-    ],
-    "ts-node": {
-        "compilerOptions": {
-            "module": "CommonJS"
-        }
-    }
+    ]
 }

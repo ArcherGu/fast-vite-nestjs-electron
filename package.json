@@ -4,13 +4,8 @@
     "description": "Vite + Electron with esbuild, so fast! ⚡",
     "main": "dist/main/index.js",
     "scripts": {
-        "dev": "npm run dev:all",
-        "dev:all": "concurrently -n=vite,main -c=#646cff,#74b1be \"npm run dev:vite\" \"npm run dev:main\"",
-        "dev:vite": "vite",
-        "dev:main": "rimraf dist/main && node -r ts-node/register script/build.main --env=development --watch",
-        "build:vite": "vite build",
-        "build:main": "rimraf dist/main && node -r ts-node/register script/build.main --env=production",
-        "build": "npm run build:vite && npm run build:main && electron-builder --config electron-builder.config.js",
+        "dev": "rimraf dist && vite",
+        "build": "rimraf dist && vite build",
         "postinstall": "electron-builder install-app-deps",
         "postuninstall": "electron-builder install-app-deps"
     },
@@ -20,27 +15,20 @@
         "@nestjs/microservices": "^8.2.6",
         "bytenode": "^1.3.4",
         "reflect-metadata": "^0.1.13",
-        "rxjs": "^7.5.2",
-        "vue": "^3.2.29"
+        "rxjs": "^7.5.3",
+        "vue": "^3.2.30"
     },
     "devDependencies": {
         "@anatine/esbuild-decorators": "^0.2.18",
-        "@types/minimist": "^1.2.2",
-        "@types/wait-on": "^5.3.1",
-        "@vitejs/plugin-vue": "^2.1.0",
-        "@vue/compiler-sfc": "^3.2.29",
+        "@vitejs/plugin-vue": "^2.2.0",
+        "@vue/compiler-sfc": "^3.2.30",
         "chalk": "^4.1.2",
-        "concurrently": "^7.0.0",
-        "dotenv": "^14.3.2",
-        "electron": "^16.0.8",
-        "electron-builder": "^22.14.5",
-        "esbuild": "^0.14.14",
-        "minimist": "^1.2.5",
+        "electron": "^17.0.0",
+        "electron-builder": "^22.14.13",
+        "esbuild": "^0.14.21",
         "rimraf": "^3.0.2",
-        "ts-node": "^10.4.0",
         "typescript": "^4.5.5",
-        "vite": "^2.7.13",
-        "vue-tsc": "^0.31.1",
-        "wait-on": "^6.0.0"
+        "vite": "^2.8.0",
+        "vue-tsc": "^0.31.2"
     }
 }
