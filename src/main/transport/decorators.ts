@@ -24,9 +24,10 @@ function GetParamsFromMessageChannel() {
 export function IpcInvoke(messageChannel: string) {
     ipcMain.handle(messageChannel, (...args) => ipcMessageDispatcher.emit(messageChannel, ...args));
 
+    // Do not modify the order!
     return applyDecorators(
-        UseFilters(new AllExceptionsFilter()),
         GetParamsFromMessageChannel(),
         MessagePattern(messageChannel),
+        UseFilters(new AllExceptionsFilter()),
     );
 }
