@@ -6,6 +6,8 @@
   "scripts": {
     "dev": "rimraf dist && vite",
     "build": "rimraf dist && vite build",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
     "postinstall": "electron-builder install-app-deps",
     "postuninstall": "electron-builder install-app-deps"
   },
@@ -20,15 +22,28 @@
   },
   "devDependencies": {
     "@anatine/esbuild-decorators": "^0.2.19",
+    "@antfu/eslint-config": "^0.23.1",
     "@vitejs/plugin-vue": "^2.3.3",
     "@vue/compiler-sfc": "^3.2.33",
     "chalk": "^4.1.2",
     "electron": "^18.2.3",
     "electron-builder": "^23.0.3",
-    "esbuild": "^0.14.39",
+    "esbuild": "0.14.28",
+    "eslint": "^8.15.0",
+    "lint-staged": "^12.4.1",
+    "pnpm": "^7.1.1",
     "rimraf": "^3.0.2",
+    "simple-git-hooks": "^2.7.0",
     "typescript": "^4.6.4",
     "vite": "^2.9.9",
     "vue-tsc": "^0.34.15"
+  },
+  "lint-staged": {
+    "*.{js,ts,tsx,vue,md,json}": [
+      "eslint --fix"
+    ]
+  },
+  "simple-git-hooks": {
+    "pre-commit": "npx lint-staged"
   }
 }

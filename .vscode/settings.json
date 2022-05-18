@@ -1,11 +1,12 @@
 {
-    "cSpell.words": [
-        "anatine",
-        "bytenode",
-        "Microservice",
-        "microservices",
-        "nestjs",
-        "outfile",
-        "postuninstall"
-    ]
+  "cSpell.words": [
+    "anatine",
+    "bytenode",
+    "Microservice",
+    "microservices",
+    "nestjs",
+    "nsis",
+    "outfile",
+    "postuninstall"
+  ]
 }
