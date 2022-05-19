@@ -26,6 +26,19 @@ This is a template based on my repo: [fast-vite-electron](https://github.com/Arc
   yarn build # npm run build
   ```
 
+## Note for PNPM
+
+In order to use with `pnpm`, you'll need to adjust your `.npmrc` to use any one the following approaches in order for your dependencies to be bundled correctly (ref: [#6389](https://github.com/electron-userland/electron-builder/issues/6289#issuecomment-1042620422)):
+```
+node-linker=hoisted
+```
+```
+public-hoist-pattern=*
+```
+```
+shamefully-hoist=true
+```
+
 ## Relative
 
 My blog post:
