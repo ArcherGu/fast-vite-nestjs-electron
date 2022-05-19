@@ -13,6 +13,7 @@ const config = {
   },
   files: [
     'dist/main/**/*',
+    'dist/preload/**/*',
     'dist/render/**/*',
   ],
   nsis: {

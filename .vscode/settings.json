@@ -6,6 +6,7 @@
     "microservices",
     "nestjs",
     "nsis",
+    "outdir",
     "outfile",
     "postuninstall"
   ]

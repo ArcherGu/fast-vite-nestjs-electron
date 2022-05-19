@@ -8,11 +8,11 @@ export function createEsbuildOptions(options: ResolvedViteElectronBuilderOptions
     [`process.env.${key}`]: JSON.stringify(value),
   }), {})
 
-  const { entryFile, mainFile, tsconfig, external } = options
+  const { entryFile, outdir, preloadFile, tsconfig, external } = options
   return {
-    entryPoints: [entryFile],
+    entryPoints: typeof preloadFile === 'string' ? [entryFile, preloadFile] : [entryFile],
     target: 'es2020',
-    outfile: mainFile,
+    outdir,
     format: 'cjs',
     bundle: true,
     platform: 'node',

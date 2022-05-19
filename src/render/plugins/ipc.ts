@@ -1,6 +1,6 @@
 import type { IpcResponse } from '@common/types'
 import { getCurrentInstance, onUnmounted, toRaw } from 'vue'
-const { ipcRenderer } = window.require('electron')
+const { ipcRenderer } = window
 
 interface IpcInstance {
   send: <T = any>(target: string, ...args: any[]) => Promise<IpcResponse<T>>

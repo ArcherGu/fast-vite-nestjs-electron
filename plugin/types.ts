@@ -3,7 +3,9 @@ import type { Configuration as ElectronBuilderConfiguration } from 'electron-bui
 export interface ViteElectronBuilderOptions {
   root?: string
   mainFile?: string
+  preloadFile?: string | boolean
   entryFile?: string
+  outdir?: string
   tsconfig?: string
   external?: string[]
   electronBuilderConfig?: string | ElectronBuilderConfiguration

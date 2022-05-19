@@ -1,5 +1,5 @@
 <p align="center">
-    <img width="400" src="https://github.com/ArcherGu/fast-vite-nestjs-electron/blob/main/logo.png" alt="logo">
+    <img width="400" src="./logo.png" alt="logo">
 </p>
 
 # ⚡Vite + Electron + Nestjs & Esbuild Template

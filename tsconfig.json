@@ -17,7 +17,8 @@
       "dom"
     ],
     "types": [
-      "vite/client"
+      "vite/client",
+      "./src/preload"
     ],
     "paths": {
       "@render/*": [
