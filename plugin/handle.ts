@@ -1,6 +1,6 @@
 import type { ChildProcess } from 'child_process'
 import { spawn } from 'child_process'
-import chalk from 'chalk'
+import * as kolorist from 'kolorist'
 import { build } from 'esbuild'
 import electron from 'electron'
 import { build as electronBuilder } from 'electron-builder'
@@ -8,7 +8,7 @@ import { createEsbuildOptions } from './esbuild.options'
 import type { ResolvedViteElectronBuilderOptions } from './types'
 
 function exitMainProcess() {
-  console.info(chalk.yellow('Main Process Exited'))
+  console.info(kolorist.yellow('Main Process Exited'))
   process.exit(0)
 }
 
@@ -26,10 +26,10 @@ export function handleDev(options: ResolvedViteElectronBuilderOptions) {
     watch: {
       onRebuild(error) {
         if (error) {
-          console.error(chalk.red('Rebuild Failed:'), error)
+          console.error(kolorist.red('Rebuild Failed:'), error)
         }
         else {
-          console.log(chalk.green('Rebuild Succeeded'))
+          console.log(kolorist.green('Rebuild Succeeded'))
           if (child) {
             child.off('exit', exitMainProcess)
             child.kill()
@@ -40,7 +40,7 @@ export function handleDev(options: ResolvedViteElectronBuilderOptions) {
       },
     },
   }).then(() => {
-    console.log(chalk.yellowBright('⚡Main Process Running'))
+    console.log(kolorist.lightYellow('⚡Main Process Running'))
     if (child) {
       child.off('exit', exitMainProcess)
       child.kill()
@@ -61,8 +61,8 @@ export function handleBuild(options: ResolvedViteElectronBuilderOptions) {
       config: electronBuilderConfig,
     })
 
-    console.log(chalk.green('Main Process Build Succeeded.'))
+    console.log(kolorist.green('Main Process Build Succeeded.'))
   }).catch((error) => {
-    console.log(`\n${chalk.red('Main Process Build Failed')}\n`, error, '\n')
+    console.log(`\n${kolorist.red('Main Process Build Failed')}\n`, error, '\n')
   })
 }
