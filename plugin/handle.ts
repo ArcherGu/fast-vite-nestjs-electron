@@ -7,8 +7,13 @@ import { build as electronBuilder } from 'electron-builder'
 import { createEsbuildOptions } from './esbuild.options'
 import type { ResolvedViteElectronBuilderOptions } from './types'
 
+function exitMainProcess() {
+  console.info(chalk.yellow('Main Process Exited'))
+  process.exit(0)
+}
+
 function runMainProcess(mainFile: string) {
-  return spawn(electron as any, [mainFile], { stdio: 'inherit' })
+  return spawn(electron as any, [mainFile], { stdio: 'inherit' }).on('exit', exitMainProcess)
 }
 
 export function handleDev(options: ResolvedViteElectronBuilderOptions) {
@@ -25,16 +30,22 @@ export function handleDev(options: ResolvedViteElectronBuilderOptions) {
         }
         else {
           console.log(chalk.green('Rebuild Succeeded'))
-          if (child)
+          if (child) {
+            child.off('exit', exitMainProcess)
             child.kill()
+          }
+
           child = runMainProcess(mainFile)
         }
       },
     },
   }).then(() => {
     console.log(chalk.yellowBright('⚡Main Process Running'))
-    if (child)
+    if (child) {
+      child.off('exit', exitMainProcess)
       child.kill()
+    }
+
     child = runMainProcess(mainFile)
   })
 }
