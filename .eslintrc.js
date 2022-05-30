@@ -6,13 +6,25 @@ const config = {
   extends: '@antfu',
   overrides: [
     {
+      files: 'scripts/*.{ts,mjs}',
+      rules: {
+        'no-console': 'off',
+      },
+    },
+    {
+      files: 'vite.config.ts',
+      rules: {
+        'no-console': 'off',
+      },
+    },
+    {
       files: 'plugin/**/*.ts',
       rules: {
         'no-console': 'off',
       },
     },
     {
-      files: 'src/main/**/*.ts',
+      files: 'packages/main/**/*.ts',
       rules: {
         'no-useless-call': 'off',
         'no-console': 'off',

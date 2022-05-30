@@ -6,7 +6,7 @@ import { IpcInvoke } from './transport'
 @Controller()
 export class AppController {
   constructor(
-    private readonly appService: AppService,
+    @Inject(AppService) private readonly appService: AppService,
     @Inject('WEB_CONTENTS') private readonly webContents: WebContents,
   ) { }
 

@@ -35,7 +35,7 @@ process.env.ELECTRON_DISABLE_SECURITY_WARNINGS = 'true'
         webPreferences: {
           nodeIntegration: false,
           contextIsolation: true,
-          preload: join(__dirname, '../preload/index.js'),
+          preload: join(__dirname, '../preload/index.cjs'),
           devTools: isDev,
         },
         autoHideMenuBar: !isDev,
@@ -43,11 +43,13 @@ process.env.ELECTRON_DISABLE_SECURITY_WARNINGS = 'true'
 
       win.maximize()
 
+      // 🚧 Use ['ENV_NAME'] avoid vite:define plugin
       const URL = isDev
-        ? process.env.DEV_SERVER_URL
-        : `file://${join(app.getAppPath(), 'dist/render/index.html')}`
+      // eslint-disable-next-line dot-notation
+        ? (process.env.DEV_SERVER_URL || `http://${process.env['VITE_DEV_SERVER_HOST']}:${process.env['VITE_DEV_SERVER_PORT']}`)
+        : `file://${join(app.getAppPath(), 'dist/renderer/index.html')}`
 
-      win.loadURL(URL)
+      await win.loadURL(URL)
 
       if (isDev)
         win.webContents.openDevTools()

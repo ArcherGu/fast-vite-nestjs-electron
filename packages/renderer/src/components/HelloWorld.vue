@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { sendMsgToMainProcess } from '@render/api'
-import { useIpc } from '@render/plugins/ipc'
+import { sendMsgToMainProcess } from '@renderer/api'
+import { useIpc } from '@renderer/plugins/ipc'
 import { ref } from 'vue'
 
 const props = defineProps({

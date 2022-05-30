@@ -18,24 +18,24 @@
     ],
     "types": [
       "vite/client",
-      "./src/preload"
+      "./packages/preload"
     ],
     "paths": {
-      "@render/*": [
-        "src/render/*"
+      "@renderer/*": [
+        "packages/renderer/src/*"
       ],
       "@main/*": [
-        "src/main/*"
+        "packages/main/src/*"
       ],
       "@common/*": [
-        "src/common/*"
+        "packages/common/*"
       ]
     }
   },
   "include": [
-    "src/**/*.ts",
-    "src/**/*.d.ts",
-    "src/**/*.tsx",
-    "src/**/*.vue"
+    "packages/**/*.ts",
+    "packages/**/*.d.ts",
+    "packages/**/*.tsx",
+    "packages/**/*.vue"
   ]
 }

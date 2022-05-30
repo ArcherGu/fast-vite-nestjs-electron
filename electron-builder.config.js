@@ -15,8 +15,9 @@ const config = {
   files: [
     'dist/main/**/*',
     'dist/preload/**/*',
-    'dist/render/**/*',
+    'dist/renderer/**/*',
   ],
+  // asar: false,
   nsis: {
     oneClick: false,
     allowElevation: true,
@@ -24,6 +25,9 @@ const config = {
     createDesktopShortcut: true,
     createStartMenuShortcut: true,
   },
+  // mac: {
+  //   target: ['dir'],
+  // },
 }
 
 module.exports = config
