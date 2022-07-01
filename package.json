@@ -28,7 +28,7 @@
     "@vue/compiler-sfc": "^3.2.33",
     "electron": "^18.2.3",
     "electron-builder": "^23.0.3",
-    "esbuild": "0.14.28",
+    "esbuild": "0.14.48",
     "eslint": "^8.15.0",
     "kolorist": "^1.5.1",
     "lint-staged": "^12.4.1",
