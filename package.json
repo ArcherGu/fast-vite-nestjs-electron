@@ -23,7 +23,7 @@
   },
   "devDependencies": {
     "@anatine/esbuild-decorators": "^0.2.19",
-    "@antfu/eslint-config": "^0.23.1",
+    "@antfu/eslint-config": "0.25.2",
     "@vitejs/plugin-vue": "^2.3.3",
     "@vue/compiler-sfc": "^3.2.33",
     "electron": "^18.2.3",
