@@ -29,7 +29,7 @@
     "electron": "18.3.5",
     "electron-builder": "23.1.0",
     "esbuild": "0.14.48",
-    "eslint": "8.18.0",
+    "eslint": "8.19.0",
     "kolorist": "1.5.1",
     "lint-staged": "12.5.0",
     "pnpm": "7.4.1",
