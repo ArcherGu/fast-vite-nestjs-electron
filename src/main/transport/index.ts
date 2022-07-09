@@ -1,5 +1,6 @@
 import { Logger } from '@nestjs/common'
-import { CustomTransportStrategy, MessageHandler, Server } from '@nestjs/microservices'
+import type { CustomTransportStrategy, MessageHandler } from '@nestjs/microservices'
+import { Server } from '@nestjs/microservices'
 import { ipcMessageDispatcher } from './dispatcher'
 
 export class ElectronIpcTransport extends Server implements CustomTransportStrategy {

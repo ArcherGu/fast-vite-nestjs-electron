@@ -1,6 +1,6 @@
 import { NestFactory } from '@nestjs/core'
 import { app } from 'electron'
-import { MicroserviceOptions } from '@nestjs/microservices'
+import type { MicroserviceOptions } from '@nestjs/microservices'
 import { ElectronIpcTransport } from './transport'
 import { AppModule } from './app.module'
 
@@ -16,6 +16,7 @@ async function bootstrap() {
     await nestApp.listen()
   }
   catch (error) {
+    // eslint-disable-next-line no-console
     console.log(error)
     app.quit()
   }

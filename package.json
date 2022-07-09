@@ -23,7 +23,7 @@
   },
   "devDependencies": {
     "@anatine/esbuild-decorators": "0.2.19",
-    "@antfu/eslint-config": "0.23.1",
+    "@lightwing/eslint-config": "^0.0.3",
     "@vitejs/plugin-vue": "2.3.3",
     "@vue/compiler-sfc": "3.2.37",
     "electron": "19.0.8",
@@ -39,12 +39,12 @@
     "vite": "2.9.13",
     "vue-tsc": "0.38.3"
   },
+  "simple-git-hooks": {
+    "pre-commit": "npx lint-staged"
+  },
   "lint-staged": {
     "*.{js,ts,tsx,vue,md,json}": [
       "eslint --fix"
     ]
-  },
-  "simple-git-hooks": {
-    "pre-commit": "npx lint-staged"
   }
 }
