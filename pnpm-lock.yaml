@@ -15,7 +15,7 @@ specifiers:
   eslint: 8.19.0
   kolorist: 1.5.1
   lint-staged: 13.0.3
-  pnpm: 7.5.1
+  pnpm: 7.5.2
   reflect-metadata: ^0.1.13
   rimraf: 3.0.2
   rxjs: ^7.5.5
@@ -45,7 +45,7 @@ devDependencies:
   eslint: 8.19.0
   kolorist: 1.5.1
   lint-staged: 13.0.3
-  pnpm: 7.5.1
+  pnpm: 7.5.2
   rimraf: 3.0.2
   simple-git-hooks: 2.8.0
   typescript: 4.7.4
@@ -3869,8 +3869,8 @@ packages:
     engines: {node: '>=4'}
     dev: true
 
-  /pnpm/7.5.1:
-    resolution: {integrity: sha512-/WbI4+V4QLJvMn4mp6dw4q+fbvwIyLTr7qmkoCpqs/xIYMpVXA3wdkvI5I9O9k1DJfYNuH8yY7Uf4vCCEdObJw==}
+  /pnpm/7.5.2:
+    resolution: {integrity: sha512-tTLvMnu1zIAWrD87Q/Dgw0+d71Brhlm+aM62KkDr/EPNZyA7dBIsu7tS9pNfRSvwgVF7V1Dhc8jJLAsTNTXnDQ==}
     engines: {node: '>=14.6'}
     hasBin: true
     dev: true
