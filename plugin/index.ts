@@ -14,9 +14,9 @@ export function VitePluginElectronBuilder(userOptions: Partial<ViteElectronBuild
       options = resolveOptions(userOptions, viteConfig)
     },
     configureServer: ({ httpServer }: ViteDevServer) => {
-      httpServer.on('listening', () => {
+      httpServer?.on('listening', () => {
         const address: any = httpServer.address()
-        options.env.DEV_SERVER_URL = `http://${address.address}:${address.port}`
+        options.env.DEV_SERVER_URL = `http://localhost:${address.port}`
 
         handleDev(options)
       })
