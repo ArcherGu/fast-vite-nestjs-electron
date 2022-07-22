@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import { sendMsgToMainProcess } from '@render/api'
-import { useIpc } from '@render/plugins/ipc'
 import { ref } from 'vue'
 
 const props = defineProps({
@@ -9,6 +7,8 @@ const props = defineProps({
     default: 'Vite + Electron & Esbuild',
   },
 })
+
+const { sendMsg: sendMsgToMainProcess, onReplyMsg } = window.electron
 
 const log = ref('')
 const msg = ref('')
@@ -24,9 +24,7 @@ const sendMsg = async () => {
   }
 }
 
-const ipc = useIpc()
-
-ipc.on('reply-msg', (msg: string) => {
+onReplyMsg((msg: string) => {
   log.value += `[main]: ${msg}  \n`
 })
 </script>
@@ -43,5 +41,4 @@ ipc.on('reply-msg', (msg: string) => {
   </div>
 </template>
 
-<style>
-</style>
+<style></style>
