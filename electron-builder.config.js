@@ -17,13 +17,6 @@ const config = {
     'dist/preload/**/*',
     'dist/render/**/*',
   ],
-  nsis: {
-    oneClick: false,
-    allowElevation: true,
-    allowToChangeInstallationDirectory: true,
-    createDesktopShortcut: true,
-    createStartMenuShortcut: true,
-  },
 }
 
 module.exports = config
