@@ -24,7 +24,7 @@ import { AppService } from './app.service'
       })
 
       const URL = isDev
-        ? process.env.DEV_SERVER_URL
+        ? process.env.DS_RENDERER_URL
         : `file://${join(app.getAppPath(), 'dist/render/index.html')}`
 
       win.loadURL(URL)

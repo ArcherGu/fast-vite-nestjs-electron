@@ -3,20 +3,23 @@ import { writeFileSync } from 'fs'
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import { compileFile } from 'bytenode'
-import { VitePluginElectronBuilder } from './plugin'
+import { VitePluginDoubleshot } from 'vite-plugin-doubleshot'
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  server: {
+    port: 3000,
+  },
   root: join(__dirname, 'src/render'),
   plugins: [
     vue(),
-    VitePluginElectronBuilder({
-      root: process.cwd(),
-      preloadFile: join(__dirname, 'src/preload/index.ts'),
-      tsconfig: './tsconfig.main.json',
-      electronBuilderConfig: './electron-builder.config.js',
-      external: ['@nestjs'],
-      afterEsbuildBuild: async () => {
+    VitePluginDoubleshot({
+      type: 'electron',
+      main: 'dist/main/index.js',
+      entry: 'src/main/index.ts',
+      outDir: 'dist/main',
+      external: ['electron', '@nestjs'],
+      afterBuild: async () => {
         await compileFile({
           filename: './dist/main/index.js',
           output: './dist/main/main.jsc',
@@ -24,6 +27,15 @@ export default defineConfig({
         })
 
         writeFileSync('./dist/main/index.js', 'require(\'bytenode\');require(\'./main.jsc\')')
+      },
+      electron: {
+        build: {
+          config: './electron-builder.config.js',
+        },
+        preload: {
+          entry: 'src/preload/index.ts',
+          outDir: 'dist/preload',
+        },
       },
     }),
   ],
