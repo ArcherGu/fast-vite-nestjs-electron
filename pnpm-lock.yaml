@@ -2,7 +2,7 @@ lockfileVersion: 5.4
 
 specifiers:
   '@doubleshot/nest-electron': 0.1.0-alpha.2
-  '@doubleshot/nest-electron-ipc-transport': 0.1.0-alpha.2
+  '@doubleshot/nest-electron-ipc-transport': 0.1.0-alpha.5
   '@lightwing/eslint-config': 0.0.3
   '@nestjs/common': ^9.0.5
   '@nestjs/core': ^9.0.5
@@ -13,7 +13,6 @@ specifiers:
   electron: 19.0.9
   electron-builder: 23.1.0
   eslint: 8.20.0
-  kolorist: 1.5.1
   lint-staged: 13.0.3
   pnpm: 7.6.0
   reflect-metadata: ^0.1.13
@@ -28,7 +27,7 @@ specifiers:
 
 dependencies:
   '@doubleshot/nest-electron': 0.1.0-alpha.2_idgsrzt3qvuyqyq65eqc3gj2gm
-  '@doubleshot/nest-electron-ipc-transport': 0.1.0-alpha.2_6rzyk7c6deetajy2thtxrtwzqm
+  '@doubleshot/nest-electron-ipc-transport': 0.1.0-alpha.5_6rzyk7c6deetajy2thtxrtwzqm
   '@nestjs/common': 9.0.5_j5hagqx4mwzscud4kyjdvubauy
   '@nestjs/core': 9.0.5_j64r5jvz6u4u7g4ymewfyvw2zq
   '@nestjs/microservices': 9.0.5_ysglbtvsggaxflvnan6dc2nlve
@@ -44,7 +43,6 @@ devDependencies:
   electron: 19.0.9
   electron-builder: 23.1.0
   eslint: 8.20.0
-  kolorist: 1.5.1
   lint-staged: 13.0.3
   pnpm: 7.6.0
   rimraf: 3.0.2
@@ -236,8 +234,8 @@ packages:
       - typescript
     dev: true
 
-  /@doubleshot/nest-electron-ipc-transport/0.1.0-alpha.2_6rzyk7c6deetajy2thtxrtwzqm:
-    resolution: {integrity: sha512-3VJhi4MwR+h8/2p3YxMKXZ3nglXVdMqH4To9UWQdRbga0gsA32tOZrZZAGDbvqe27yaiKaswkC5AShqPAyRVuw==}
+  /@doubleshot/nest-electron-ipc-transport/0.1.0-alpha.5_6rzyk7c6deetajy2thtxrtwzqm:
+    resolution: {integrity: sha512-fKDNaZeEoQ7/3yeH0lS6E0pat07GGW+gBf5YoNslDG/rNwx47rVgZQv2T21VYfWJhbKHTgzEsO3tjuK27XccMw==}
     peerDependencies:
       '@nestjs/common': ^6.0.0 || ^7.0.0 || ^8.0.0 || ^9.0.0
       '@nestjs/microservices': ^6.0.0 || ^7.0.0 || ^8.0.0 || ^9.0.0
@@ -3505,10 +3503,6 @@ packages:
     resolution: {integrity: sha512-9ykJ/46SN/9KPM/sichzQ7OvXyGDYKGTaDlKMGCAlg2UK8KRy4jb0d8sFc+0Tt0YYnThq8X2RZgCg74RPxgcVA==}
     dependencies:
       json-buffer: 3.0.0
-
-  /kolorist/1.5.1:
-    resolution: {integrity: sha512-lxpCM3HTvquGxKGzHeknB/sUjuVoUElLlfYnXZT73K8geR9jQbroGlSCFBax9/0mpGoD3kzcMLnOlGQPJJNyqQ==}
-    dev: true
 
   /latest-version/5.1.0:
     resolution: {integrity: sha512-weT+r0kTkRQdCdYCNtkMwWXQTMEswKrFBkm4ckQOMVhhqhIMI1UT2hMj+1iigIhgSZm5gTmrRXBNoGUgaTY1xA==}

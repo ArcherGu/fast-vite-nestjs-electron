@@ -9,12 +9,11 @@
     "build": "rimraf dist && vite build",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
-    "postinstall": "electron-builder install-app-deps",
-    "postuninstall": "electron-builder install-app-deps"
+    "postinstall": "electron-builder install-app-deps"
   },
   "dependencies": {
     "@doubleshot/nest-electron": "0.1.0-alpha.2",
-    "@doubleshot/nest-electron-ipc-transport": "0.1.0-alpha.2",
+    "@doubleshot/nest-electron-ipc-transport": "0.1.0-alpha.5",
     "@nestjs/common": "^9.0.5",
     "@nestjs/core": "^9.0.5",
     "@nestjs/microservices": "^9.0.5",
@@ -30,7 +29,6 @@
     "electron": "19.0.9",
     "electron-builder": "23.1.0",
     "eslint": "8.20.0",
-    "kolorist": "1.5.1",
     "lint-staged": "13.0.3",
     "pnpm": "7.6.0",
     "rimraf": "3.0.2",
