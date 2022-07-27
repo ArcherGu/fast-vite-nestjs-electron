@@ -26,9 +26,6 @@
       ],
       "@main/*": [
         "src/main/*"
-      ],
-      "@common/*": [
-        "src/common/*"
       ]
     }
   },
