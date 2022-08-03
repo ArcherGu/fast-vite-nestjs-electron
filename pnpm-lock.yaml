@@ -2,7 +2,7 @@ lockfileVersion: 5.4
 
 specifiers:
   '@doubleshot/nest-electron': 0.1.0-beta.0
-  '@doubleshot/nest-electron-ipc-transport': 0.1.0-alpha.5
+  '@doubleshot/nest-electron-ipc-transport': 0.1.0-beta.0
   '@lightwing/eslint-config': 0.0.3
   '@nestjs/common': ^9.0.5
   '@nestjs/core': ^9.0.5
@@ -26,7 +26,7 @@ specifiers:
 
 dependencies:
   '@doubleshot/nest-electron': 0.1.0-beta.0_ya5ptfk3q7w75lwo3ds7uyessq
-  '@doubleshot/nest-electron-ipc-transport': 0.1.0-alpha.5_q3l5fxepxhos4ybr7bdoo6mrnm
+  '@doubleshot/nest-electron-ipc-transport': 0.1.0-beta.0_q3l5fxepxhos4ybr7bdoo6mrnm
   '@nestjs/common': 9.0.5_j5hagqx4mwzscud4kyjdvubauy
   '@nestjs/core': 9.0.5_j64r5jvz6u4u7g4ymewfyvw2zq
   '@nestjs/microservices': 9.0.5_ysglbtvsggaxflvnan6dc2nlve
@@ -232,12 +232,12 @@ packages:
       - typescript
     dev: true
 
-  /@doubleshot/nest-electron-ipc-transport/0.1.0-alpha.5_q3l5fxepxhos4ybr7bdoo6mrnm:
-    resolution: {integrity: sha512-fKDNaZeEoQ7/3yeH0lS6E0pat07GGW+gBf5YoNslDG/rNwx47rVgZQv2T21VYfWJhbKHTgzEsO3tjuK27XccMw==}
+  /@doubleshot/nest-electron-ipc-transport/0.1.0-beta.0_q3l5fxepxhos4ybr7bdoo6mrnm:
+    resolution: {integrity: sha512-aWpCUPc4B/coXZNXMOsUwOgjs4EqzB3sVlktaYk4n2BRpTSQKRlMf8vQ80CRRsCWQiKe1JExcKUhhxeZ52ajsA==}
     peerDependencies:
-      '@nestjs/common': ^6.0.0 || ^7.0.0 || ^8.0.0 || ^9.0.0
-      '@nestjs/microservices': ^6.0.0 || ^7.0.0 || ^8.0.0 || ^9.0.0
-      electron: ^16.0.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
+      '@nestjs/common': '>=6.0.0'
+      '@nestjs/microservices': '>=6.0.0'
+      electron: '>=16.0.0'
     dependencies:
       '@nestjs/common': 9.0.5_j5hagqx4mwzscud4kyjdvubauy
       '@nestjs/microservices': 9.0.5_ysglbtvsggaxflvnan6dc2nlve
