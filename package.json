@@ -13,7 +13,7 @@
   },
   "dependencies": {
     "@doubleshot/nest-electron": "0.1.0-beta.0",
-    "@doubleshot/nest-electron-ipc-transport": "0.1.0-alpha.5",
+    "@doubleshot/nest-electron-ipc-transport": "0.1.0-beta.0",
     "@nestjs/common": "^9.0.5",
     "@nestjs/core": "^9.0.5",
     "@nestjs/microservices": "^9.0.5",
