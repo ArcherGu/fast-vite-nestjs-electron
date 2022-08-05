@@ -37,7 +37,7 @@ async function bootstrap() {
     const nestApp = await NestFactory.createMicroservice<MicroserviceOptions>(
       AppModule,
       {
-        strategy: new ElectronIpcTransport(),
+        strategy: new ElectronIpcTransport('IpcTransport'),
       },
     )
 
