@@ -14,18 +14,18 @@
   "dependencies": {
     "@doubleshot/nest-electron": "0.1.0-beta.0",
     "@doubleshot/nest-electron-ipc-transport": "0.1.0-beta.1",
-    "@nestjs/common": "^9.0.5",
-    "@nestjs/core": "^9.0.5",
-    "@nestjs/microservices": "^9.0.5",
+    "@nestjs/common": "^9.0.9",
+    "@nestjs/core": "^9.0.9",
+    "@nestjs/microservices": "^9.0.9",
     "reflect-metadata": "^0.1.13",
     "rxjs": "^7.5.6",
     "vue": "^3.2.37"
   },
   "devDependencies": {
-    "@lightwing/eslint-config": "0.0.3",
+    "@lightwing/eslint-config": "0.0.4",
     "@vitejs/plugin-vue": "3.0.3",
     "@vue/compiler-sfc": "3.2.37",
-    "electron": "19.0.12",
+    "electron": "20.0.2",
     "electron-builder": "23.3.3",
     "eslint": "8.22.0",
     "lint-staged": "13.0.3",
@@ -34,7 +34,7 @@
     "simple-git-hooks": "2.8.0",
     "typescript": "4.7.4",
     "vite": "3.0.7",
-    "vite-plugin-doubleshot": "0.1.0-alpha.1",
+    "vite-plugin-doubleshot": "0.1.0-beta.1",
     "vue-tsc": "0.40.1"
   },
   "simple-git-hooks": {
