@@ -19,7 +19,7 @@ specifiers:
   rxjs: ^7.5.6
   simple-git-hooks: 2.8.0
   typescript: 4.7.4
-  vite: 3.0.7
+  vite: 3.0.8
   vite-plugin-doubleshot: 0.1.0-beta.1
   vue: ^3.2.37
   vue-tsc: 0.40.1
@@ -36,7 +36,7 @@ dependencies:
 
 devDependencies:
   '@lightwing/eslint-config': 0.0.4_4rv7y5c6xz3vfxwhbrcxxi73bq
-  '@vitejs/plugin-vue': 3.0.3_vite@3.0.7+vue@3.2.37
+  '@vitejs/plugin-vue': 3.0.3_vite@3.0.8+vue@3.2.37
   '@vue/compiler-sfc': 3.2.37
   electron: 20.0.2
   electron-builder: 23.3.3
@@ -46,8 +46,8 @@ devDependencies:
   rimraf: 3.0.2
   simple-git-hooks: 2.8.0
   typescript: 4.7.4
-  vite: 3.0.7
-  vite-plugin-doubleshot: 0.1.0-beta.1_rg3do2uxtfrqzji5pegnlrbaoa
+  vite: 3.0.8
+  vite-plugin-doubleshot: 0.1.0-beta.1_wihrlxvlkk5vhucdon3exwdkci
   vue-tsc: 0.40.1_typescript@4.7.4
 
 packages:
@@ -892,14 +892,14 @@ packages:
       eslint-visitor-keys: 3.3.0
     dev: true
 
-  /@vitejs/plugin-vue/3.0.3_vite@3.0.7+vue@3.2.37:
+  /@vitejs/plugin-vue/3.0.3_vite@3.0.8+vue@3.2.37:
     resolution: {integrity: sha512-U4zNBlz9mg+TA+i+5QPc3N5lQvdUXENZLO2h0Wdzp56gI1MWhqJOv+6R+d4kOzoaSSq6TnGPBdZAXKOe4lXy6g==}
     engines: {node: ^14.18.0 || >=16.0.0}
     peerDependencies:
       vite: ^3.0.0
       vue: ^3.2.25
     dependencies:
-      vite: 3.0.7
+      vite: 3.0.8
       vue: 3.2.37
     dev: true
 
@@ -5046,14 +5046,14 @@ packages:
     dev: true
     optional: true
 
-  /vite-plugin-doubleshot/0.1.0-beta.1_rg3do2uxtfrqzji5pegnlrbaoa:
+  /vite-plugin-doubleshot/0.1.0-beta.1_wihrlxvlkk5vhucdon3exwdkci:
     resolution: {integrity: sha512-37MduVmC1NDkJk1YKgIe/nDZj1NEpF34Uo5xuJgZz+W48DF7VTknOXBupEVjT6rdzGQB3HkyfdhzMkCUWZPmDQ==}
     engines: {node: '>=14.0.0'}
     peerDependencies:
       vite: '>=2.0.0'
     dependencies:
       '@doubleshot/builder': 0.1.0-beta.1_4gf2fjuvajv23pka3bkksunq6y
-      vite: 3.0.7
+      vite: 3.0.8
     transitivePeerDependencies:
       - debug
       - electron
@@ -5064,8 +5064,8 @@ packages:
       - typescript
     dev: true
 
-  /vite/3.0.7:
-    resolution: {integrity: sha512-dILhvKba1mbP1wCezVQx/qhEK7/+jVn9ciadEcyKMMhZpsuAi/eWZfJRMkmYlkSFG7Qq9NvJbgFq4XOBxugJsA==}
+  /vite/3.0.8:
+    resolution: {integrity: sha512-AOZ4eN7mrkJiOLuw8IA7piS4IdOQyQCA81GxGsAQvAZzMRi9ZwGB3TOaYsj4uLAWK46T5L4AfQ6InNGlxX30IQ==}
     engines: {node: ^14.18.0 || >=16.0.0}
     hasBin: true
     peerDependencies:
