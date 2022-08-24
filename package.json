@@ -25,7 +25,7 @@
     "@lightwing/eslint-config": "0.0.4",
     "@vitejs/plugin-vue": "3.0.3",
     "@vue/compiler-sfc": "3.2.37",
-    "electron": "20.0.3",
+    "electron": "20.1.0",
     "electron-builder": "23.3.3",
     "eslint": "8.22.0",
     "lint-staged": "13.0.3",
