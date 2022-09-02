@@ -1,4 +1,4 @@
-import type { IpcResponse } from '@doubleshot/nest-electron-ipc-transport'
+import type { IpcResponse } from '@doubleshot/nest-electron'
 
 declare global {
   interface Window {

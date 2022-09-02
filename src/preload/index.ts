@@ -1,4 +1,4 @@
-import type { IpcResponse } from '@doubleshot/nest-electron-ipc-transport'
+import type { IpcResponse } from '@doubleshot/nest-electron'
 import { contextBridge, ipcRenderer } from 'electron'
 
 contextBridge.exposeInMainWorld(
