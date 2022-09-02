@@ -33,7 +33,7 @@
     "simple-git-hooks": "2.8.0",
     "typescript": "4.8.2",
     "vite": "3.0.9",
-    "vite-plugin-doubleshot": "0.1.0-beta.2",
+    "vite-plugin-doubleshot": "0.0.1",
     "vue-tsc": "0.40.5"
   },
   "simple-git-hooks": {
