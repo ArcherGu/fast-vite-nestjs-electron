@@ -1,7 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
-  '@doubleshot/nest-electron': ^0.0.1
+  '@doubleshot/nest-electron': ^0.0.2
   '@lightwing/eslint-config': 0.0.7
   '@nestjs/common': ^9.0.11
   '@nestjs/core': ^9.0.11
@@ -24,7 +24,7 @@ specifiers:
   vue-tsc: 0.40.6
 
 dependencies:
-  '@doubleshot/nest-electron': 0.0.1_tg2puzvpt5s6wmxibbuhbokfcq
+  '@doubleshot/nest-electron': 0.0.2_tg2puzvpt5s6wmxibbuhbokfcq
   '@nestjs/common': 9.0.11_j5hagqx4mwzscud4kyjdvubauy
   '@nestjs/core': 9.0.11_jekf3ziphn52mxrmswvchcpj4m
   '@nestjs/microservices': 9.0.11_mr622mjrz7hsw5sxbt7k6brday
@@ -230,8 +230,8 @@ packages:
       - typescript
     dev: true
 
-  /@doubleshot/nest-electron/0.0.1_tg2puzvpt5s6wmxibbuhbokfcq:
-    resolution: {integrity: sha512-JnL1rgviMmUuWkxKAoF1OlWS7EXNKUraTRW51Tgjf6CpbB99VtC8aVAsggk8TYQOZ9Y5w8jiLKGNLJDLLrbY2g==}
+  /@doubleshot/nest-electron/0.0.2_tg2puzvpt5s6wmxibbuhbokfcq:
+    resolution: {integrity: sha512-DroNlqLDsOSB/F+ibOszTFuti6lChDhzoc/FwbIMyE+LfKG2kA08RxfE8inxnMsjPxUowdU0ncvRA2ag+3nPFw==}
     peerDependencies:
       '@nestjs/common': '>=6.0.0'
       '@nestjs/microservices': '>=6.0.0'
