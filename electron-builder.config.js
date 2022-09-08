@@ -8,9 +8,6 @@ const config = {
   },
   publish: null,
   npmRebuild: false,
-  electronDownload: {
-    mirror: 'https://npm.taobao.org/mirrors/electron/',
-  },
   files: [
     'dist/main/**/*',
     'dist/preload/**/*',
