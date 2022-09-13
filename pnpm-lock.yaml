@@ -19,7 +19,7 @@ specifiers:
   simple-git-hooks: 2.8.0
   typescript: 4.8.3
   vite: 3.1.0
-  vite-plugin-doubleshot: 0.0.3
+  vite-plugin-doubleshot: 0.0.5
   vue: ^3.2.38
   vue-tsc: 0.40.13
 
@@ -45,7 +45,7 @@ devDependencies:
   simple-git-hooks: 2.8.0
   typescript: 4.8.3
   vite: 3.1.0
-  vite-plugin-doubleshot: 0.0.3_mhub7uhofvpwoevz37rt2ny73m
+  vite-plugin-doubleshot: 0.0.5_mhub7uhofvpwoevz37rt2ny73m
   vue-tsc: 0.40.13_typescript@4.8.3
 
 packages:
@@ -197,8 +197,8 @@ packages:
       ajv-keywords: 3.5.2_ajv@6.12.6
     dev: true
 
-  /@doubleshot/builder/0.0.3_tm5ado4myteldvvhyvxjoic5om:
-    resolution: {integrity: sha512-P+K8KqRHXHBmGq8C1Nh+PCTRR9c0aIRkCXD0wzNTzjFa0RAAYFRCID+18w4v13m8u/Pe9XSI6QmAgeNJ9+zaKg==}
+  /@doubleshot/builder/0.0.5_tm5ado4myteldvvhyvxjoic5om:
+    resolution: {integrity: sha512-5sL0Ixe2XXT57jMWO6gX5pYh+D2Dwvh73Ff4L6/Rxe3Pggke3RyD2CZX7jVUadlXLLbULmMNSzd26At7Qt6xWQ==}
     engines: {node: '>=14.0.0'}
     hasBin: true
     peerDependencies:
@@ -5313,13 +5313,13 @@ packages:
     dev: true
     optional: true
 
-  /vite-plugin-doubleshot/0.0.3_mhub7uhofvpwoevz37rt2ny73m:
-    resolution: {integrity: sha512-xNmwvPCb87wZks+vUOkSJ2M6Bk3//DyTMsfT432Cb9wBYt2PZFFMq2yxltulaYCAn8+mCKJKKNthWN8uKXPiGQ==}
+  /vite-plugin-doubleshot/0.0.5_mhub7uhofvpwoevz37rt2ny73m:
+    resolution: {integrity: sha512-bfqo/EnbsEhP50ZLc/jxTxa2gB179pHColiG1GFx0c4fnohb9j4ry121CVLGzfsqdEJ1vhxYi4fEhnd5vBiKkQ==}
     engines: {node: '>=14.0.0'}
     peerDependencies:
       vite: '>=2.0.0'
     dependencies:
-      '@doubleshot/builder': 0.0.3_tm5ado4myteldvvhyvxjoic5om
+      '@doubleshot/builder': 0.0.5_tm5ado4myteldvvhyvxjoic5om
       vite: 3.1.0
     transitivePeerDependencies:
       - debug
