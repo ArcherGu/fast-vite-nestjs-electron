@@ -1,7 +1,7 @@
 {
   "name": "fast-vite-nestjs-electron",
   "version": "0.0.1",
-  "packageManager": "pnpm@7.12.2",
+  "packageManager": "pnpm@7.13.0",
   "description": "Vite + Electron with Doubleshot, so fast! ⚡",
   "main": "dist/main/index.js",
   "scripts": {
@@ -28,7 +28,7 @@
     "electron-builder": "23.3.3",
     "eslint": "8.24.0",
     "lint-staged": "13.0.3",
-    "pnpm": "7.12.2",
+    "pnpm": "7.13.0",
     "rimraf": "3.0.2",
     "simple-git-hooks": "2.8.0",
     "typescript": "4.8.4",
