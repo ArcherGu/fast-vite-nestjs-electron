@@ -18,7 +18,7 @@ specifiers:
   rxjs: ^7.5.6
   simple-git-hooks: 2.8.1
   typescript: 4.8.4
-  vite: 3.1.8
+  vite: 3.2.0
   vite-plugin-doubleshot: 0.0.6
   vue: ^3.2.38
   vue-tsc: 1.0.9
@@ -34,7 +34,7 @@ dependencies:
 
 devDependencies:
   '@lightwing/eslint-config': 0.0.8_wyqvi574yv7oiwfeinomdzmc3m
-  '@vitejs/plugin-vue': 3.2.0_vite@3.1.8+vue@3.2.38
+  '@vitejs/plugin-vue': 3.2.0_vite@3.2.0+vue@3.2.38
   '@vue/compiler-sfc': 3.2.41
   electron: 21.2.0
   electron-builder: 23.6.0
@@ -44,8 +44,8 @@ devDependencies:
   rimraf: 3.0.2
   simple-git-hooks: 2.8.1
   typescript: 4.8.4
-  vite: 3.1.8
-  vite-plugin-doubleshot: 0.0.6_3wkp62l7qzuispkny4q5xl3lzm
+  vite: 3.2.0
+  vite-plugin-doubleshot: 0.0.6_sl65lt4pvt5dp2vikcvibtio2u
   vue-tsc: 1.0.9_typescript@4.8.4
 
 packages:
@@ -884,14 +884,14 @@ packages:
       eslint-visitor-keys: 3.3.0
     dev: true
 
-  /@vitejs/plugin-vue/3.2.0_vite@3.1.8+vue@3.2.38:
+  /@vitejs/plugin-vue/3.2.0_vite@3.2.0+vue@3.2.38:
     resolution: {integrity: sha512-E0tnaL4fr+qkdCNxJ+Xd0yM31UwMkQje76fsDVBBUCoGOUPexu2VDUYHL8P4CwV+zMvWw6nlRw19OnRKmYAJpw==}
     engines: {node: ^14.18.0 || >=16.0.0}
     peerDependencies:
       vite: ^3.0.0
       vue: ^3.2.25
     dependencies:
-      vite: 3.1.8
+      vite: 3.2.0
       vue: 3.2.38
     dev: true
 
@@ -976,7 +976,7 @@ packages:
       '@vue/shared': 3.2.38
       estree-walker: 2.0.2
       magic-string: 0.25.9
-      postcss: 8.4.16
+      postcss: 8.4.18
       source-map: 0.6.1
 
   /@vue/compiler-sfc/3.2.41:
@@ -4277,6 +4277,15 @@ packages:
       nanoid: 3.3.4
       picocolors: 1.0.0
       source-map-js: 1.0.2
+    dev: true
+
+  /postcss/8.4.18:
+    resolution: {integrity: sha512-Wi8mWhncLJm11GATDaQKobXSNEYGUHeQLiQqDFG1qQ5UTDPTEvKw0Xt5NsTpktGTwLps3ByrWsBrG0rB8YQ9oA==}
+    engines: {node: ^10 || ^12 || >=14}
+    dependencies:
+      nanoid: 3.3.4
+      picocolors: 1.0.0
+      source-map-js: 1.0.2
 
   /prelude-ls/1.2.1:
     resolution: {integrity: sha512-vkcDPrRZo1QZLbn5RLGPpg/WmIQ65qoWWhcGKf/b5eplkkarX0m9z8ppCat4mlOqUsWpyNuYgO3VRyrYHSzX5g==}
@@ -4436,8 +4445,8 @@ packages:
       sprintf-js: 1.1.2
     optional: true
 
-  /rollup/2.78.1:
-    resolution: {integrity: sha512-VeeCgtGi4P+o9hIg+xz4qQpRl6R401LWEXBmxYKOV4zlF82lyhgh2hTZnheFUbANE8l2A41F458iwj2vEYaXJg==}
+  /rollup/2.79.1:
+    resolution: {integrity: sha512-uKxbd0IhMZOhjAiD5oAFp7BqvkA4Dv47qpOCtaNvng4HBwdbWtdOh8f5nZNuk2rp51PMGk3bzfWu5oayNEuYnw==}
     engines: {node: '>=10.0.0'}
     hasBin: true
     optionalDependencies:
@@ -4894,7 +4903,7 @@ packages:
       joycon: 3.1.1
       postcss-load-config: 3.1.4
       resolve-from: 5.0.0
-      rollup: 2.78.1
+      rollup: 2.79.1
       source-map: 0.8.0-beta.0
       sucrase: 3.24.0
       tree-kill: 1.2.2
@@ -5025,14 +5034,14 @@ packages:
     dev: true
     optional: true
 
-  /vite-plugin-doubleshot/0.0.6_3wkp62l7qzuispkny4q5xl3lzm:
+  /vite-plugin-doubleshot/0.0.6_sl65lt4pvt5dp2vikcvibtio2u:
     resolution: {integrity: sha512-TwBlAsQUtowbtGtIjqZJv/lB2JPSg4sEIfgAO9fMh+jSS19hGuGFd8U9JuNKHXWB+ChjChvw4oNtJtbW6CrnZQ==}
     engines: {node: '>=14.0.0'}
     peerDependencies:
       vite: '>=2.0.0'
     dependencies:
       '@doubleshot/builder': 0.0.6_avykeqcm3ltmhu4rjeiqka4fd4
-      vite: 3.1.8
+      vite: 3.2.0
     transitivePeerDependencies:
       - debug
       - electron
@@ -5043,14 +5052,15 @@ packages:
       - typescript
     dev: true
 
-  /vite/3.1.8:
-    resolution: {integrity: sha512-m7jJe3nufUbuOfotkntGFupinL/fmuTNuQmiVE7cH2IZMuf4UbfbGYMUT3jVWgGYuRVLY9j8NnrRqgw5rr5QTg==}
+  /vite/3.2.0:
+    resolution: {integrity: sha512-Ovj7+cqIdM1I0LPCk2CWxzgADXMix3NLXpUT6g7P7zg/a9grk/TaC3qn9YMg7w7M0POIVCBOp1aBANJW+RH7oA==}
     engines: {node: ^14.18.0 || >=16.0.0}
     hasBin: true
     peerDependencies:
       less: '*'
       sass: '*'
       stylus: '*'
+      sugarss: '*'
       terser: ^5.4.0
     peerDependenciesMeta:
       less:
@@ -5059,13 +5069,15 @@ packages:
         optional: true
       stylus:
         optional: true
+      sugarss:
+        optional: true
       terser:
         optional: true
     dependencies:
       esbuild: 0.15.10
-      postcss: 8.4.16
+      postcss: 8.4.18
       resolve: 1.22.1
-      rollup: 2.78.1
+      rollup: 2.79.1
     optionalDependencies:
       fsevents: 2.3.2
     dev: true
