@@ -18,7 +18,7 @@ specifiers:
   rxjs: ^7.5.6
   simple-git-hooks: 2.8.1
   typescript: 4.9.4
-  vite: 4.0.0
+  vite: 4.0.1
   vite-plugin-doubleshot: 0.0.6
   vue: ^3.2.38
   vue-tsc: 1.0.13
@@ -34,7 +34,7 @@ dependencies:
 
 devDependencies:
   '@lightwing/eslint-config': 0.0.8_ha6vam6werchizxrnqvarmz2zu
-  '@vitejs/plugin-vue': 4.0.0_vite@4.0.0+vue@3.2.38
+  '@vitejs/plugin-vue': 4.0.0_vite@4.0.1+vue@3.2.38
   '@vue/compiler-sfc': 3.2.45
   electron: 22.0.0
   electron-builder: 23.6.0
@@ -44,8 +44,8 @@ devDependencies:
   rimraf: 3.0.2
   simple-git-hooks: 2.8.1
   typescript: 4.9.4
-  vite: 4.0.0
-  vite-plugin-doubleshot: 0.0.6_pq6k6fhqd3nyffaxsso5ibtj3u
+  vite: 4.0.1
+  vite-plugin-doubleshot: 0.0.6_m6pwtpfiof3omoxrgouvtrfa3i
   vue-tsc: 1.0.13_typescript@4.9.4
 
 packages:
@@ -1092,14 +1092,14 @@ packages:
       eslint-visitor-keys: 3.3.0
     dev: true
 
-  /@vitejs/plugin-vue/4.0.0_vite@4.0.0+vue@3.2.38:
+  /@vitejs/plugin-vue/4.0.0_vite@4.0.1+vue@3.2.38:
     resolution: {integrity: sha512-e0X4jErIxAB5oLtDqbHvHpJe/uWNkdpYV83AOG2xo2tEVSzCzewgJMtREZM30wXnM5ls90hxiOtAuVU6H5JgbA==}
     engines: {node: ^14.18.0 || >=16.0.0}
     peerDependencies:
       vite: ^4.0.0
       vue: ^3.2.25
     dependencies:
-      vite: 4.0.0
+      vite: 4.0.1
       vue: 3.2.38
     dev: true
 
@@ -1184,7 +1184,7 @@ packages:
       '@vue/shared': 3.2.38
       estree-walker: 2.0.2
       magic-string: 0.25.9
-      postcss: 8.4.19
+      postcss: 8.4.20
       source-map: 0.6.1
 
   /@vue/compiler-sfc/3.2.45:
@@ -4470,8 +4470,8 @@ packages:
       source-map-js: 1.0.2
     dev: true
 
-  /postcss/8.4.19:
-    resolution: {integrity: sha512-h+pbPsyhlYj6N2ozBmHhHrs9DzGmbaarbLvWipMRO7RLS+v4onj26MPFXA5OBYFxyqYhUJK456SwDcY9H2/zsA==}
+  /postcss/8.4.20:
+    resolution: {integrity: sha512-6Q04AXR1212bXr5fh03u8aAwbLxAQNGQ/Q1LNa0VfOI06ZAlhPHtQvE4OIdpj4kLThXilalPnmDSOD65DcHt+g==}
     engines: {node: ^10 || ^12 || >=14}
     dependencies:
       nanoid: 3.3.4
@@ -5217,14 +5217,14 @@ packages:
     dev: true
     optional: true
 
-  /vite-plugin-doubleshot/0.0.6_pq6k6fhqd3nyffaxsso5ibtj3u:
+  /vite-plugin-doubleshot/0.0.6_m6pwtpfiof3omoxrgouvtrfa3i:
     resolution: {integrity: sha512-TwBlAsQUtowbtGtIjqZJv/lB2JPSg4sEIfgAO9fMh+jSS19hGuGFd8U9JuNKHXWB+ChjChvw4oNtJtbW6CrnZQ==}
     engines: {node: '>=14.0.0'}
     peerDependencies:
       vite: '>=2.0.0'
     dependencies:
       '@doubleshot/builder': 0.0.6_4gl47vbnwavah233mclplcq6wi
-      vite: 4.0.0
+      vite: 4.0.1
     transitivePeerDependencies:
       - debug
       - electron
@@ -5235,8 +5235,8 @@ packages:
       - typescript
     dev: true
 
-  /vite/4.0.0:
-    resolution: {integrity: sha512-ynad+4kYs8Jcnn8J7SacS9vAbk7eMy0xWg6E7bAhS1s79TK+D7tVFGXVZ55S7RNLRROU1rxoKlvZ/qjaB41DGA==}
+  /vite/4.0.1:
+    resolution: {integrity: sha512-kZQPzbDau35iWOhy3CpkrRC7It+HIHtulAzBhMqzGHKRf/4+vmh8rPDDdv98SWQrFWo6//3ozwsRmwQIPZsK9g==}
     engines: {node: ^14.18.0 || >=16.0.0}
     hasBin: true
     peerDependencies:
@@ -5261,7 +5261,7 @@ packages:
         optional: true
     dependencies:
       esbuild: 0.16.3
-      postcss: 8.4.19
+      postcss: 8.4.20
       resolve: 1.22.1
       rollup: 3.7.0
     optionalDependencies:
