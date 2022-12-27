@@ -13,15 +13,15 @@
   },
   "dependencies": {
     "@doubleshot/nest-electron": "^0.0.5",
-    "@nestjs/common": "^9.0.11",
-    "@nestjs/core": "^9.0.11",
-    "@nestjs/microservices": "^9.0.11",
+    "@nestjs/common": "^9.2.1",
+    "@nestjs/core": "^9.2.1",
+    "@nestjs/microservices": "^9.2.1",
     "reflect-metadata": "^0.1.13",
-    "rxjs": "^7.5.6",
-    "vue": "^3.2.38"
+    "rxjs": "^7.8.0",
+    "vue": "^3.2.45"
   },
   "devDependencies": {
-    "@lightwing/eslint-config": "0.0.8",
+    "@lightwing/eslint-config": "0.0.9",
     "@vitejs/plugin-vue": "4.0.0",
     "@vue/compiler-sfc": "3.2.45",
     "electron": "22.0.0",
