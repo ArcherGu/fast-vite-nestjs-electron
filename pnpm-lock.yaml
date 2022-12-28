@@ -12,7 +12,7 @@ specifiers:
   electron-builder: 23.6.0
   eslint: 8.30.0
   lint-staged: 13.1.0
-  pnpm: 7.20.0
+  pnpm: 7.21.0
   reflect-metadata: ^0.1.13
   rimraf: 3.0.2
   rxjs: ^7.8.0
@@ -40,7 +40,7 @@ devDependencies:
   electron-builder: 23.6.0
   eslint: 8.30.0
   lint-staged: 13.1.0
-  pnpm: 7.20.0
+  pnpm: 7.21.0
   rimraf: 3.0.2
   simple-git-hooks: 2.8.1
   typescript: 4.9.4
@@ -4432,8 +4432,8 @@ packages:
     engines: {node: '>=4'}
     dev: true
 
-  /pnpm/7.20.0:
-    resolution: {integrity: sha512-klGp+P0sxw1f6OYwJtl0PcoYiIHVhMZdh9e2B8maUmzOGmAj0NL9jKaKPfIX4kKfyQcWeADm46Z+4CKtabZqSw==}
+  /pnpm/7.21.0:
+    resolution: {integrity: sha512-zDsRciscnXmp8AVD0u9eSoJrGfXywepuwMmFstsd+Vfl/wDZUxgaSaZ/6Nkx3bBftC+oBpWFkAGBRyjy58jvZg==}
     engines: {node: '>=14.6'}
     hasBin: true
     dev: true
