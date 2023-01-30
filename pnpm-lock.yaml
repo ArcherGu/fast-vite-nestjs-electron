@@ -19,7 +19,7 @@ specifiers:
   simple-git-hooks: 2.8.1
   typescript: 4.9.4
   vite: 4.0.4
-  vite-plugin-doubleshot: 0.0.8
+  vite-plugin-doubleshot: 0.0.9
   vue: ^3.2.45
   vue-tsc: 1.0.24
 
@@ -45,7 +45,7 @@ devDependencies:
   simple-git-hooks: 2.8.1
   typescript: 4.9.4
   vite: 4.0.4
-  vite-plugin-doubleshot: 0.0.8_tk2zpbyre6kzhem7g74q4wk5sy
+  vite-plugin-doubleshot: 0.0.9_tk2zpbyre6kzhem7g74q4wk5sy
   vue-tsc: 1.0.24_typescript@4.9.4
 
 packages:
@@ -5049,8 +5049,8 @@ packages:
     dev: true
     optional: true
 
-  /vite-plugin-doubleshot/0.0.8_tk2zpbyre6kzhem7g74q4wk5sy:
-    resolution: {integrity: sha512-T2hJ2HmmBCfN0PMxPSxq1uyAQkykHMVUWe+S4mRLXMjcfUHrwfwV0GGIiymimfLNJ0U3st8P5ewh85N+Hq9mTQ==}
+  /vite-plugin-doubleshot/0.0.9_tk2zpbyre6kzhem7g74q4wk5sy:
+    resolution: {integrity: sha512-2c4m1z6vqj4+OB7qu/yr68S8LIjRb4pm/x2cNZ9+JWkGGh2lAY2ge+VoQ1fRSJUxK05e6GS9UW7o7AyoU7vinw==}
     engines: {node: '>=14.0.0'}
     peerDependencies:
       vite: '>=2.0.0'
