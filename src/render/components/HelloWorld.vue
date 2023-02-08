@@ -16,7 +16,7 @@ const msg = ref('')
 const sendMsg = async () => {
   try {
     log.value += `[render]: ${msg.value} \n`
-    const { data } = await sendMsgToMainProcess(msg.value)
+    const data = await sendMsgToMainProcess(msg.value)
     log.value += `[main]: ${data}  \n`
   }
   catch (error) {
@@ -41,4 +41,6 @@ onReplyMsg((msg: string) => {
   </div>
 </template>
 
-<style></style>
+<style>
+
+</style>
