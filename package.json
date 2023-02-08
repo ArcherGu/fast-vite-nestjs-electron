@@ -21,7 +21,7 @@
     "vue": "^3.2.47"
   },
   "devDependencies": {
-    "@lightwing/eslint-config": "0.0.10",
+    "@lightwing/eslint-config": "0.0.11",
     "@vitejs/plugin-vue": "4.0.0",
     "@vue/compiler-sfc": "3.2.47",
     "electron": "23.0.0",
