@@ -6,7 +6,7 @@ specifiers:
   '@nestjs/common': ^9.3.9
   '@nestjs/core': ^9.3.9
   '@nestjs/microservices': ^9.3.9
-  '@vitejs/plugin-vue': 4.0.0
+  '@vitejs/plugin-vue': 4.1.0
   '@vue/compiler-sfc': 3.2.47
   electron: 23.1.4
   electron-builder: 23.6.0
@@ -34,7 +34,7 @@ dependencies:
 
 devDependencies:
   '@lightwing/eslint-config': 0.0.11_vgl77cfdswitgr47lm5swmv43m
-  '@vitejs/plugin-vue': 4.0.0_vite@4.1.4+vue@3.2.47
+  '@vitejs/plugin-vue': 4.1.0_vite@4.1.4+vue@3.2.47
   '@vue/compiler-sfc': 3.2.47
   electron: 23.1.4
   electron-builder: 23.6.0
@@ -1161,8 +1161,8 @@ packages:
       eslint-visitor-keys: 3.3.0
     dev: true
 
-  /@vitejs/plugin-vue/4.0.0_vite@4.1.4+vue@3.2.47:
-    resolution: {integrity: sha512-e0X4jErIxAB5oLtDqbHvHpJe/uWNkdpYV83AOG2xo2tEVSzCzewgJMtREZM30wXnM5ls90hxiOtAuVU6H5JgbA==}
+  /@vitejs/plugin-vue/4.1.0_vite@4.1.4+vue@3.2.47:
+    resolution: {integrity: sha512-++9JOAFdcXI3lyer9UKUV4rfoQ3T1RN8yDqoCLar86s0xQct5yblxAE+yWgRnU5/0FOlVCpTZpYSBV/bGWrSrQ==}
     engines: {node: ^14.18.0 || >=16.0.0}
     peerDependencies:
       vite: ^4.0.0
