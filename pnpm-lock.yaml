@@ -46,8 +46,8 @@ devDependencies:
     specifier: 13.2.0
     version: 13.2.0
   pnpm:
-    specifier: 8.0.0
-    version: 8.0.0
+    specifier: 8.1.0
+    version: 8.1.0
   rimraf:
     specifier: 4.4.1
     version: 4.4.1
@@ -4631,8 +4631,8 @@ packages:
     engines: {node: '>=4'}
     dev: true
 
-  /pnpm@8.0.0:
-    resolution: {integrity: sha512-Crsvd8LKb+SoEB/bQxRZrtSt5Ri8g9jmPg6MKyexMTI1pdLd44gPwVV6cZLq2jYYPv5q+gADPkYTbYr8SeFCeA==}
+  /pnpm@8.1.0:
+    resolution: {integrity: sha512-e2H73wTRxmc5fWF/6QJqbuwU6O3NRVZC1G1WFXG8EqfN/+ZBu8XVHJZwPH6Xh0DxbEoZgw8/wy2utgCDwPu4Sg==}
     engines: {node: '>=16.14'}
     hasBin: true
     dev: true
