@@ -13,7 +13,7 @@ const { sendMsg: sendMsgToMainProcess, onReplyMsg } = window.electron
 const log = ref('')
 const msg = ref('')
 
-const sendMsg = async () => {
+async function sendMsg() {
   try {
     log.value += `[render]: ${msg.value} \n`
     const data = await sendMsgToMainProcess(msg.value)

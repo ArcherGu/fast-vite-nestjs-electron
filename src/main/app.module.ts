@@ -1,4 +1,4 @@
-import { join } from 'path'
+import { join } from 'node:path'
 import { Module } from '@nestjs/common'
 import { ElectronModule } from '@doubleshot/nest-electron'
 import { BrowserWindow, app } from 'electron'
