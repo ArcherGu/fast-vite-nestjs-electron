@@ -29,7 +29,7 @@ devDependencies:
     version: 0.0.14(eslint@8.38.0)(typescript@5.0.4)
   '@vitejs/plugin-vue':
     specifier: 4.1.0
-    version: 4.1.0(vite@4.2.1)(vue@3.2.47)
+    version: 4.1.0(vite@4.2.2)(vue@3.2.47)
   '@vue/compiler-sfc':
     specifier: 3.2.47
     version: 3.2.47
@@ -55,11 +55,11 @@ devDependencies:
     specifier: 5.0.4
     version: 5.0.4
   vite:
-    specifier: 4.2.1
-    version: 4.2.1
+    specifier: 4.2.2
+    version: 4.2.2
   vite-plugin-doubleshot:
     specifier: 0.0.10
-    version: 0.0.10(electron-builder@23.6.0)(electron@24.1.2)(typescript@5.0.4)(vite@4.2.1)
+    version: 0.0.10(electron-builder@23.6.0)(electron@24.1.2)(typescript@5.0.4)(vite@4.2.2)
   vue-tsc:
     specifier: 1.2.0
     version: 1.2.0(typescript@5.0.4)
@@ -1171,14 +1171,14 @@ packages:
       eslint-visitor-keys: 3.4.0
     dev: true
 
-  /@vitejs/plugin-vue@4.1.0(vite@4.2.1)(vue@3.2.47):
+  /@vitejs/plugin-vue@4.1.0(vite@4.2.2)(vue@3.2.47):
     resolution: {integrity: sha512-++9JOAFdcXI3lyer9UKUV4rfoQ3T1RN8yDqoCLar86s0xQct5yblxAE+yWgRnU5/0FOlVCpTZpYSBV/bGWrSrQ==}
     engines: {node: ^14.18.0 || >=16.0.0}
     peerDependencies:
       vite: ^4.0.0
       vue: ^3.2.25
     dependencies:
-      vite: 4.2.1
+      vite: 4.2.2
       vue: 3.2.47
     dev: true
 
@@ -4997,14 +4997,14 @@ packages:
     dev: true
     optional: true
 
-  /vite-plugin-doubleshot@0.0.10(electron-builder@23.6.0)(electron@24.1.2)(typescript@5.0.4)(vite@4.2.1):
+  /vite-plugin-doubleshot@0.0.10(electron-builder@23.6.0)(electron@24.1.2)(typescript@5.0.4)(vite@4.2.2):
     resolution: {integrity: sha512-Sw05inDjlfLCPId+e5fUgRBLTs5CQaeljMEGoaxvtNRMr9vMfEJjo8SLwN69KlSYlLPGpli4zhnSv7njj/C0+A==}
     engines: {node: '>=14.0.0'}
     peerDependencies:
       vite: '>=2.0.0'
     dependencies:
       '@doubleshot/builder': 0.0.9(electron-builder@23.6.0)(electron@24.1.2)(typescript@5.0.4)
-      vite: 4.2.1
+      vite: 4.2.2
     transitivePeerDependencies:
       - '@swc/helpers'
       - debug
@@ -5016,8 +5016,8 @@ packages:
       - typescript
     dev: true
 
-  /vite@4.2.1:
-    resolution: {integrity: sha512-7MKhqdy0ISo4wnvwtqZkjke6XN4taqQ2TBaTccLIpOKv7Vp2h4Y+NpmWCnGDeSvvn45KxvWgGyb0MkHvY1vgbg==}
+  /vite@4.2.2:
+    resolution: {integrity: sha512-PcNtT5HeDxb3QaSqFYkEum8f5sCVe0R3WK20qxgIvNBZPXU/Obxs/+ubBMeE7nLWeCo2LDzv+8hRYSlcaSehig==}
     engines: {node: ^14.18.0 || >=16.0.0}
     hasBin: true
     peerDependencies:
