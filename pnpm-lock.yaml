@@ -29,7 +29,7 @@ devDependencies:
     version: 0.0.14(eslint@8.38.0)(typescript@5.0.4)
   '@vitejs/plugin-vue':
     specifier: 4.1.0
-    version: 4.1.0(vite@4.2.2)(vue@3.2.47)
+    version: 4.1.0(vite@4.3.0)(vue@3.2.47)
   '@vue/compiler-sfc':
     specifier: 3.2.47
     version: 3.2.47
@@ -55,11 +55,11 @@ devDependencies:
     specifier: 5.0.4
     version: 5.0.4
   vite:
-    specifier: 4.2.2
-    version: 4.2.2
+    specifier: 4.3.0
+    version: 4.3.0
   vite-plugin-doubleshot:
     specifier: 0.0.10
-    version: 0.0.10(electron-builder@23.6.0)(electron@24.1.2)(typescript@5.0.4)(vite@4.2.2)
+    version: 0.0.10(electron-builder@23.6.0)(electron@24.1.2)(typescript@5.0.4)(vite@4.3.0)
   vue-tsc:
     specifier: 1.2.0
     version: 1.2.0(typescript@5.0.4)
@@ -1171,14 +1171,14 @@ packages:
       eslint-visitor-keys: 3.4.0
     dev: true
 
-  /@vitejs/plugin-vue@4.1.0(vite@4.2.2)(vue@3.2.47):
+  /@vitejs/plugin-vue@4.1.0(vite@4.3.0)(vue@3.2.47):
     resolution: {integrity: sha512-++9JOAFdcXI3lyer9UKUV4rfoQ3T1RN8yDqoCLar86s0xQct5yblxAE+yWgRnU5/0FOlVCpTZpYSBV/bGWrSrQ==}
     engines: {node: ^14.18.0 || >=16.0.0}
     peerDependencies:
       vite: ^4.0.0
       vue: ^3.2.25
     dependencies:
-      vite: 4.2.2
+      vite: 4.3.0
       vue: 3.2.47
     dev: true
 
@@ -4391,8 +4391,8 @@ packages:
       sprintf-js: 1.1.2
     optional: true
 
-  /rollup@3.19.1:
-    resolution: {integrity: sha512-lAbrdN7neYCg/8WaoWn/ckzCtz+jr70GFfYdlf50OF7387HTg+wiuiqJRFYawwSPpqfqDNYqK7smY/ks2iAudg==}
+  /rollup@3.20.6:
+    resolution: {integrity: sha512-2yEB3nQXp/tBQDN0hJScJQheXdvU2wFhh6ld7K/aiZ1vYcak6N/BKjY1QrU6BvO2JWYS8bEs14FRaxXosxy2zw==}
     engines: {node: '>=14.18.0', npm: '>=8.0.0'}
     hasBin: true
     optionalDependencies:
@@ -4867,7 +4867,7 @@ packages:
       joycon: 3.1.1
       postcss-load-config: 3.1.4
       resolve-from: 5.0.0
-      rollup: 3.19.1
+      rollup: 3.20.6
       source-map: 0.8.0-beta.0
       sucrase: 3.24.0
       tree-kill: 1.2.2
@@ -4997,14 +4997,14 @@ packages:
     dev: true
     optional: true
 
-  /vite-plugin-doubleshot@0.0.10(electron-builder@23.6.0)(electron@24.1.2)(typescript@5.0.4)(vite@4.2.2):
+  /vite-plugin-doubleshot@0.0.10(electron-builder@23.6.0)(electron@24.1.2)(typescript@5.0.4)(vite@4.3.0):
     resolution: {integrity: sha512-Sw05inDjlfLCPId+e5fUgRBLTs5CQaeljMEGoaxvtNRMr9vMfEJjo8SLwN69KlSYlLPGpli4zhnSv7njj/C0+A==}
     engines: {node: '>=14.0.0'}
     peerDependencies:
       vite: '>=2.0.0'
     dependencies:
       '@doubleshot/builder': 0.0.9(electron-builder@23.6.0)(electron@24.1.2)(typescript@5.0.4)
-      vite: 4.2.2
+      vite: 4.3.0
     transitivePeerDependencies:
       - '@swc/helpers'
       - debug
@@ -5016,8 +5016,8 @@ packages:
       - typescript
     dev: true
 
-  /vite@4.2.2:
-    resolution: {integrity: sha512-PcNtT5HeDxb3QaSqFYkEum8f5sCVe0R3WK20qxgIvNBZPXU/Obxs/+ubBMeE7nLWeCo2LDzv+8hRYSlcaSehig==}
+  /vite@4.3.0:
+    resolution: {integrity: sha512-JTGFgDh3dVxeGBpuQX04Up+JZmuG6wu9414Ei36vQzaEruY/M4K0AgwtuB2b4HaBgB7R8l+LHxjB0jcgz4d2qQ==}
     engines: {node: ^14.18.0 || >=16.0.0}
     hasBin: true
     peerDependencies:
@@ -5043,8 +5043,7 @@ packages:
     dependencies:
       esbuild: 0.17.11
       postcss: 8.4.21
-      resolve: 1.22.1
-      rollup: 3.19.1
+      rollup: 3.20.6
     optionalDependencies:
       fsevents: 2.3.2
     dev: true
