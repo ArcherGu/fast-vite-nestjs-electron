@@ -3,7 +3,7 @@ lockfileVersion: '6.0'
 dependencies:
   '@doubleshot/nest-electron':
     specifier: ^0.2.3
-    version: 0.2.3(@nestjs/common@9.4.0)(@nestjs/microservices@9.4.0)(electron@24.3.1)(rxjs@7.8.0)
+    version: 0.2.3(@nestjs/common@9.4.0)(@nestjs/microservices@9.4.0)(electron@24.4.0)(rxjs@7.8.0)
   '@nestjs/common':
     specifier: ^9.4.0
     version: 9.4.0(reflect-metadata@0.1.13)(rxjs@7.8.0)
@@ -34,8 +34,8 @@ devDependencies:
     specifier: 3.3.4
     version: 3.3.4
   electron:
-    specifier: 24.3.1
-    version: 24.3.1
+    specifier: 24.4.0
+    version: 24.4.0
   electron-builder:
     specifier: 23.6.0
     version: 23.6.0
@@ -59,7 +59,7 @@ devDependencies:
     version: 4.3.8
   vite-plugin-doubleshot:
     specifier: 0.0.10
-    version: 0.0.10(electron-builder@23.6.0)(electron@24.3.1)(typescript@5.0.4)(vite@4.3.8)
+    version: 0.0.10(electron-builder@23.6.0)(electron@24.4.0)(typescript@5.0.4)(vite@4.3.8)
   vue-tsc:
     specifier: 1.6.5
     version: 1.6.5(typescript@5.0.4)
@@ -208,7 +208,7 @@ packages:
       ajv-keywords: 3.5.2(ajv@6.12.6)
     dev: true
 
-  /@doubleshot/builder@0.0.9(electron-builder@23.6.0)(electron@24.3.1)(typescript@5.0.4):
+  /@doubleshot/builder@0.0.9(electron-builder@23.6.0)(electron@24.4.0)(typescript@5.0.4):
     resolution: {integrity: sha512-WXn15LVmk5Zz+fJBkQqK9yR5rXqbz7Q31WWt9EuEd9bbU+/C+e7qK2cOwlXF7JPIawQcJ3kaDWxi+xQNpEdAxg==}
     engines: {node: '>=14.0.0'}
     hasBin: true
@@ -226,7 +226,7 @@ packages:
       cac: 6.7.14
       check-package-exists: 1.1.3
       colorette: 2.0.19
-      electron: 24.3.1
+      electron: 24.4.0
       electron-builder: 23.6.0
       esbuild: 0.17.11
       joycon: 3.1.1
@@ -242,7 +242,7 @@ packages:
       - typescript
     dev: true
 
-  /@doubleshot/nest-electron@0.2.3(@nestjs/common@9.4.0)(@nestjs/microservices@9.4.0)(electron@24.3.1)(rxjs@7.8.0):
+  /@doubleshot/nest-electron@0.2.3(@nestjs/common@9.4.0)(@nestjs/microservices@9.4.0)(electron@24.4.0)(rxjs@7.8.0):
     resolution: {integrity: sha512-+QO2tknpONpppytsJBTBE87DZnkkEovL+f8/VnLgRLy4FUTL204cGugloVJu3S2OOeGKqKVr7my4mspYyktd+g==}
     peerDependencies:
       '@nestjs/common': '>=8.0.0'
@@ -252,7 +252,7 @@ packages:
     dependencies:
       '@nestjs/common': 9.4.0(reflect-metadata@0.1.13)(rxjs@7.8.0)
       '@nestjs/microservices': 9.4.0(@nestjs/common@9.4.0)(@nestjs/core@9.4.0)(reflect-metadata@0.1.13)(rxjs@7.8.0)
-      electron: 24.3.1
+      electron: 24.4.0
       rxjs: 7.8.0
     dev: false
 
@@ -2247,8 +2247,8 @@ packages:
       - supports-color
     dev: true
 
-  /electron@24.3.1:
-    resolution: {integrity: sha512-lKfC0umie1k5LW48troHzpPKJrqPEW+5j14/CPTC41K9+dJA98oUPt/05G7QAe8OGD4fHjQQuulfRdZ9MjjXeQ==}
+  /electron@24.4.0:
+    resolution: {integrity: sha512-A9YzLHRUA+HfYVf2daNv0jPXNCWShgcgcTaGntrZRGynQLEhDTbti9Lfmq2tjRKoEgXZ7qj+aJFw+tJZsT/Cfw==}
     engines: {node: '>= 12.20.55'}
     hasBin: true
     requiresBuild: true
@@ -5092,13 +5092,13 @@ packages:
     dev: true
     optional: true
 
-  /vite-plugin-doubleshot@0.0.10(electron-builder@23.6.0)(electron@24.3.1)(typescript@5.0.4)(vite@4.3.8):
+  /vite-plugin-doubleshot@0.0.10(electron-builder@23.6.0)(electron@24.4.0)(typescript@5.0.4)(vite@4.3.8):
     resolution: {integrity: sha512-Sw05inDjlfLCPId+e5fUgRBLTs5CQaeljMEGoaxvtNRMr9vMfEJjo8SLwN69KlSYlLPGpli4zhnSv7njj/C0+A==}
     engines: {node: '>=14.0.0'}
     peerDependencies:
       vite: '>=2.0.0'
     dependencies:
-      '@doubleshot/builder': 0.0.9(electron-builder@23.6.0)(electron@24.3.1)(typescript@5.0.4)
+      '@doubleshot/builder': 0.0.9(electron-builder@23.6.0)(electron@24.4.0)(typescript@5.0.4)
       vite: 4.3.8
     transitivePeerDependencies:
       - '@swc/helpers'
