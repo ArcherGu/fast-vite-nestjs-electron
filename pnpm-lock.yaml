@@ -7,7 +7,7 @@ settings:
 dependencies:
   '@doubleshot/nest-electron':
     specifier: ^0.2.3
-    version: 0.2.3(@nestjs/common@10.0.0)(@nestjs/microservices@10.0.0)(electron@25.1.1)(rxjs@7.8.0)
+    version: 0.2.3(@nestjs/common@10.0.0)(@nestjs/microservices@10.0.0)(electron@25.2.0)(rxjs@7.8.0)
   '@nestjs/common':
     specifier: ^10.0.0
     version: 10.0.0(reflect-metadata@0.1.13)(rxjs@7.8.0)
@@ -38,8 +38,8 @@ devDependencies:
     specifier: 3.3.4
     version: 3.3.4
   electron:
-    specifier: 25.1.1
-    version: 25.1.1
+    specifier: 25.2.0
+    version: 25.2.0
   electron-builder:
     specifier: 24.4.0
     version: 24.4.0
@@ -63,7 +63,7 @@ devDependencies:
     version: 4.3.9
   vite-plugin-doubleshot:
     specifier: 0.0.12
-    version: 0.0.12(electron-builder@24.4.0)(electron@25.1.1)(typescript@5.1.3)(vite@4.3.9)
+    version: 0.0.12(electron-builder@24.4.0)(electron@25.2.0)(typescript@5.1.3)(vite@4.3.9)
   vue-tsc:
     specifier: 1.8.1
     version: 1.8.1(typescript@5.1.3)
@@ -212,7 +212,7 @@ packages:
       ajv-keywords: 3.5.2(ajv@6.12.6)
     dev: true
 
-  /@doubleshot/builder@0.0.11(electron-builder@24.4.0)(electron@25.1.1)(typescript@5.1.3):
+  /@doubleshot/builder@0.0.11(electron-builder@24.4.0)(electron@25.2.0)(typescript@5.1.3):
     resolution: {integrity: sha512-dlPnJ2SMxNhwdnijTVaISBQMT4zzM7pVUZivRqoFVGC68omcoceQQWOV14D5bicOCMZtjJ1HEg7y5hDql3/Ohw==}
     engines: {node: '>=14.0.0'}
     hasBin: true
@@ -230,7 +230,7 @@ packages:
       cac: 6.7.14
       check-package-exists: 1.1.3
       colorette: 2.0.20
-      electron: 25.1.1
+      electron: 25.2.0
       electron-builder: 24.4.0
       esbuild: 0.18.0
       joycon: 3.1.1
@@ -246,7 +246,7 @@ packages:
       - typescript
     dev: true
 
-  /@doubleshot/nest-electron@0.2.3(@nestjs/common@10.0.0)(@nestjs/microservices@10.0.0)(electron@25.1.1)(rxjs@7.8.0):
+  /@doubleshot/nest-electron@0.2.3(@nestjs/common@10.0.0)(@nestjs/microservices@10.0.0)(electron@25.2.0)(rxjs@7.8.0):
     resolution: {integrity: sha512-+QO2tknpONpppytsJBTBE87DZnkkEovL+f8/VnLgRLy4FUTL204cGugloVJu3S2OOeGKqKVr7my4mspYyktd+g==}
     peerDependencies:
       '@nestjs/common': '>=8.0.0'
@@ -256,7 +256,7 @@ packages:
     dependencies:
       '@nestjs/common': 10.0.0(reflect-metadata@0.1.13)(rxjs@7.8.0)
       '@nestjs/microservices': 10.0.0(@nestjs/common@10.0.0)(@nestjs/core@10.0.0)(reflect-metadata@0.1.13)(rxjs@7.8.0)
-      electron: 25.1.1
+      electron: 25.2.0
       rxjs: 7.8.0
     dev: false
 
@@ -2253,7 +2253,7 @@ packages:
     dependencies:
       clone-response: 1.0.3
       get-stream: 5.2.0
-      http-cache-semantics: 4.1.0
+      http-cache-semantics: 4.1.1
       keyv: 4.5.2
       lowercase-keys: 2.0.0
       normalize-url: 6.1.0
@@ -2729,8 +2729,8 @@ packages:
       - supports-color
     dev: true
 
-  /electron@25.1.1:
-    resolution: {integrity: sha512-WvFUfVsJn6YiP35UxdibYVjU2LceastyMm4SVp2bmb4XvKEvItAIiwxgm7tPC5Syl1243aRCvQLqr84sZ71pyQ==}
+  /electron@25.2.0:
+    resolution: {integrity: sha512-I/rhcW2sV2fyiveVSBr2N7v5ZiCtdGY0UiNCDZgk2fpSC+irQjbeh7JT2b4vWmJ2ogOXBjqesrN9XszTIG6DHg==}
     engines: {node: '>= 12.20.55'}
     hasBin: true
     requiresBuild: true
@@ -3813,12 +3813,8 @@ packages:
       entities: 4.4.0
     dev: true
 
-  /http-cache-semantics@4.1.0:
-    resolution: {integrity: sha512-carPklcUh7ROWRK7Cv27RPtdhYhUsela/ue5/jKzjegVvXDqM2ILE9Q2BGn9JZJh1g87cp56su/FgQSzcWS8cQ==}
-
   /http-cache-semantics@4.1.1:
     resolution: {integrity: sha512-er295DKPVsV82j5kw1Gjt+ADA/XYHsajl82cGNQG2eyoPkvgUhX+nDIyelzhIWbbsXP39EHcI6l5tYs2FYqYXQ==}
-    dev: true
 
   /http-proxy-agent@5.0.0:
     resolution: {integrity: sha512-n2hY8YdoRE1i7r6M0w9DIw5GgZN0G25P8zLCRQ8rjXtTU3vsNFBI/vWK/UIeE6g5MUUz6avwAPXmL6Fy9D/90w==}
@@ -5882,13 +5878,13 @@ packages:
     dev: true
     optional: true
 
-  /vite-plugin-doubleshot@0.0.12(electron-builder@24.4.0)(electron@25.1.1)(typescript@5.1.3)(vite@4.3.9):
+  /vite-plugin-doubleshot@0.0.12(electron-builder@24.4.0)(electron@25.2.0)(typescript@5.1.3)(vite@4.3.9):
     resolution: {integrity: sha512-7PWlopliLKB+dcMao/f25AWMArYBB7+ZG7FRpljbTkGYOfv2v1PH/9DzXn3lE1Jl0OowbhRmeCEkAdOlwtFbVA==}
     engines: {node: '>=14.0.0'}
     peerDependencies:
       vite: '>=2.0.0'
     dependencies:
-      '@doubleshot/builder': 0.0.11(electron-builder@24.4.0)(electron@25.1.1)(typescript@5.1.3)
+      '@doubleshot/builder': 0.0.11(electron-builder@24.4.0)(electron@25.2.0)(typescript@5.1.3)
       vite: 4.3.9
     transitivePeerDependencies:
       - '@swc/helpers'
