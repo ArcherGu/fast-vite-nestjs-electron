@@ -27,7 +27,7 @@
     "electron": "25.2.0",
     "electron-builder": "24.4.0",
     "eslint": "8.43.0",
-    "lint-staged": "13.2.2",
+    "lint-staged": "13.2.3",
     "rimraf": "5.0.1",
     "simple-git-hooks": "2.8.1",
     "typescript": "5.1.5",
