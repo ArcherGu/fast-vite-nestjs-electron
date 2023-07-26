@@ -7,7 +7,7 @@ settings:
 dependencies:
   '@doubleshot/nest-electron':
     specifier: ^0.2.3
-    version: 0.2.3(@nestjs/common@10.0.0)(@nestjs/microservices@10.0.0)(electron@25.3.1)(rxjs@7.8.0)
+    version: 0.2.3(@nestjs/common@10.0.0)(@nestjs/microservices@10.0.0)(electron@25.3.2)(rxjs@7.8.0)
   '@nestjs/common':
     specifier: ^10.0.0
     version: 10.0.0(reflect-metadata@0.1.13)(rxjs@7.8.0)
@@ -38,8 +38,8 @@ devDependencies:
     specifier: 3.3.4
     version: 3.3.4
   electron:
-    specifier: 25.3.1
-    version: 25.3.1
+    specifier: 25.3.2
+    version: 25.3.2
   electron-builder:
     specifier: 24.6.3
     version: 24.6.3
@@ -63,7 +63,7 @@ devDependencies:
     version: 4.4.7
   vite-plugin-doubleshot:
     specifier: 0.0.12
-    version: 0.0.12(electron-builder@24.6.3)(electron@25.3.1)(typescript@5.1.6)(vite@4.4.7)
+    version: 0.0.12(electron-builder@24.6.3)(electron@25.3.2)(typescript@5.1.6)(vite@4.4.7)
   vue-tsc:
     specifier: 1.8.6
     version: 1.8.6(typescript@5.1.6)
@@ -217,7 +217,7 @@ packages:
       ajv-keywords: 3.5.2(ajv@6.12.6)
     dev: true
 
-  /@doubleshot/builder@0.0.11(electron-builder@24.6.3)(electron@25.3.1)(typescript@5.1.6):
+  /@doubleshot/builder@0.0.11(electron-builder@24.6.3)(electron@25.3.2)(typescript@5.1.6):
     resolution: {integrity: sha512-dlPnJ2SMxNhwdnijTVaISBQMT4zzM7pVUZivRqoFVGC68omcoceQQWOV14D5bicOCMZtjJ1HEg7y5hDql3/Ohw==}
     engines: {node: '>=14.0.0'}
     hasBin: true
@@ -235,7 +235,7 @@ packages:
       cac: 6.7.14
       check-package-exists: 1.1.3
       colorette: 2.0.20
-      electron: 25.3.1
+      electron: 25.3.2
       electron-builder: 24.6.3
       esbuild: 0.18.11
       joycon: 3.1.1
@@ -251,7 +251,7 @@ packages:
       - typescript
     dev: true
 
-  /@doubleshot/nest-electron@0.2.3(@nestjs/common@10.0.0)(@nestjs/microservices@10.0.0)(electron@25.3.1)(rxjs@7.8.0):
+  /@doubleshot/nest-electron@0.2.3(@nestjs/common@10.0.0)(@nestjs/microservices@10.0.0)(electron@25.3.2)(rxjs@7.8.0):
     resolution: {integrity: sha512-+QO2tknpONpppytsJBTBE87DZnkkEovL+f8/VnLgRLy4FUTL204cGugloVJu3S2OOeGKqKVr7my4mspYyktd+g==}
     peerDependencies:
       '@nestjs/common': '>=8.0.0'
@@ -261,7 +261,7 @@ packages:
     dependencies:
       '@nestjs/common': 10.0.0(reflect-metadata@0.1.13)(rxjs@7.8.0)
       '@nestjs/microservices': 10.0.0(@nestjs/common@10.0.0)(@nestjs/core@10.0.0)(reflect-metadata@0.1.13)(rxjs@7.8.0)
-      electron: 25.3.1
+      electron: 25.3.2
       rxjs: 7.8.0
     dev: false
 
@@ -1093,7 +1093,7 @@ packages:
       grapheme-splitter: 1.0.4
       ignore: 5.2.0
       natural-compare-lite: 1.4.0
-      semver: 7.5.1
+      semver: 7.5.4
       tsutils: 3.21.0(typescript@5.1.6)
       typescript: 5.1.6
     transitivePeerDependencies:
@@ -1167,7 +1167,7 @@ packages:
       debug: 4.3.4
       globby: 11.1.0
       is-glob: 4.0.3
-      semver: 7.5.1
+      semver: 7.5.4
       tsutils: 3.21.0(typescript@5.1.6)
       typescript: 5.1.6
     transitivePeerDependencies:
@@ -1188,7 +1188,7 @@ packages:
       '@typescript-eslint/typescript-estree': 5.59.7(typescript@5.1.6)
       eslint: 8.45.0
       eslint-scope: 5.1.1
-      semver: 7.5.1
+      semver: 7.5.4
     transitivePeerDependencies:
       - supports-color
       - typescript
@@ -1522,7 +1522,7 @@ packages:
       minimatch: 5.1.1
       read-config-file: 6.3.2
       sanitize-filename: 1.6.3
-      semver: 7.5.1
+      semver: 7.5.4
       tar: 6.1.15
       temp-file: 3.4.0
     transitivePeerDependencies:
@@ -1736,7 +1736,7 @@ packages:
   /builtins@5.0.1:
     resolution: {integrity: sha512-qwVpFEHNfhYJIzNRBvd2C1kyo6jz3ZSMPyyuR47OPdiKWlbYnZNyDWuyR175qDnAJLiCo5fBBqPb3RiXgWlkOQ==}
     dependencies:
-      semver: 7.5.1
+      semver: 7.5.4
     dev: true
 
   /bundle-require@4.0.1(esbuild@0.18.11):
@@ -2202,8 +2202,8 @@ packages:
       - supports-color
     dev: true
 
-  /electron@25.3.1:
-    resolution: {integrity: sha512-t0QXXqgf0/P0OJ9LU3qpcBMK+wL0FRwTQfooBaaG08v5hywPzc1yplfb3l4tS1xC0Ttw8IBaKLBeEoRgxBRHjg==}
+  /electron@25.3.2:
+    resolution: {integrity: sha512-xiktJvXraaE/ARf2OVHFyTze1TksSbsbJgOaBtdIiBvUduez6ipATEPIec8Msz1n6eQ+xqYb6YF8tDuIZtJSPw==}
     engines: {node: '>= 12.20.55'}
     hasBin: true
     requiresBuild: true
@@ -2525,7 +2525,7 @@ packages:
       is-core-module: 2.12.1
       minimatch: 3.1.2
       resolve: 1.22.2
-      semver: 7.5.1
+      semver: 7.5.4
     dev: true
 
   /eslint-plugin-no-only-tests@3.1.0:
@@ -2563,7 +2563,7 @@ packages:
       regexp-tree: 0.1.24
       regjsparser: 0.10.0
       safe-regex: 2.1.1
-      semver: 7.5.1
+      semver: 7.5.4
       strip-indent: 3.0.0
     dev: true
 
@@ -2593,7 +2593,7 @@ packages:
       natural-compare: 1.4.0
       nth-check: 2.1.1
       postcss-selector-parser: 6.0.11
-      semver: 7.5.1
+      semver: 7.5.4
       vue-eslint-parser: 9.3.0(eslint@8.45.0)
       xml-name-validator: 4.0.0
     transitivePeerDependencies:
@@ -3050,7 +3050,7 @@ packages:
       es6-error: 4.1.1
       matcher: 3.0.0
       roarr: 2.15.4
-      semver: 7.5.1
+      semver: 7.5.4
       serialize-error: 7.0.1
     optional: true
 
@@ -3597,7 +3597,7 @@ packages:
       acorn: 8.9.0
       eslint-visitor-keys: 3.4.1
       espree: 9.6.0
-      semver: 7.5.1
+      semver: 7.5.4
     dev: true
 
   /jsonfile@4.0.0:
@@ -4467,6 +4467,7 @@ packages:
     hasBin: true
     dependencies:
       lru-cache: 6.0.0
+    dev: true
 
   /semver@7.5.4:
     resolution: {integrity: sha512-1bCSESV6Pv+i21Hvpxp3Dx+pSD8lIPt8uVjRrxAUt/nbswYc+tK6Y2btiULjd4+fnq15PX+nqQDC7Oft7WkwcA==}
@@ -4474,7 +4475,6 @@ packages:
     hasBin: true
     dependencies:
       lru-cache: 6.0.0
-    dev: true
 
   /serialize-error@7.0.1:
     resolution: {integrity: sha512-8I8TjW5KMOKsZQTvoxjuSIa7foAwPWGOts+6o7sgjz41/qMD9VQHEDxi6PBvK2l0MXUmqZyNpUK+T2tQaaElvw==}
@@ -5024,13 +5024,13 @@ packages:
     dev: true
     optional: true
 
-  /vite-plugin-doubleshot@0.0.12(electron-builder@24.6.3)(electron@25.3.1)(typescript@5.1.6)(vite@4.4.7):
+  /vite-plugin-doubleshot@0.0.12(electron-builder@24.6.3)(electron@25.3.2)(typescript@5.1.6)(vite@4.4.7):
     resolution: {integrity: sha512-7PWlopliLKB+dcMao/f25AWMArYBB7+ZG7FRpljbTkGYOfv2v1PH/9DzXn3lE1Jl0OowbhRmeCEkAdOlwtFbVA==}
     engines: {node: '>=14.0.0'}
     peerDependencies:
       vite: '>=2.0.0'
     dependencies:
-      '@doubleshot/builder': 0.0.11(electron-builder@24.6.3)(electron@25.3.1)(typescript@5.1.6)
+      '@doubleshot/builder': 0.0.11(electron-builder@24.6.3)(electron@25.3.2)(typescript@5.1.6)
       vite: 4.4.7
     transitivePeerDependencies:
       - '@swc/helpers'
@@ -5091,7 +5091,7 @@ packages:
       espree: 9.6.0
       esquery: 1.5.0
       lodash: 4.17.21
-      semver: 7.5.1
+      semver: 7.5.4
     transitivePeerDependencies:
       - supports-color
     dev: true
