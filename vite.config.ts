@@ -23,6 +23,12 @@ export default defineConfig({
           outDir: 'dist/preload',
         },
       },
+      configureForMode: (config, mode) => {
+        if (mode !== 'production')
+          config.debug = true
+
+        return config
+      },
     }),
   ],
   resolve: {

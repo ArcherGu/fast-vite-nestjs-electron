@@ -1,0 +1,17 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug with npm",
+      "type": "node",
+      "request": "launch",
+      "cwd": "${workspaceRoot}",
+      "runtimeArgs": [
+        "run-script",
+        "dev"
+      ],
+      "runtimeExecutable": "npm",
+      "console": "integratedTerminal"
+    }
+  ]
+}
