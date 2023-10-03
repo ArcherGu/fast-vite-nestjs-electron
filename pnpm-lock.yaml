@@ -33,7 +33,7 @@ devDependencies:
     version: 0.0.23(eslint@8.50.0)(typescript@5.2.2)
   '@vitejs/plugin-vue':
     specifier: 4.4.0
-    version: 4.4.0(vite@4.4.9)(vue@3.2.47)
+    version: 4.4.0(vite@4.4.10)(vue@3.2.47)
   '@vue/compiler-sfc':
     specifier: 3.3.4
     version: 3.3.4
@@ -59,11 +59,11 @@ devDependencies:
     specifier: 5.2.2
     version: 5.2.2
   vite:
-    specifier: 4.4.9
-    version: 4.4.9
+    specifier: 4.4.10
+    version: 4.4.10
   vite-plugin-doubleshot:
     specifier: 0.0.12
-    version: 0.0.12(electron-builder@24.6.4)(electron@26.2.4)(typescript@5.2.2)(vite@4.4.9)
+    version: 0.0.12(electron-builder@24.6.4)(electron@26.2.4)(typescript@5.2.2)(vite@4.4.10)
   vue-tsc:
     specifier: 1.8.15
     version: 1.8.15(typescript@5.2.2)
@@ -1277,14 +1277,14 @@ packages:
       eslint-visitor-keys: 3.4.3
     dev: true
 
-  /@vitejs/plugin-vue@4.4.0(vite@4.4.9)(vue@3.2.47):
+  /@vitejs/plugin-vue@4.4.0(vite@4.4.10)(vue@3.2.47):
     resolution: {integrity: sha512-xdguqb+VUwiRpSg+nsc2HtbAUSGak25DXYvpQQi4RVU1Xq1uworyoH/md9Rfd8zMmPR/pSghr309QNcftUVseg==}
     engines: {node: ^14.18.0 || >=16.0.0}
     peerDependencies:
       vite: ^4.0.0
       vue: ^3.2.25
     dependencies:
-      vite: 4.4.9
+      vite: 4.4.10
       vue: 3.2.47
     dev: true
 
@@ -1347,7 +1347,7 @@ packages:
       '@vue/shared': 3.2.47
       estree-walker: 2.0.2
       magic-string: 0.25.9
-      postcss: 8.4.26
+      postcss: 8.4.27
       source-map: 0.6.1
 
   /@vue/compiler-sfc@3.3.4:
@@ -4026,14 +4026,6 @@ packages:
       source-map-js: 1.0.2
     dev: true
 
-  /postcss@8.4.26:
-    resolution: {integrity: sha512-jrXHFF8iTloAenySjM/ob3gSj7pCu0Ji49hnjqzsgSRa50hkWCKD0HQ+gMNJkW38jBI68MpAAg7ZWwHwX8NMMw==}
-    engines: {node: ^10 || ^12 || >=14}
-    dependencies:
-      nanoid: 3.3.6
-      picocolors: 1.0.0
-      source-map-js: 1.0.2
-
   /postcss@8.4.27:
     resolution: {integrity: sha512-gY/ACJtJPSmUFPDCHtX78+01fHa64FaU4zaaWfuh1MhGJISufJAH4cun6k/8fwsHYeK4UQmENQK+tRLCFJE8JQ==}
     engines: {node: ^10 || ^12 || >=14}
@@ -4041,7 +4033,6 @@ packages:
       nanoid: 3.3.6
       picocolors: 1.0.0
       source-map-js: 1.0.2
-    dev: true
 
   /prelude-ls@1.2.1:
     resolution: {integrity: sha512-vkcDPrRZo1QZLbn5RLGPpg/WmIQ65qoWWhcGKf/b5eplkkarX0m9z8ppCat4mlOqUsWpyNuYgO3VRyrYHSzX5g==}
@@ -4219,14 +4210,6 @@ packages:
       semver-compare: 1.0.0
       sprintf-js: 1.1.2
     optional: true
-
-  /rollup@3.26.1:
-    resolution: {integrity: sha512-I5gJCSpSMr3U9wv4D5YA8g7w7cj3eaSDeo7t+JcaFQOmoOUBgu4K9iMp8k3EZnwbJrjQxUMSKxMyB8qEQzzaSg==}
-    engines: {node: '>=14.18.0', npm: '>=8.0.0'}
-    hasBin: true
-    optionalDependencies:
-      fsevents: 2.3.2
-    dev: true
 
   /rollup@3.27.2:
     resolution: {integrity: sha512-YGwmHf7h2oUHkVBT248x0yt6vZkYQ3/rvE5iQuVBh3WO8GcJ6BNeOkpoX1yMHIiBm18EMLjBPIoUDkhgnyxGOQ==}
@@ -4643,7 +4626,7 @@ packages:
       joycon: 3.1.1
       postcss-load-config: 4.0.1
       resolve-from: 5.0.0
-      rollup: 3.26.1
+      rollup: 3.27.2
       source-map: 0.8.0-beta.0
       sucrase: 3.24.0
       tree-kill: 1.2.2
@@ -4763,14 +4746,14 @@ packages:
     dev: true
     optional: true
 
-  /vite-plugin-doubleshot@0.0.12(electron-builder@24.6.4)(electron@26.2.4)(typescript@5.2.2)(vite@4.4.9):
+  /vite-plugin-doubleshot@0.0.12(electron-builder@24.6.4)(electron@26.2.4)(typescript@5.2.2)(vite@4.4.10):
     resolution: {integrity: sha512-7PWlopliLKB+dcMao/f25AWMArYBB7+ZG7FRpljbTkGYOfv2v1PH/9DzXn3lE1Jl0OowbhRmeCEkAdOlwtFbVA==}
     engines: {node: '>=14.0.0'}
     peerDependencies:
       vite: '>=2.0.0'
     dependencies:
       '@doubleshot/builder': 0.0.11(electron-builder@24.6.4)(electron@26.2.4)(typescript@5.2.2)
-      vite: 4.4.9
+      vite: 4.4.10
     transitivePeerDependencies:
       - '@swc/helpers'
       - debug
@@ -4782,8 +4765,8 @@ packages:
       - typescript
     dev: true
 
-  /vite@4.4.9:
-    resolution: {integrity: sha512-2mbUn2LlUmNASWwSCNSJ/EG2HuSRTnVNaydp6vMCm5VIqJsjMfbIWtbH2kDuwUVW5mMUKKZvGPX/rqeqVvv1XA==}
+  /vite@4.4.10:
+    resolution: {integrity: sha512-TzIjiqx9BEXF8yzYdF2NTf1kFFbjMjUSV0LFZ3HyHoI3SGSPLnnFUKiIQtL3gl2AjHvMrprOvQ3amzaHgQlAxw==}
     engines: {node: ^14.18.0 || >=16.0.0}
     hasBin: true
     peerDependencies:
