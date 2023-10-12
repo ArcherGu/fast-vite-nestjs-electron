@@ -1,25 +1,16 @@
 {
   "compilerOptions": {
     "target": "ESNext",
-    "module": "ESNext",
-    "moduleResolution": "node",
-    "strict": false,
-    "jsx": "preserve",
-    "sourceMap": true,
-    "resolveJsonModule": true,
-    "esModuleInterop": true,
-    "noImplicitAny": false,
-    "experimentalDecorators": true,
-    "emitDecoratorMetadata": true,
-    "baseUrl": ".",
     "lib": [
       "esnext",
       "dom"
     ],
-    "types": [
-      "vite/client",
-      "./src/preload"
-    ],
+    "jsx": "preserve",
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "baseUrl": ".",
     "paths": {
       "@render/*": [
         "src/render/*"
@@ -27,7 +18,18 @@
       "@main/*": [
         "src/main/*"
       ]
-    }
+    },
+    "types": [
+      "vite/client",
+      "./src/preload"
+    ],
+    "resolveJsonModule": true,
+    "sourceMap": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "strict": false,
+    "noImplicitAny": false,
+    "skipLibCheck": true
   },
   "include": [
     "src/**/*.ts",
