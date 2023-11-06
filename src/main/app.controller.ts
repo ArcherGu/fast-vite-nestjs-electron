@@ -3,7 +3,7 @@ import { IpcHandle, Window } from '@doubleshot/nest-electron'
 import { Payload } from '@nestjs/microservices'
 import { type Observable, of } from 'rxjs'
 import type { BrowserWindow } from 'electron'
-import type { AppService } from './app.service'
+import { AppService } from './app.service'
 
 @Controller()
 export class AppController {

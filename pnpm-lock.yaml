@@ -29,8 +29,8 @@ dependencies:
 
 devDependencies:
   '@lightwing/eslint-config':
-    specifier: ^1.0.1
-    version: 1.0.1(eslint@8.53.0)(typescript@5.2.2)
+    specifier: ^1.0.3
+    version: 1.0.3(eslint@8.53.0)(typescript@5.2.2)
   '@vitejs/plugin-vue':
     specifier: 4.4.0
     version: 4.4.0(vite@4.5.0)(vue@3.3.7)
@@ -633,8 +633,8 @@ packages:
   /@jridgewell/sourcemap-codec@1.4.15:
     resolution: {integrity: sha512-eF2rxCRulEKXHTRiDrDy6erMYWqNw4LPdQ8UQA4huuxaQsVeRPFl2oM8oDGxMFhJUWZf9McpLtJasDDZb/Bpeg==}
 
-  /@lightwing/eslint-config@1.0.1(eslint@8.53.0)(typescript@5.2.2):
-    resolution: {integrity: sha512-rfLgjQpeJ0po7akViMLnrnTRa68QGoJHu2liJP5x9LKvb1KV7dK5aTE6camC33B0kNZVjVF2GfDC6Qx7WGjwMw==}
+  /@lightwing/eslint-config@1.0.3(eslint@8.53.0)(typescript@5.2.2):
+    resolution: {integrity: sha512-azeDaF3kV9xdZGldkWXj7SlX0yUv1GNeecVqfa5q+HXbZBfce7UAn/gtRdMucpLc0eT2HPBlw7MDcSfeZEhZzQ==}
     peerDependencies:
       eslint: '>=8.0.0'
       typescript: '>=4.0.0'
