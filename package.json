@@ -6,6 +6,7 @@
   "main": "dist/main/index.js",
   "scripts": {
     "dev": "rimraf dist && vite",
+    "debug": "rimraf dist && vite -- --dsb-debug",
     "build": "rimraf dist && vue-tsc && vite build",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",

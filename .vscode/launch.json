@@ -8,7 +8,7 @@
       "cwd": "${workspaceRoot}",
       "runtimeArgs": [
         "run-script",
-        "dev"
+        "debug"
       ],
       "runtimeExecutable": "npm",
       "console": "integratedTerminal"
