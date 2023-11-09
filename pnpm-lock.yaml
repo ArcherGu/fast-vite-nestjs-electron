@@ -62,8 +62,8 @@ devDependencies:
     specifier: 4.5.0
     version: 4.5.0
   vite-plugin-doubleshot:
-    specifier: 0.0.12
-    version: 0.0.12(electron-builder@24.6.4)(electron@27.0.4)(typescript@5.2.2)(vite@4.5.0)
+    specifier: 0.0.13
+    version: 0.0.13(electron-builder@24.6.4)(electron@27.0.4)(typescript@5.2.2)(vite@4.5.0)
   vue-tsc:
     specifier: 1.8.22
     version: 1.8.22(typescript@5.2.2)
@@ -5117,8 +5117,8 @@ packages:
     dev: true
     optional: true
 
-  /vite-plugin-doubleshot@0.0.12(electron-builder@24.6.4)(electron@27.0.4)(typescript@5.2.2)(vite@4.5.0):
-    resolution: {integrity: sha512-7PWlopliLKB+dcMao/f25AWMArYBB7+ZG7FRpljbTkGYOfv2v1PH/9DzXn3lE1Jl0OowbhRmeCEkAdOlwtFbVA==}
+  /vite-plugin-doubleshot@0.0.13(electron-builder@24.6.4)(electron@27.0.4)(typescript@5.2.2)(vite@4.5.0):
+    resolution: {integrity: sha512-AdeF/4fePxA5rHMGrc2Q2FDtihNcjnWD/YNZTmr2qF8380W9a+2fcDreCVPkTBiwhJcWPUM0nDmQ4ojQgSFggw==}
     engines: {node: '>=14.0.0'}
     peerDependencies:
       vite: '>=2.0.0'
