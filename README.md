@@ -27,7 +27,7 @@ This is a template based on my repo: [fast-vite-electron](https://github.com/Arc
 ## How to use
 
 - Click the [Use this template](https://github.com/ArcherGu/fast-vite-electron/generate) button (you must be logged in) or just clone this repo.
-- In the project folder: 
+- In the project folder:
   ```bash
   # install dependencies
   yarn # npm install
