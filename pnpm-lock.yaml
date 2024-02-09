@@ -32,8 +32,8 @@ devDependencies:
     specifier: ^1.0.23
     version: 1.0.23(@vue/compiler-sfc@3.4.18)(eslint@8.56.0)(typescript@5.3.3)
   '@vitejs/plugin-vue':
-    specifier: 5.0.3
-    version: 5.0.3(vite@5.1.1)(vue@3.4.13)
+    specifier: 5.0.4
+    version: 5.0.4(vite@5.1.1)(vue@3.4.13)
   '@vue/compiler-sfc':
     specifier: 3.4.18
     version: 3.4.18
@@ -1588,8 +1588,8 @@ packages:
     resolution: {integrity: sha512-zuVdFrMJiuCDQUMCzQaD6KL28MjnqqN8XnAqiEq9PNm/hCPTSGfrXCOfwj1ow4LFb/tNymJPwsNbVePc1xFqrQ==}
     dev: true
 
-  /@vitejs/plugin-vue@5.0.3(vite@5.1.1)(vue@3.4.13):
-    resolution: {integrity: sha512-b8S5dVS40rgHdDrw+DQi/xOM9ed+kSRZzfm1T74bMmBDCd8XO87NKlFYInzCtwvtWwXZvo1QxE2OSspTATWrbA==}
+  /@vitejs/plugin-vue@5.0.4(vite@5.1.1)(vue@3.4.13):
+    resolution: {integrity: sha512-WS3hevEszI6CEVEx28F8RjTX97k3KsrcY6kvTg7+Whm5y3oYvcqzVeGCU3hxSAn4uY2CLCkeokkGKpoctccilQ==}
     engines: {node: ^18.0.0 || >=20.0.0}
     peerDependencies:
       vite: ^5.0.0
