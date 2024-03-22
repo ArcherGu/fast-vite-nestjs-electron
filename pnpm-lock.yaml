@@ -7,16 +7,16 @@ settings:
 dependencies:
   '@doubleshot/nest-electron':
     specifier: ^0.2.5
-    version: 0.2.5(@nestjs/common@10.3.4)(@nestjs/core@10.3.4)(@nestjs/microservices@10.3.4)(electron@29.1.5)(rxjs@7.8.1)
+    version: 0.2.5(@nestjs/common@10.3.5)(@nestjs/core@10.3.5)(@nestjs/microservices@10.3.5)(electron@29.1.5)(rxjs@7.8.1)
   '@nestjs/common':
     specifier: ^10.3.0
-    version: 10.3.4(reflect-metadata@0.2.1)(rxjs@7.8.1)
+    version: 10.3.5(reflect-metadata@0.2.1)(rxjs@7.8.1)
   '@nestjs/core':
     specifier: ^10.3.0
-    version: 10.3.4(@nestjs/common@10.3.4)(@nestjs/microservices@10.3.4)(reflect-metadata@0.2.1)(rxjs@7.8.1)
+    version: 10.3.5(@nestjs/common@10.3.5)(@nestjs/microservices@10.3.5)(reflect-metadata@0.2.1)(rxjs@7.8.1)
   '@nestjs/microservices':
     specifier: ^10.3.0
-    version: 10.3.4(@nestjs/common@10.3.4)(@nestjs/core@10.3.4)(reflect-metadata@0.2.1)(rxjs@7.8.1)
+    version: 10.3.5(@nestjs/common@10.3.5)(@nestjs/core@10.3.5)(reflect-metadata@0.2.1)(rxjs@7.8.1)
   reflect-metadata:
     specifier: ^0.2.1
     version: 0.2.1
@@ -242,7 +242,7 @@ packages:
       - typescript
     dev: true
 
-  /@doubleshot/nest-electron@0.2.5(@nestjs/common@10.3.4)(@nestjs/core@10.3.4)(@nestjs/microservices@10.3.4)(electron@29.1.5)(rxjs@7.8.1):
+  /@doubleshot/nest-electron@0.2.5(@nestjs/common@10.3.5)(@nestjs/core@10.3.5)(@nestjs/microservices@10.3.5)(electron@29.1.5)(rxjs@7.8.1):
     resolution: {integrity: sha512-3klwsIvw1Di/Kvu/VmFpiTSc2Wy9lJWhoyz0AxpJLzGbNF1FrtEy+V3W4i6GfLwvJQusQzh4Vi7a1nrHg1yp4w==}
     peerDependencies:
       '@nestjs/common': '>=8.0.0'
@@ -251,9 +251,9 @@ packages:
       electron: '>=16.0.0'
       rxjs: '>=7.0.0'
     dependencies:
-      '@nestjs/common': 10.3.4(reflect-metadata@0.2.1)(rxjs@7.8.1)
-      '@nestjs/core': 10.3.4(@nestjs/common@10.3.4)(@nestjs/microservices@10.3.4)(reflect-metadata@0.2.1)(rxjs@7.8.1)
-      '@nestjs/microservices': 10.3.4(@nestjs/common@10.3.4)(@nestjs/core@10.3.4)(reflect-metadata@0.2.1)(rxjs@7.8.1)
+      '@nestjs/common': 10.3.5(reflect-metadata@0.2.1)(rxjs@7.8.1)
+      '@nestjs/core': 10.3.5(@nestjs/common@10.3.5)(@nestjs/microservices@10.3.5)(reflect-metadata@0.2.1)(rxjs@7.8.1)
+      '@nestjs/microservices': 10.3.5(@nestjs/common@10.3.5)(@nestjs/core@10.3.5)(reflect-metadata@0.2.1)(rxjs@7.8.1)
       electron: 29.1.5
       rxjs: 7.8.1
     dev: false
@@ -938,8 +938,8 @@ packages:
       - supports-color
     dev: true
 
-  /@nestjs/common@10.3.4(reflect-metadata@0.2.1)(rxjs@7.8.1):
-    resolution: {integrity: sha512-HmehujZhUZjf9TN2o0TyzWYNwEgyRYqZZ5qIcF/mCgIUZ4olIKlazna0kGK56FGlCvviHWNKQM5eTuVeTstIgA==}
+  /@nestjs/common@10.3.5(reflect-metadata@0.2.1)(rxjs@7.8.1):
+    resolution: {integrity: sha512-XWxbDf2ey/jAyEa3/XpckgfzJZ9j3I05ZkEFx7cAlebFuVKeq5UDDb5Sq9O7hMmbH9xdQj3pYT19SSj01hKeug==}
     peerDependencies:
       class-transformer: '*'
       class-validator: '*'
@@ -958,8 +958,8 @@ packages:
       uid: 2.0.2
     dev: false
 
-  /@nestjs/core@10.3.4(@nestjs/common@10.3.4)(@nestjs/microservices@10.3.4)(reflect-metadata@0.2.1)(rxjs@7.8.1):
-    resolution: {integrity: sha512-rF0yebuHmMj+9/CkbjPWWMvlF5x8j5Biw2DRvbl8R8n2X3OdFBN+06x/9xm3/ZssR5tLoB9tsYspFUb+SvnnwA==}
+  /@nestjs/core@10.3.5(@nestjs/common@10.3.5)(@nestjs/microservices@10.3.5)(reflect-metadata@0.2.1)(rxjs@7.8.1):
+    resolution: {integrity: sha512-U7SrGD9/Mu4eUtxfZYiGdY38FcksEyJegs4dQZ8B19nnusw0aTocPEy4HVsmx0LLO4sG+fBLLYzCDDr9kFwXAQ==}
     requiresBuild: true
     peerDependencies:
       '@nestjs/common': ^10.0.0
@@ -976,8 +976,8 @@ packages:
       '@nestjs/websockets':
         optional: true
     dependencies:
-      '@nestjs/common': 10.3.4(reflect-metadata@0.2.1)(rxjs@7.8.1)
-      '@nestjs/microservices': 10.3.4(@nestjs/common@10.3.4)(@nestjs/core@10.3.4)(reflect-metadata@0.2.1)(rxjs@7.8.1)
+      '@nestjs/common': 10.3.5(reflect-metadata@0.2.1)(rxjs@7.8.1)
+      '@nestjs/microservices': 10.3.5(@nestjs/common@10.3.5)(@nestjs/core@10.3.5)(reflect-metadata@0.2.1)(rxjs@7.8.1)
       '@nuxtjs/opencollective': 0.3.2
       fast-safe-stringify: 2.1.1
       iterare: 1.2.1
@@ -990,8 +990,8 @@ packages:
       - encoding
     dev: false
 
-  /@nestjs/microservices@10.3.4(@nestjs/common@10.3.4)(@nestjs/core@10.3.4)(reflect-metadata@0.2.1)(rxjs@7.8.1):
-    resolution: {integrity: sha512-dJusFRxGqNM3v3gYqE/o9XAYFs1Zm0OahC/CvYISO9SI4Gyxc4W9G4EYHKcKsMyxBKlUmo64H+jI3IqHtjy+Sg==}
+  /@nestjs/microservices@10.3.5(@nestjs/common@10.3.5)(@nestjs/core@10.3.5)(reflect-metadata@0.2.1)(rxjs@7.8.1):
+    resolution: {integrity: sha512-zL+8Yg2uCoCbb7KzgAYPGt+W6shAI5Ac/0ls3zoyjK2VtHcSgzLwKQWY48QbhzoDWQzVqCtCAWH0yuCxTqTNQw==}
     peerDependencies:
       '@grpc/grpc-js': '*'
       '@nestjs/common': ^10.0.0
@@ -1026,8 +1026,8 @@ packages:
       nats:
         optional: true
     dependencies:
-      '@nestjs/common': 10.3.4(reflect-metadata@0.2.1)(rxjs@7.8.1)
-      '@nestjs/core': 10.3.4(@nestjs/common@10.3.4)(@nestjs/microservices@10.3.4)(reflect-metadata@0.2.1)(rxjs@7.8.1)
+      '@nestjs/common': 10.3.5(reflect-metadata@0.2.1)(rxjs@7.8.1)
+      '@nestjs/core': 10.3.5(@nestjs/common@10.3.5)(@nestjs/microservices@10.3.5)(reflect-metadata@0.2.1)(rxjs@7.8.1)
       iterare: 1.2.1
       reflect-metadata: 0.2.1
       rxjs: 7.8.1
@@ -1406,7 +1406,7 @@ packages:
   /@types/fs-extra@9.0.13:
     resolution: {integrity: sha512-nEnwB++1u5lVDM2UI4c1+5R+FYaKfaAzS4OococimjVm3nQw3TuzH5UNsocrcTBbhnerblyHj4A49qXbIiZdpA==}
     dependencies:
-      '@types/node': 20.11.28
+      '@types/node': 20.11.30
     dev: true
 
   /@types/http-cache-semantics@4.0.1:
@@ -1437,6 +1437,13 @@ packages:
     dependencies:
       undici-types: 5.26.5
 
+  /@types/node@20.11.30:
+    resolution: {integrity: sha512-dHM6ZxwlmuZaRmUPfv1p+KrdD1Dci04FbdEm/9wEMouFqxYoFl5aMkt0VMAUtYRQDyYvD41WJLukhq/ha3YuTw==}
+    requiresBuild: true
+    dependencies:
+      undici-types: 5.26.5
+    dev: true
+
   /@types/normalize-package-data@2.4.1:
     resolution: {integrity: sha512-Gj7cI7z+98M282Tqmp2K5EIsoouUEzbBJhQQzDE3jSIRk6r9gsz0oUokqIUR4u1R3dMHo0pDHM7sNOHyhulypw==}
     dev: true
@@ -1445,7 +1452,7 @@ packages:
     resolution: {integrity: sha512-E6OCaRmAe4WDmWNsL/9RMqdkkzDCY1etutkflWk4c+AcjDU07Pcz1fQwTX0TQz+Pxqn9i4L1TU3UFpjnrcDgxA==}
     requiresBuild: true
     dependencies:
-      '@types/node': 20.11.28
+      '@types/node': 20.11.30
       xmlbuilder: 15.1.1
     dev: true
     optional: true
@@ -3966,7 +3973,7 @@ packages:
     dependencies:
       universalify: 2.0.0
     optionalDependencies:
-      graceful-fs: 4.2.11
+      graceful-fs: 4.2.10
     dev: true
 
   /keyv@4.5.2:
