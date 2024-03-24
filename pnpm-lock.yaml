@@ -33,7 +33,7 @@ devDependencies:
     version: 1.0.23(@vue/compiler-sfc@3.4.21)(eslint@8.57.0)(typescript@5.4.3)
   '@vitejs/plugin-vue':
     specifier: 5.0.4
-    version: 5.0.4(vite@5.2.5)(vue@3.4.21)
+    version: 5.0.4(vite@5.2.6)(vue@3.4.21)
   '@vue/compiler-sfc':
     specifier: 3.4.21
     version: 3.4.21
@@ -59,11 +59,11 @@ devDependencies:
     specifier: 5.4.3
     version: 5.4.3
   vite:
-    specifier: 5.2.5
-    version: 5.2.5
+    specifier: 5.2.6
+    version: 5.2.6
   vite-plugin-doubleshot:
     specifier: 0.0.13
-    version: 0.0.13(electron-builder@24.13.3)(electron@29.1.5)(typescript@5.4.3)(vite@5.2.5)
+    version: 0.0.13(electron-builder@24.13.3)(electron@29.1.5)(typescript@5.4.3)(vite@5.2.6)
   vue-tsc:
     specifier: 2.0.7
     version: 2.0.7(typescript@5.4.3)
@@ -1619,14 +1619,14 @@ packages:
     resolution: {integrity: sha512-zuVdFrMJiuCDQUMCzQaD6KL28MjnqqN8XnAqiEq9PNm/hCPTSGfrXCOfwj1ow4LFb/tNymJPwsNbVePc1xFqrQ==}
     dev: true
 
-  /@vitejs/plugin-vue@5.0.4(vite@5.2.5)(vue@3.4.21):
+  /@vitejs/plugin-vue@5.0.4(vite@5.2.6)(vue@3.4.21):
     resolution: {integrity: sha512-WS3hevEszI6CEVEx28F8RjTX97k3KsrcY6kvTg7+Whm5y3oYvcqzVeGCU3hxSAn4uY2CLCkeokkGKpoctccilQ==}
     engines: {node: ^18.0.0 || >=20.0.0}
     peerDependencies:
       vite: ^5.0.0
       vue: ^3.2.25
     dependencies:
-      vite: 5.2.5
+      vite: 5.2.6
       vue: 3.4.21(typescript@5.4.3)
     dev: true
 
@@ -5479,14 +5479,14 @@ packages:
     dev: true
     optional: true
 
-  /vite-plugin-doubleshot@0.0.13(electron-builder@24.13.3)(electron@29.1.5)(typescript@5.4.3)(vite@5.2.5):
+  /vite-plugin-doubleshot@0.0.13(electron-builder@24.13.3)(electron@29.1.5)(typescript@5.4.3)(vite@5.2.6):
     resolution: {integrity: sha512-AdeF/4fePxA5rHMGrc2Q2FDtihNcjnWD/YNZTmr2qF8380W9a+2fcDreCVPkTBiwhJcWPUM0nDmQ4ojQgSFggw==}
     engines: {node: '>=14.0.0'}
     peerDependencies:
       vite: '>=2.0.0'
     dependencies:
       '@doubleshot/builder': 0.0.11(electron-builder@24.13.3)(electron@29.1.5)(typescript@5.4.3)
-      vite: 5.2.5
+      vite: 5.2.6
     transitivePeerDependencies:
       - '@swc/helpers'
       - debug
@@ -5498,8 +5498,8 @@ packages:
       - typescript
     dev: true
 
-  /vite@5.2.5:
-    resolution: {integrity: sha512-a+rTAqkMmJ2hQpC6dfAyyc5M0YLH3BGZKLpA6pU9AhzlcK1YZS8P/ov9OcdHxaf+j0sM0DIh/txH7ydTHUpISg==}
+  /vite@5.2.6:
+    resolution: {integrity: sha512-FPtnxFlSIKYjZ2eosBQamz4CbyrTizbZ3hnGJlh/wMtCrlp1Hah6AzBLjGI5I2urTfNnpovpHdrL6YRuBOPnCA==}
     engines: {node: ^18.0.0 || >=20.0.0}
     hasBin: true
     peerDependencies:
