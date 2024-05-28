@@ -35,7 +35,7 @@ importers:
         version: 1.0.54(@typescript-eslint/parser@7.10.0(eslint@9.3.0)(typescript@5.4.5))(@vue/compiler-sfc@3.4.27)(eslint@9.3.0)(typescript@5.4.5)
       '@vitejs/plugin-vue':
         specifier: 5.0.4
-        version: 5.0.4(vite@5.2.11(@types/node@20.12.7))(vue@3.4.27(typescript@5.4.5))
+        version: 5.0.4(vite@5.2.12(@types/node@20.12.7))(vue@3.4.27(typescript@5.4.5))
       '@vue/compiler-sfc':
         specifier: 3.4.27
         version: 3.4.27
@@ -61,11 +61,11 @@ importers:
         specifier: 5.4.5
         version: 5.4.5
       vite:
-        specifier: 5.2.11
-        version: 5.2.11(@types/node@20.12.7)
+        specifier: 5.2.12
+        version: 5.2.12(@types/node@20.12.7)
       vite-plugin-doubleshot:
         specifier: 0.0.14
-        version: 0.0.14(electron-builder@24.13.3(electron-builder-squirrel-windows@24.13.3(dmg-builder@24.13.3)))(electron@30.0.8)(postcss@8.4.38)(typescript@5.4.5)(vite@5.2.11(@types/node@20.12.7))
+        version: 0.0.14(electron-builder@24.13.3(electron-builder-squirrel-windows@24.13.3(dmg-builder@24.13.3)))(electron@30.0.8)(postcss@8.4.38)(typescript@5.4.5)(vite@5.2.12(@types/node@20.12.7))
       vue-tsc:
         specifier: 2.0.19
         version: 2.0.19(typescript@5.4.5)
@@ -3308,8 +3308,8 @@ packages:
     peerDependencies:
       vite: '>=2.0.0'
 
-  vite@5.2.11:
-    resolution: {integrity: sha512-HndV31LWW05i1BLPMUCE1B9E9GFbOu1MbenhS58FuK6owSO5qHm7GiCotrNY1YE5rMeQSFBGmT5ZaLEjFizgiQ==}
+  vite@5.2.12:
+    resolution: {integrity: sha512-/gC8GxzxMK5ntBwb48pR32GGhENnjtY30G4A0jemunsBkiEZFw60s8InGpN8gkhHEkjnRK1aSAxeQgwvFhUHAA==}
     engines: {node: ^18.0.0 || >=20.0.0}
     hasBin: true
     peerDependencies:
@@ -4380,9 +4380,9 @@ snapshots:
       - supports-color
       - typescript
 
-  '@vitejs/plugin-vue@5.0.4(vite@5.2.11(@types/node@20.12.7))(vue@3.4.27(typescript@5.4.5))':
+  '@vitejs/plugin-vue@5.0.4(vite@5.2.12(@types/node@20.12.7))(vue@3.4.27(typescript@5.4.5))':
     dependencies:
-      vite: 5.2.11(@types/node@20.12.7)
+      vite: 5.2.12(@types/node@20.12.7)
       vue: 3.4.27(typescript@5.4.5)
 
   '@volar/language-core@2.2.4':
@@ -6923,10 +6923,10 @@ snapshots:
       extsprintf: 1.4.1
     optional: true
 
-  vite-plugin-doubleshot@0.0.14(electron-builder@24.13.3(electron-builder-squirrel-windows@24.13.3(dmg-builder@24.13.3)))(electron@30.0.8)(postcss@8.4.38)(typescript@5.4.5)(vite@5.2.11(@types/node@20.12.7)):
+  vite-plugin-doubleshot@0.0.14(electron-builder@24.13.3(electron-builder-squirrel-windows@24.13.3(dmg-builder@24.13.3)))(electron@30.0.8)(postcss@8.4.38)(typescript@5.4.5)(vite@5.2.12(@types/node@20.12.7)):
     dependencies:
       '@doubleshot/builder': 0.0.11(electron-builder@24.13.3(electron-builder-squirrel-windows@24.13.3(dmg-builder@24.13.3)))(electron@30.0.8)(postcss@8.4.38)(typescript@5.4.5)
-      vite: 5.2.11(@types/node@20.12.7)
+      vite: 5.2.12(@types/node@20.12.7)
     transitivePeerDependencies:
       - '@swc/helpers'
       - debug
@@ -6937,7 +6937,7 @@ snapshots:
       - ts-node
       - typescript
 
-  vite@5.2.11(@types/node@20.12.7):
+  vite@5.2.12(@types/node@20.12.7):
     dependencies:
       esbuild: 0.20.2
       postcss: 8.4.38
