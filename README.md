@@ -28,7 +28,7 @@ This is a template based on my repo: [fast-vite-electron](https://github.com/Arc
 - 🪟 An electron module for [nestjs](https://nestjs.com/) to launch electron windows.
   <br>
 
-- ⏩ Quick start and build, powered by [tsup](https://tsup.egoist.sh/) and [electron-builder](https://www.electron.build/) integrated in [@doubleshot/builder](https://github.com/Doubleshotjs/doubleshot/tree/main/packages/builder)
+- ⏩ Quick start and build, powered by [tsup](https://tsup.egoist.dev/) and [electron-builder](https://www.electron.build/) integrated in [@doubleshot/builder](https://github.com/Doubleshotjs/doubleshot/tree/main/packages/builder)
 
 ## How to use
 
