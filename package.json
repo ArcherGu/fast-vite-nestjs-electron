@@ -29,7 +29,7 @@
     "electron-builder": "24.13.3",
     "eslint": "9.6.0",
     "lint-staged": "15.2.7",
-    "rimraf": "5.0.9",
+    "rimraf": "6.0.0",
     "simple-git-hooks": "2.11.1",
     "typescript": "5.5.3",
     "vite": "5.3.3",
