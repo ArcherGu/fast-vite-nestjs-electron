@@ -24,7 +24,7 @@
   "devDependencies": {
     "@lightwing/eslint-config": "^1.0.52",
     "@vitejs/plugin-vue": "5.1.2",
-    "@vue/compiler-sfc": "3.4.37",
+    "@vue/compiler-sfc": "3.4.38",
     "electron": "31.4.0",
     "electron-builder": "24.13.3",
     "eslint": "9.9.0",
