@@ -27,7 +27,7 @@
     "@vue/compiler-sfc": "3.5.8",
     "electron": "32.1.2",
     "electron-builder": "25.0.5",
-    "eslint": "9.11.0",
+    "eslint": "9.11.1",
     "lint-staged": "15.2.10",
     "rimraf": "6.0.1",
     "simple-git-hooks": "2.11.1",
