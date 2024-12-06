@@ -1,7 +1,7 @@
 import { join } from 'node:path'
-import { Module } from '@nestjs/common'
 import { ElectronModule } from '@doubleshot/nest-electron'
-import { BrowserWindow, app } from 'electron'
+import { Module } from '@nestjs/common'
+import { app, BrowserWindow } from 'electron'
 import { AppController } from './app.controller'
 import { AppService } from './app.service'
 

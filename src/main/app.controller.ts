@@ -1,8 +1,8 @@
-import { Controller } from '@nestjs/common'
+import type { BrowserWindow } from 'electron'
 import { IpcHandle, Window } from '@doubleshot/nest-electron'
+import { Controller } from '@nestjs/common'
 import { Payload } from '@nestjs/microservices'
 import { type Observable, of } from 'rxjs'
-import type { BrowserWindow } from 'electron'
 import { AppService } from './app.service'
 
 @Controller()
