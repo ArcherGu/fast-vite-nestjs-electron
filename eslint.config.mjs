@@ -1,7 +1,6 @@
-// @ts-check
-const lightwing = require('@lightwing/eslint-config').default
+import lightwing from '@lightwing/eslint-config'
 
-module.exports = lightwing(
+export default lightwing(
   {
     ignores: [
       'dist',
