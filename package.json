@@ -13,16 +13,16 @@
     "postinstall": "electron-builder install-app-deps"
   },
   "dependencies": {
-    "@doubleshot/nest-electron": "^0.2.5",
-    "@nestjs/common": "^11.0.0",
-    "@nestjs/core": "^11.0.0",
-    "@nestjs/microservices": "^11.0.0",
+    "@doubleshot/nest-electron": "^0.2.6",
+    "@nestjs/common": "^11.0.5",
+    "@nestjs/core": "^11.0.5",
+    "@nestjs/microservices": "^11.0.5",
     "reflect-metadata": "^0.2.2",
     "rxjs": "^7.8.1",
     "vue": "^3.5.13"
   },
   "devDependencies": {
-    "@lightwing/eslint-config": "^1.0.93",
+    "@lightwing/eslint-config": "^1.0.102",
     "@vitejs/plugin-vue": "5.2.1",
     "@vue/compiler-sfc": "3.5.13",
     "electron": "34.0.1",
