@@ -10,16 +10,16 @@ importers:
     dependencies:
       '@doubleshot/nest-electron':
         specifier: ^0.2.6
-        version: 0.2.6(@nestjs/common@11.0.6(reflect-metadata@0.2.2)(rxjs@7.8.1))(@nestjs/core@11.0.6)(@nestjs/microservices@11.0.6)(electron@34.0.2)(rxjs@7.8.1)
+        version: 0.2.6(@nestjs/common@11.0.7(reflect-metadata@0.2.2)(rxjs@7.8.1))(@nestjs/core@11.0.7)(@nestjs/microservices@11.0.7)(electron@34.0.2)(rxjs@7.8.1)
       '@nestjs/common':
         specifier: ^11.0.5
-        version: 11.0.6(reflect-metadata@0.2.2)(rxjs@7.8.1)
+        version: 11.0.7(reflect-metadata@0.2.2)(rxjs@7.8.1)
       '@nestjs/core':
         specifier: ^11.0.5
-        version: 11.0.6(@nestjs/common@11.0.6(reflect-metadata@0.2.2)(rxjs@7.8.1))(@nestjs/microservices@11.0.6)(reflect-metadata@0.2.2)(rxjs@7.8.1)
+        version: 11.0.7(@nestjs/common@11.0.7(reflect-metadata@0.2.2)(rxjs@7.8.1))(@nestjs/microservices@11.0.7)(reflect-metadata@0.2.2)(rxjs@7.8.1)
       '@nestjs/microservices':
         specifier: ^11.0.5
-        version: 11.0.6(@nestjs/common@11.0.6(reflect-metadata@0.2.2)(rxjs@7.8.1))(@nestjs/core@11.0.6)(reflect-metadata@0.2.2)(rxjs@7.8.1)
+        version: 11.0.7(@nestjs/common@11.0.7(reflect-metadata@0.2.2)(rxjs@7.8.1))(@nestjs/core@11.0.7)(reflect-metadata@0.2.2)(rxjs@7.8.1)
       reflect-metadata:
         specifier: ^0.2.2
         version: 0.2.2
@@ -736,8 +736,8 @@ packages:
     resolution: {integrity: sha512-9QOtNffcOF/c1seMCDnjckb3R9WHcG34tky+FHpNKKCW0wc/scYLwMtO+ptyGUfMW0/b/n4qRiALlaFHc9Oj7Q==}
     engines: {node: '>= 10.0.0'}
 
-  '@nestjs/common@11.0.6':
-    resolution: {integrity: sha512-j+M3WOU6loZPNirIHDiZ1LxXRXVNb62XicgLBqdgyrDBFCJrAZaq0lfERUEPlN0/j4GBFnTSPg+CNsoGTBW1zQ==}
+  '@nestjs/common@11.0.7':
+    resolution: {integrity: sha512-2HXwaFem0IUCMoruOIC57wSxuRBBRJQwfcuHw6dsL15bqekpgmR8I53zT4RGfX7bgRDr8tINvzRun8PFeSiVgA==}
     peerDependencies:
       class-transformer: '*'
       class-validator: '*'
@@ -749,8 +749,8 @@ packages:
       class-validator:
         optional: true
 
-  '@nestjs/core@11.0.6':
-    resolution: {integrity: sha512-Xf33bwc3waAJ/faJBW06+Dwq3m15p3wbFOc/CcK8ua5EZna4sMjIjXXAb6bQmEjR1KfTXV5z595UD2vwp6cyHg==}
+  '@nestjs/core@11.0.7':
+    resolution: {integrity: sha512-LRijT+lXBpWjySJDNI+P18T+JiYOrpIBP/y8B+ObJN+sdaV3AFNT8cdf1U4hnkDbNGuIvVx1yNiRi6QNNVyw3A==}
     engines: {node: '>= 20'}
     peerDependencies:
       '@nestjs/common': ^11.0.0
@@ -767,8 +767,8 @@ packages:
       '@nestjs/websockets':
         optional: true
 
-  '@nestjs/microservices@11.0.6':
-    resolution: {integrity: sha512-/tDpk2ToOuEinhKDb+HBvupJnM2vSpEhhVWtuEsWsrHHmz1BeRedlb1vxIT2QsobGJ/foAViAB7r9O+E8Acvhg==}
+  '@nestjs/microservices@11.0.7':
+    resolution: {integrity: sha512-NzRzmiVS7jn9PFq1ONRh0kyc6VEtd+0bj2p0oJSEf7xcFdNpENKJpyUV+bHKK7Fs/dapExlzPEewrOdkwR7pMg==}
     peerDependencies:
       '@grpc/grpc-js': '*'
       '@nestjs/common': ^11.0.0
@@ -3510,6 +3510,11 @@ packages:
     engines: {node: '>=10'}
     hasBin: true
 
+  semver@7.7.0:
+    resolution: {integrity: sha512-DrfFnPzblFmNrIZzg5RzHegbiRWg7KMR7btwi2yjHwx06zsUbO5g613sVwEV7FTwmzJu+Io0lJe2GJ3LxqpvBQ==}
+    engines: {node: '>=10'}
+    hasBin: true
+
   serialize-error@7.0.1:
     resolution: {integrity: sha512-8I8TjW5KMOKsZQTvoxjuSIa7foAwPWGOts+6o7sgjz41/qMD9VQHEDxi6PBvK2l0MXUmqZyNpUK+T2tQaaElvw==}
     engines: {node: '>=10'}
@@ -4171,11 +4176,11 @@ snapshots:
       - typescript
       - yaml
 
-  '@doubleshot/nest-electron@0.2.6(@nestjs/common@11.0.6(reflect-metadata@0.2.2)(rxjs@7.8.1))(@nestjs/core@11.0.6)(@nestjs/microservices@11.0.6)(electron@34.0.2)(rxjs@7.8.1)':
+  '@doubleshot/nest-electron@0.2.6(@nestjs/common@11.0.7(reflect-metadata@0.2.2)(rxjs@7.8.1))(@nestjs/core@11.0.7)(@nestjs/microservices@11.0.7)(electron@34.0.2)(rxjs@7.8.1)':
     dependencies:
-      '@nestjs/common': 11.0.6(reflect-metadata@0.2.2)(rxjs@7.8.1)
-      '@nestjs/core': 11.0.6(@nestjs/common@11.0.6(reflect-metadata@0.2.2)(rxjs@7.8.1))(@nestjs/microservices@11.0.6)(reflect-metadata@0.2.2)(rxjs@7.8.1)
-      '@nestjs/microservices': 11.0.6(@nestjs/common@11.0.6(reflect-metadata@0.2.2)(rxjs@7.8.1))(@nestjs/core@11.0.6)(reflect-metadata@0.2.2)(rxjs@7.8.1)
+      '@nestjs/common': 11.0.7(reflect-metadata@0.2.2)(rxjs@7.8.1)
+      '@nestjs/core': 11.0.7(@nestjs/common@11.0.7(reflect-metadata@0.2.2)(rxjs@7.8.1))(@nestjs/microservices@11.0.7)(reflect-metadata@0.2.2)(rxjs@7.8.1)
+      '@nestjs/microservices': 11.0.7(@nestjs/common@11.0.7(reflect-metadata@0.2.2)(rxjs@7.8.1))(@nestjs/core@11.0.7)(reflect-metadata@0.2.2)(rxjs@7.8.1)
       electron: 34.0.2
       rxjs: 7.8.1
 
@@ -4733,7 +4738,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@nestjs/common@11.0.6(reflect-metadata@0.2.2)(rxjs@7.8.1)':
+  '@nestjs/common@11.0.7(reflect-metadata@0.2.2)(rxjs@7.8.1)':
     dependencies:
       iterare: 1.2.1
       reflect-metadata: 0.2.2
@@ -4741,9 +4746,9 @@ snapshots:
       tslib: 2.8.1
       uid: 2.0.2
 
-  '@nestjs/core@11.0.6(@nestjs/common@11.0.6(reflect-metadata@0.2.2)(rxjs@7.8.1))(@nestjs/microservices@11.0.6)(reflect-metadata@0.2.2)(rxjs@7.8.1)':
+  '@nestjs/core@11.0.7(@nestjs/common@11.0.7(reflect-metadata@0.2.2)(rxjs@7.8.1))(@nestjs/microservices@11.0.7)(reflect-metadata@0.2.2)(rxjs@7.8.1)':
     dependencies:
-      '@nestjs/common': 11.0.6(reflect-metadata@0.2.2)(rxjs@7.8.1)
+      '@nestjs/common': 11.0.7(reflect-metadata@0.2.2)(rxjs@7.8.1)
       '@nuxt/opencollective': 0.4.1
       fast-safe-stringify: 2.1.1
       iterare: 1.2.1
@@ -4753,12 +4758,12 @@ snapshots:
       tslib: 2.8.1
       uid: 2.0.2
     optionalDependencies:
-      '@nestjs/microservices': 11.0.6(@nestjs/common@11.0.6(reflect-metadata@0.2.2)(rxjs@7.8.1))(@nestjs/core@11.0.6)(reflect-metadata@0.2.2)(rxjs@7.8.1)
+      '@nestjs/microservices': 11.0.7(@nestjs/common@11.0.7(reflect-metadata@0.2.2)(rxjs@7.8.1))(@nestjs/core@11.0.7)(reflect-metadata@0.2.2)(rxjs@7.8.1)
 
-  '@nestjs/microservices@11.0.6(@nestjs/common@11.0.6(reflect-metadata@0.2.2)(rxjs@7.8.1))(@nestjs/core@11.0.6)(reflect-metadata@0.2.2)(rxjs@7.8.1)':
+  '@nestjs/microservices@11.0.7(@nestjs/common@11.0.7(reflect-metadata@0.2.2)(rxjs@7.8.1))(@nestjs/core@11.0.7)(reflect-metadata@0.2.2)(rxjs@7.8.1)':
     dependencies:
-      '@nestjs/common': 11.0.6(reflect-metadata@0.2.2)(rxjs@7.8.1)
-      '@nestjs/core': 11.0.6(@nestjs/common@11.0.6(reflect-metadata@0.2.2)(rxjs@7.8.1))(@nestjs/microservices@11.0.6)(reflect-metadata@0.2.2)(rxjs@7.8.1)
+      '@nestjs/common': 11.0.7(reflect-metadata@0.2.2)(rxjs@7.8.1)
+      '@nestjs/core': 11.0.7(@nestjs/common@11.0.7(reflect-metadata@0.2.2)(rxjs@7.8.1))(@nestjs/microservices@11.0.7)(reflect-metadata@0.2.2)(rxjs@7.8.1)
       iterare: 1.2.1
       reflect-metadata: 0.2.2
       rxjs: 7.8.1
@@ -5339,7 +5344,7 @@ snapshots:
       minimatch: 5.1.6
       read-config-file: 6.3.2
       sanitize-filename: 1.6.3
-      semver: 7.6.3
+      semver: 7.7.0
       tar: 6.2.1
       temp-file: 3.4.0
     transitivePeerDependencies:
@@ -8058,6 +8063,8 @@ snapshots:
   semver@6.3.0: {}
 
   semver@7.6.3: {}
+
+  semver@7.7.0: {}
 
   serialize-error@7.0.1:
     dependencies:
