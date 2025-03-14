@@ -35,7 +35,7 @@ importers:
         version: 1.0.111(@typescript-eslint/utils@8.26.1(eslint@9.22.0(jiti@2.4.2))(typescript@5.8.2))(@vue/compiler-sfc@3.5.13)(eslint@9.22.0(jiti@2.4.2))(ts-api-utils@2.0.1(typescript@5.8.2))(typescript@5.8.2)
       '@vitejs/plugin-vue':
         specifier: 5.2.1
-        version: 5.2.1(vite@6.2.1(@types/node@22.13.9)(jiti@2.4.2)(tsx@4.19.2)(yaml@2.7.0))(vue@3.5.13(typescript@5.8.2))
+        version: 5.2.1(vite@6.2.2(@types/node@22.13.9)(jiti@2.4.2)(tsx@4.19.2)(yaml@2.7.0))(vue@3.5.13(typescript@5.8.2))
       '@vue/compiler-sfc':
         specifier: 3.5.13
         version: 3.5.13
@@ -61,11 +61,11 @@ importers:
         specifier: 5.8.2
         version: 5.8.2
       vite:
-        specifier: 6.2.1
-        version: 6.2.1(@types/node@22.13.9)(jiti@2.4.2)(tsx@4.19.2)(yaml@2.7.0)
+        specifier: 6.2.2
+        version: 6.2.2(@types/node@22.13.9)(jiti@2.4.2)(tsx@4.19.2)(yaml@2.7.0)
       vite-plugin-doubleshot:
         specifier: 0.0.18
-        version: 0.0.18(electron-builder@25.1.8(electron-builder-squirrel-windows@24.13.3(dmg-builder@25.1.8)))(electron@35.0.1)(jiti@2.4.2)(postcss@8.5.3)(tsx@4.19.2)(typescript@5.8.2)(vite@6.2.1(@types/node@22.13.9)(jiti@2.4.2)(tsx@4.19.2)(yaml@2.7.0))(yaml@2.7.0)
+        version: 0.0.18(electron-builder@25.1.8(electron-builder-squirrel-windows@24.13.3(dmg-builder@25.1.8)))(electron@35.0.1)(jiti@2.4.2)(postcss@8.5.3)(tsx@4.19.2)(typescript@5.8.2)(vite@6.2.2(@types/node@22.13.9)(jiti@2.4.2)(tsx@4.19.2)(yaml@2.7.0))(yaml@2.7.0)
       vue-tsc:
         specifier: 2.2.8
         version: 2.2.8(typescript@5.8.2)
@@ -3851,8 +3851,8 @@ packages:
     peerDependencies:
       vite: '>=2.0.0'
 
-  vite@6.2.1:
-    resolution: {integrity: sha512-n2GnqDb6XPhlt9B8olZPrgMD/es/Nd1RdChF6CBD/fHW6pUyUTt2sQW2fPRX5GiD9XEa6+8A6A4f2vT6pSsE7Q==}
+  vite@6.2.2:
+    resolution: {integrity: sha512-yW7PeMM+LkDzc7CgJuRLMW2Jz0FxMOsVJ8Lv3gpgW9WLcb9cTW+121UEr1hvmfR7w3SegR5ItvYyzVz1vxNJgQ==}
     engines: {node: ^18.0.0 || ^20.0.0 || >=22.0.0}
     hasBin: true
     peerDependencies:
@@ -5076,9 +5076,9 @@ snapshots:
       '@unocss/core': 66.0.0
       magic-string: 0.30.17
 
-  '@vitejs/plugin-vue@5.2.1(vite@6.2.1(@types/node@22.13.9)(jiti@2.4.2)(tsx@4.19.2)(yaml@2.7.0))(vue@3.5.13(typescript@5.8.2))':
+  '@vitejs/plugin-vue@5.2.1(vite@6.2.2(@types/node@22.13.9)(jiti@2.4.2)(tsx@4.19.2)(yaml@2.7.0))(vue@3.5.13(typescript@5.8.2))':
     dependencies:
-      vite: 6.2.1(@types/node@22.13.9)(jiti@2.4.2)(tsx@4.19.2)(yaml@2.7.0)
+      vite: 6.2.2(@types/node@22.13.9)(jiti@2.4.2)(tsx@4.19.2)(yaml@2.7.0)
       vue: 3.5.13(typescript@5.8.2)
 
   '@vitest/eslint-plugin@1.1.37(@typescript-eslint/utils@8.26.1(eslint@9.22.0(jiti@2.4.2))(typescript@5.8.2))(eslint@9.22.0(jiti@2.4.2))(typescript@5.8.2)':
@@ -8317,10 +8317,10 @@ snapshots:
       extsprintf: 1.4.1
     optional: true
 
-  vite-plugin-doubleshot@0.0.18(electron-builder@25.1.8(electron-builder-squirrel-windows@24.13.3(dmg-builder@25.1.8)))(electron@35.0.1)(jiti@2.4.2)(postcss@8.5.3)(tsx@4.19.2)(typescript@5.8.2)(vite@6.2.1(@types/node@22.13.9)(jiti@2.4.2)(tsx@4.19.2)(yaml@2.7.0))(yaml@2.7.0):
+  vite-plugin-doubleshot@0.0.18(electron-builder@25.1.8(electron-builder-squirrel-windows@24.13.3(dmg-builder@25.1.8)))(electron@35.0.1)(jiti@2.4.2)(postcss@8.5.3)(tsx@4.19.2)(typescript@5.8.2)(vite@6.2.2(@types/node@22.13.9)(jiti@2.4.2)(tsx@4.19.2)(yaml@2.7.0))(yaml@2.7.0):
     dependencies:
       '@doubleshot/builder': 0.0.14(electron-builder@25.1.8(electron-builder-squirrel-windows@24.13.3(dmg-builder@25.1.8)))(electron@35.0.1)(jiti@2.4.2)(postcss@8.5.3)(tsx@4.19.2)(typescript@5.8.2)(yaml@2.7.0)
-      vite: 6.2.1(@types/node@22.13.9)(jiti@2.4.2)(tsx@4.19.2)(yaml@2.7.0)
+      vite: 6.2.2(@types/node@22.13.9)(jiti@2.4.2)(tsx@4.19.2)(yaml@2.7.0)
     transitivePeerDependencies:
       - '@microsoft/api-extractor'
       - '@swc/helpers'
@@ -8334,7 +8334,7 @@ snapshots:
       - typescript
       - yaml
 
-  vite@6.2.1(@types/node@22.13.9)(jiti@2.4.2)(tsx@4.19.2)(yaml@2.7.0):
+  vite@6.2.2(@types/node@22.13.9)(jiti@2.4.2)(tsx@4.19.2)(yaml@2.7.0):
     dependencies:
       esbuild: 0.25.0
       postcss: 8.5.3
