@@ -31,7 +31,7 @@
     "lint-staged": "15.5.0",
     "rimraf": "6.0.1",
     "simple-git-hooks": "2.12.1",
-    "typescript": "5.8.2",
+    "typescript": "5.8.3",
     "vite": "6.2.5",
     "vite-plugin-doubleshot": "0.0.18",
     "vue-tsc": "2.2.8"
