@@ -35,7 +35,7 @@ importers:
         version: 1.0.121(@vue/compiler-sfc@3.5.17)(eslint@9.29.0(jiti@2.4.2))(ts-api-utils@2.1.0(typescript@5.8.3))(typescript@5.8.3)
       '@vitejs/plugin-vue':
         specifier: 5.2.4
-        version: 5.2.4(vite@6.3.5(@types/node@22.13.9)(jiti@2.4.2)(tsx@4.19.2)(yaml@2.8.0))(vue@3.5.17(typescript@5.8.3))
+        version: 5.2.4(vite@7.0.0(@types/node@22.13.9)(jiti@2.4.2)(tsx@4.19.2)(yaml@2.8.0))(vue@3.5.17(typescript@5.8.3))
       '@vue/compiler-sfc':
         specifier: 3.5.17
         version: 3.5.17
@@ -61,11 +61,11 @@ importers:
         specifier: 5.8.3
         version: 5.8.3
       vite:
-        specifier: 6.3.5
-        version: 6.3.5(@types/node@22.13.9)(jiti@2.4.2)(tsx@4.19.2)(yaml@2.8.0)
+        specifier: 7.0.0
+        version: 7.0.0(@types/node@22.13.9)(jiti@2.4.2)(tsx@4.19.2)(yaml@2.8.0)
       vite-plugin-doubleshot:
         specifier: 0.0.18
-        version: 0.0.18(electron-builder@26.0.12(electron-builder-squirrel-windows@24.13.3(dmg-builder@26.0.12)))(electron@37.0.0)(jiti@2.4.2)(postcss@8.5.6)(tsx@4.19.2)(typescript@5.8.3)(vite@6.3.5(@types/node@22.13.9)(jiti@2.4.2)(tsx@4.19.2)(yaml@2.8.0))(yaml@2.8.0)
+        version: 0.0.18(electron-builder@26.0.12(electron-builder-squirrel-windows@24.13.3(dmg-builder@26.0.12)))(electron@37.0.0)(jiti@2.4.2)(postcss@8.5.6)(tsx@4.19.2)(typescript@5.8.3)(vite@7.0.0(@types/node@22.13.9)(jiti@2.4.2)(tsx@4.19.2)(yaml@2.8.0))(yaml@2.8.0)
       vue-tsc:
         specifier: 2.2.10
         version: 2.2.10(typescript@5.8.3)
@@ -2212,14 +2212,6 @@ packages:
   fd-slicer@1.1.0:
     resolution: {integrity: sha512-cE1qsB/VwyQozZ+q1dGxR8LBYNZeofhEdUNGSMbQD3Gw2lAzX9Zb3uIU6Ebc/Fmyjo9AWWfnn0AUCHqtevs/8g==}
 
-  fdir@6.4.4:
-    resolution: {integrity: sha512-1NZP+GK4GfuAv3PqKvxQRDMjdSRZjnkq7KfhlNrCNNlZ0ygQFpebfrnfnq/W7fpUnAv9aGWmY1zKx7FYL3gwhg==}
-    peerDependencies:
-      picomatch: ^3 || ^4
-    peerDependenciesMeta:
-      picomatch:
-        optional: true
-
   fdir@6.4.6:
     resolution: {integrity: sha512-hiFoqpyZcfNm1yc4u8oWCf9A2c4D3QjCrks3zmoVKVxpQRzmPNar1hUJcBG2RQHvEVGDN+Jm81ZheVLAQMK6+w==}
     peerDependencies:
@@ -3037,11 +3029,6 @@ packages:
     engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
     hasBin: true
 
-  nanoid@3.3.8:
-    resolution: {integrity: sha512-WNLf5Sd8oZxOm+TzppcYk8gVOgP+l58xNy58D0nbUnOxOWRWvlcCV4kUF7ltmI6PsrLl/BgKEyS4mqsGChFN0w==}
-    engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
-    hasBin: true
-
   natural-compare@1.4.0:
     resolution: {integrity: sha512-OWND8ei3VtNC9h7V60qff3SVobHr996CTwgxubgyQYEpg290h9J0buyECNNJexkFm5sOajh5G116RYA1c8ZMSw==}
 
@@ -3247,10 +3234,6 @@ packages:
   postcss-selector-parser@6.1.2:
     resolution: {integrity: sha512-Q8qQfPiZ+THO/3ZrOrO0cJJKfpYCagtMUkXbnEfmgUjwXg6z/WBeOyS9APBBPCTSiDV+s4SwQGu8yFsiMRIudg==}
     engines: {node: '>=4'}
-
-  postcss@8.5.3:
-    resolution: {integrity: sha512-dle9A3yYxlBSrt8Fu+IpjGT8SY8hN0mlaA6GY8t0P5PjIOZemULz/E2Bnm/2dcUOena75OTNkHI76uZBNUUq3A==}
-    engines: {node: ^10 || ^12 || >=14}
 
   postcss@8.5.6:
     resolution: {integrity: sha512-3Ybi1tAuwAP9s0r1UQ2J4n5Y0G05bJkpUIO0/bI9MhwmD70S5aTWbXGBwxHrelT+XM1k6dM0pk+SwNkpTRN7Pg==}
@@ -3821,19 +3804,19 @@ packages:
     peerDependencies:
       vite: '>=2.0.0'
 
-  vite@6.3.5:
-    resolution: {integrity: sha512-cZn6NDFE7wdTpINgs++ZJ4N49W2vRp8LCKrn3Ob1kYNtOo21vfDoaV5GzBfLU4MovSAB8uNRm4jgzVQZ+mBzPQ==}
-    engines: {node: ^18.0.0 || ^20.0.0 || >=22.0.0}
+  vite@7.0.0:
+    resolution: {integrity: sha512-ixXJB1YRgDIw2OszKQS9WxGHKwLdCsbQNkpJN171udl6szi/rIySHL6/Os3s2+oE4P/FLD4dxg4mD7Wust+u5g==}
+    engines: {node: ^20.19.0 || >=22.12.0}
     hasBin: true
     peerDependencies:
-      '@types/node': ^18.0.0 || ^20.0.0 || >=22.0.0
+      '@types/node': ^20.19.0 || >=22.12.0
       jiti: '>=1.21.0'
-      less: '*'
+      less: ^4.0.0
       lightningcss: ^1.21.0
-      sass: '*'
-      sass-embedded: '*'
-      stylus: '*'
-      sugarss: '*'
+      sass: ^1.70.0
+      sass-embedded: ^1.70.0
+      stylus: '>=0.54.8'
+      sugarss: ^5.0.0
       terser: ^5.16.0
       tsx: ^4.8.1
       yaml: ^2.4.2
@@ -5091,9 +5074,9 @@ snapshots:
       '@unocss/core': 66.2.3
       magic-string: 0.30.17
 
-  '@vitejs/plugin-vue@5.2.4(vite@6.3.5(@types/node@22.13.9)(jiti@2.4.2)(tsx@4.19.2)(yaml@2.8.0))(vue@3.5.17(typescript@5.8.3))':
+  '@vitejs/plugin-vue@5.2.4(vite@7.0.0(@types/node@22.13.9)(jiti@2.4.2)(tsx@4.19.2)(yaml@2.8.0))(vue@3.5.17(typescript@5.8.3))':
     dependencies:
-      vite: 6.3.5(@types/node@22.13.9)(jiti@2.4.2)(tsx@4.19.2)(yaml@2.8.0)
+      vite: 7.0.0(@types/node@22.13.9)(jiti@2.4.2)(tsx@4.19.2)(yaml@2.8.0)
       vue: 3.5.17(typescript@5.8.3)
 
   '@vitest/eslint-plugin@1.2.7(eslint@9.29.0(jiti@2.4.2))(typescript@5.8.3)':
@@ -6461,10 +6444,6 @@ snapshots:
     dependencies:
       pend: 1.2.0
 
-  fdir@6.4.4(picomatch@4.0.2):
-    optionalDependencies:
-      picomatch: 4.0.2
-
   fdir@6.4.6(picomatch@4.0.2):
     optionalDependencies:
       picomatch: 4.0.2
@@ -7490,8 +7469,6 @@ snapshots:
 
   nanoid@3.3.11: {}
 
-  nanoid@3.3.8: {}
-
   natural-compare@1.4.0: {}
 
   natural-orderby@5.0.0: {}
@@ -7668,12 +7645,6 @@ snapshots:
     dependencies:
       cssesc: 3.0.0
       util-deprecate: 1.0.2
-
-  postcss@8.5.3:
-    dependencies:
-      nanoid: 3.3.8
-      picocolors: 1.1.1
-      source-map-js: 1.2.1
 
   postcss@8.5.6:
     dependencies:
@@ -8100,7 +8071,7 @@ snapshots:
 
   tinyglobby@0.2.13:
     dependencies:
-      fdir: 6.4.4(picomatch@4.0.2)
+      fdir: 6.4.6(picomatch@4.0.2)
       picomatch: 4.0.2
 
   tinyglobby@0.2.14:
@@ -8268,10 +8239,10 @@ snapshots:
       extsprintf: 1.4.1
     optional: true
 
-  vite-plugin-doubleshot@0.0.18(electron-builder@26.0.12(electron-builder-squirrel-windows@24.13.3(dmg-builder@26.0.12)))(electron@37.0.0)(jiti@2.4.2)(postcss@8.5.6)(tsx@4.19.2)(typescript@5.8.3)(vite@6.3.5(@types/node@22.13.9)(jiti@2.4.2)(tsx@4.19.2)(yaml@2.8.0))(yaml@2.8.0):
+  vite-plugin-doubleshot@0.0.18(electron-builder@26.0.12(electron-builder-squirrel-windows@24.13.3(dmg-builder@26.0.12)))(electron@37.0.0)(jiti@2.4.2)(postcss@8.5.6)(tsx@4.19.2)(typescript@5.8.3)(vite@7.0.0(@types/node@22.13.9)(jiti@2.4.2)(tsx@4.19.2)(yaml@2.8.0))(yaml@2.8.0):
     dependencies:
       '@doubleshot/builder': 0.0.14(electron-builder@26.0.12(electron-builder-squirrel-windows@24.13.3(dmg-builder@26.0.12)))(electron@37.0.0)(jiti@2.4.2)(postcss@8.5.6)(tsx@4.19.2)(typescript@5.8.3)(yaml@2.8.0)
-      vite: 6.3.5(@types/node@22.13.9)(jiti@2.4.2)(tsx@4.19.2)(yaml@2.8.0)
+      vite: 7.0.0(@types/node@22.13.9)(jiti@2.4.2)(tsx@4.19.2)(yaml@2.8.0)
     transitivePeerDependencies:
       - '@microsoft/api-extractor'
       - '@swc/helpers'
@@ -8285,14 +8256,14 @@ snapshots:
       - typescript
       - yaml
 
-  vite@6.3.5(@types/node@22.13.9)(jiti@2.4.2)(tsx@4.19.2)(yaml@2.8.0):
+  vite@7.0.0(@types/node@22.13.9)(jiti@2.4.2)(tsx@4.19.2)(yaml@2.8.0):
     dependencies:
       esbuild: 0.25.0
-      fdir: 6.4.4(picomatch@4.0.2)
+      fdir: 6.4.6(picomatch@4.0.2)
       picomatch: 4.0.2
-      postcss: 8.5.3
+      postcss: 8.5.6
       rollup: 4.40.0
-      tinyglobby: 0.2.13
+      tinyglobby: 0.2.14
     optionalDependencies:
       '@types/node': 22.13.9
       fsevents: 2.3.3
