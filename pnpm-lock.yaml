@@ -35,7 +35,7 @@ importers:
         version: 1.0.122(@vue/compiler-sfc@3.5.17)(eslint@9.30.1(jiti@2.4.2))(ts-api-utils@2.1.0(typescript@5.8.3))(typescript@5.8.3)
       '@vitejs/plugin-vue':
         specifier: 5.2.4
-        version: 5.2.4(vite@7.0.3(@types/node@22.13.9)(jiti@2.4.2)(tsx@4.19.2)(yaml@2.8.0))(vue@3.5.17(typescript@5.8.3))
+        version: 5.2.4(vite@7.0.4(@types/node@22.13.9)(jiti@2.4.2)(tsx@4.19.2)(yaml@2.8.0))(vue@3.5.17(typescript@5.8.3))
       '@vue/compiler-sfc':
         specifier: 3.5.17
         version: 3.5.17
@@ -61,11 +61,11 @@ importers:
         specifier: 5.8.3
         version: 5.8.3
       vite:
-        specifier: 7.0.3
-        version: 7.0.3(@types/node@22.13.9)(jiti@2.4.2)(tsx@4.19.2)(yaml@2.8.0)
+        specifier: 7.0.4
+        version: 7.0.4(@types/node@22.13.9)(jiti@2.4.2)(tsx@4.19.2)(yaml@2.8.0)
       vite-plugin-doubleshot:
         specifier: 0.0.18
-        version: 0.0.18(electron-builder@26.0.12(electron-builder-squirrel-windows@24.13.3(dmg-builder@26.0.12)))(electron@37.2.0)(jiti@2.4.2)(postcss@8.5.6)(tsx@4.19.2)(typescript@5.8.3)(vite@7.0.3(@types/node@22.13.9)(jiti@2.4.2)(tsx@4.19.2)(yaml@2.8.0))(yaml@2.8.0)
+        version: 0.0.18(electron-builder@26.0.12(electron-builder-squirrel-windows@24.13.3(dmg-builder@26.0.12)))(electron@37.2.0)(jiti@2.4.2)(postcss@8.5.6)(tsx@4.19.2)(typescript@5.8.3)(vite@7.0.4(@types/node@22.13.9)(jiti@2.4.2)(tsx@4.19.2)(yaml@2.8.0))(yaml@2.8.0)
       vue-tsc:
         specifier: 3.0.1
         version: 3.0.1(typescript@5.8.3)
@@ -3800,8 +3800,8 @@ packages:
     peerDependencies:
       vite: '>=2.0.0'
 
-  vite@7.0.3:
-    resolution: {integrity: sha512-y2L5oJZF7bj4c0jgGYgBNSdIu+5HF+m68rn2cQXFbGoShdhV1phX9rbnxy9YXj82aS8MMsCLAAFkRxZeWdldrQ==}
+  vite@7.0.4:
+    resolution: {integrity: sha512-SkaSguuS7nnmV7mfJ8l81JGBFV7Gvzp8IzgE8A8t23+AxuNX61Q5H1Tpz5efduSN7NHC8nQXD3sKQKZAu5mNEA==}
     engines: {node: ^20.19.0 || >=22.12.0}
     hasBin: true
     peerDependencies:
@@ -5065,9 +5065,9 @@ snapshots:
       '@unocss/core': 66.3.2
       magic-string: 0.30.17
 
-  '@vitejs/plugin-vue@5.2.4(vite@7.0.3(@types/node@22.13.9)(jiti@2.4.2)(tsx@4.19.2)(yaml@2.8.0))(vue@3.5.17(typescript@5.8.3))':
+  '@vitejs/plugin-vue@5.2.4(vite@7.0.4(@types/node@22.13.9)(jiti@2.4.2)(tsx@4.19.2)(yaml@2.8.0))(vue@3.5.17(typescript@5.8.3))':
     dependencies:
-      vite: 7.0.3(@types/node@22.13.9)(jiti@2.4.2)(tsx@4.19.2)(yaml@2.8.0)
+      vite: 7.0.4(@types/node@22.13.9)(jiti@2.4.2)(tsx@4.19.2)(yaml@2.8.0)
       vue: 3.5.17(typescript@5.8.3)
 
   '@vitest/eslint-plugin@1.3.4(eslint@9.30.1(jiti@2.4.2))(typescript@5.8.3)':
@@ -8225,10 +8225,10 @@ snapshots:
       extsprintf: 1.4.1
     optional: true
 
-  vite-plugin-doubleshot@0.0.18(electron-builder@26.0.12(electron-builder-squirrel-windows@24.13.3(dmg-builder@26.0.12)))(electron@37.2.0)(jiti@2.4.2)(postcss@8.5.6)(tsx@4.19.2)(typescript@5.8.3)(vite@7.0.3(@types/node@22.13.9)(jiti@2.4.2)(tsx@4.19.2)(yaml@2.8.0))(yaml@2.8.0):
+  vite-plugin-doubleshot@0.0.18(electron-builder@26.0.12(electron-builder-squirrel-windows@24.13.3(dmg-builder@26.0.12)))(electron@37.2.0)(jiti@2.4.2)(postcss@8.5.6)(tsx@4.19.2)(typescript@5.8.3)(vite@7.0.4(@types/node@22.13.9)(jiti@2.4.2)(tsx@4.19.2)(yaml@2.8.0))(yaml@2.8.0):
     dependencies:
       '@doubleshot/builder': 0.0.14(electron-builder@26.0.12(electron-builder-squirrel-windows@24.13.3(dmg-builder@26.0.12)))(electron@37.2.0)(jiti@2.4.2)(postcss@8.5.6)(tsx@4.19.2)(typescript@5.8.3)(yaml@2.8.0)
-      vite: 7.0.3(@types/node@22.13.9)(jiti@2.4.2)(tsx@4.19.2)(yaml@2.8.0)
+      vite: 7.0.4(@types/node@22.13.9)(jiti@2.4.2)(tsx@4.19.2)(yaml@2.8.0)
     transitivePeerDependencies:
       - '@microsoft/api-extractor'
       - '@swc/helpers'
@@ -8242,7 +8242,7 @@ snapshots:
       - typescript
       - yaml
 
-  vite@7.0.3(@types/node@22.13.9)(jiti@2.4.2)(tsx@4.19.2)(yaml@2.8.0):
+  vite@7.0.4(@types/node@22.13.9)(jiti@2.4.2)(tsx@4.19.2)(yaml@2.8.0):
     dependencies:
       esbuild: 0.25.0
       fdir: 6.4.6(picomatch@4.0.2)
