@@ -33,7 +33,7 @@
     "simple-git-hooks": "2.13.1",
     "typescript": "5.9.2",
     "vite": "7.1.4",
-    "vite-plugin-doubleshot": "0.0.18",
+    "vite-plugin-doubleshot": "0.0.19",
     "vue-tsc": "3.0.6"
   },
   "pnpm": {
