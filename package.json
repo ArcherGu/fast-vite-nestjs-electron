@@ -34,7 +34,7 @@
     "typescript": "5.9.3",
     "vite": "7.1.9",
     "vite-plugin-doubleshot": "0.0.19",
-    "vue-tsc": "3.1.0"
+    "vue-tsc": "3.1.1"
   },
   "pnpm": {
     "onlyBuiltDependencies": [
