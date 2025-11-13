@@ -10,7 +10,7 @@ importers:
     dependencies:
       '@doubleshot/nest-electron':
         specifier: ^0.2.8
-        version: 0.2.9(@nestjs/common@11.1.8(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/core@11.1.8)(@nestjs/microservices@11.1.8)(electron@39.1.2)(rxjs@7.8.2)
+        version: 0.2.10(@nestjs/common@11.1.8(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/core@11.1.8)(@nestjs/microservices@11.1.8)(electron@39.1.2)(rxjs@7.8.2)
       '@nestjs/common':
         specifier: ^11.1.6
         version: 11.1.8(reflect-metadata@0.2.2)(rxjs@7.8.2)
@@ -230,8 +230,8 @@ packages:
       electron-builder:
         optional: true
 
-  '@doubleshot/nest-electron@0.2.9':
-    resolution: {integrity: sha512-zQzHz4+8c2HSzPydk99GXk13pfX0mxXzznqz8OY/A1fjnoh5r3w/Le1ZuBm29U9eVLAINbx4Dy8OQU0eEeleCw==}
+  '@doubleshot/nest-electron@0.2.10':
+    resolution: {integrity: sha512-4a84qrWfzJZG4LzDojIQMfcxZswOCU26SouA+pj/2bLUYDcElkPf7mqJWElIUsFPLkf/HY1HUupDV7ZA8Pe4uA==}
     peerDependencies:
       '@nestjs/common': '>=8.0.0'
       '@nestjs/core': '>=8.0.0'
@@ -2586,8 +2586,8 @@ packages:
     resolution: {integrity: sha512-7PnF4oN3CvZF23ADhA5wRaYEQpJ8qygSkbtTXWBeXWXmEVRXK+1ITciHWwHhsjv1TmW0MgacIv6hEi5pX5NQdA==}
     engines: {node: '>=10'}
 
-  ip-address@10.0.1:
-    resolution: {integrity: sha512-NWv9YLW4PoW2B7xtzaS3NCot75m6nK7Icdv0o3lfMceJVRfSoQwqD4wEH5rLwoKJwUiZ/rfpiVBhnaF0FK4HoA==}
+  ip-address@10.1.0:
+    resolution: {integrity: sha512-XXADHxXmvT9+CRxhXg56LJovE+bmWnEWB78LB83VZTprKTmaC5QfruXocxzTZ2Kl0DNwKuBdlIhjL8LeY8Sf8Q==}
     engines: {node: '>= 12'}
 
   is-builtin-module@5.0.0:
@@ -2650,8 +2650,8 @@ packages:
     resolution: {integrity: sha512-YKBKVkKhty7s8rxddb40oOkuP0NbaeXrQvLin6QMHL7Ypiy2RW9LwOVrVgZRyOrhQlayMd9t+D8yDy8MKFTSDQ==}
     engines: {node: '>= 18.0.0'}
 
-  isbinaryfile@5.0.6:
-    resolution: {integrity: sha512-I+NmIfBHUl+r2wcDd6JwE9yWje/PIVY/R5/CmV8dXLZd5K+L9X2klAOwfAHNnondLXkbHyTAleQAWonpTJBTtw==}
+  isbinaryfile@5.0.7:
+    resolution: {integrity: sha512-gnWD14Jh3FzS3CPhF0AxNOJ8CxqeblPTADzI38r0wt8ZyQl5edpy75myt08EG2oKvpyiqSqsx+Wkz9vtkbTqYQ==}
     engines: {node: '>= 18.0.0'}
 
   isexe@2.0.0:
@@ -2689,6 +2689,10 @@ packages:
 
   js-yaml@4.1.0:
     resolution: {integrity: sha512-wpxZs9NoxZaJESJGIZTyDEaYpl0FKSA+FB9aJiyemKhMwkxQg63h4T1KJgUGHpTqPDNRcmmYLugrRjJlBtWvRA==}
+    hasBin: true
+
+  js-yaml@4.1.1:
+    resolution: {integrity: sha512-qQKT4zQxXl8lLwBtHMWwaTcGfFOZviOJet3Oy/xmGk2gZH677CJM9EvtfdSkgWcATZhj/55JZ0rmy3myCT5lsA==}
     hasBin: true
 
   jsdoc-type-pratt-parser@4.1.0:
@@ -4248,7 +4252,7 @@ snapshots:
       - typescript
       - yaml
 
-  '@doubleshot/nest-electron@0.2.9(@nestjs/common@11.1.8(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/core@11.1.8)(@nestjs/microservices@11.1.8)(electron@39.1.2)(rxjs@7.8.2)':
+  '@doubleshot/nest-electron@0.2.10(@nestjs/common@11.1.8(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/core@11.1.8)(@nestjs/microservices@11.1.8)(electron@39.1.2)(rxjs@7.8.2)':
     dependencies:
       '@nestjs/common': 11.1.8(reflect-metadata@0.2.2)(rxjs@7.8.2)
       '@nestjs/core': 11.1.8(@nestjs/common@11.1.8(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/microservices@11.1.8)(reflect-metadata@0.2.2)(rxjs@7.8.2)
@@ -5438,8 +5442,8 @@ snapshots:
       fs-extra: 10.1.0
       hosted-git-info: 4.1.0
       is-ci: 3.0.1
-      isbinaryfile: 5.0.6
-      js-yaml: 4.1.0
+      isbinaryfile: 5.0.7
+      js-yaml: 4.1.1
       lazy-val: 1.0.5
       minimatch: 5.1.6
       read-config-file: 6.3.2
@@ -5638,7 +5642,7 @@ snapshots:
       http-proxy-agent: 5.0.0
       https-proxy-agent: 5.0.1
       is-ci: 3.0.1
-      js-yaml: 4.1.0
+      js-yaml: 4.1.1
       source-map-support: 0.5.21
       stat-mode: 1.0.0
       temp-file: 3.4.0
@@ -6974,7 +6978,7 @@ snapshots:
 
   ini@2.0.0: {}
 
-  ip-address@10.0.1: {}
+  ip-address@10.1.0: {}
 
   is-builtin-module@5.0.0:
     dependencies:
@@ -7024,7 +7028,7 @@ snapshots:
 
   isbinaryfile@5.0.4: {}
 
-  isbinaryfile@5.0.6: {}
+  isbinaryfile@5.0.7: {}
 
   isexe@2.0.0: {}
 
@@ -7062,6 +7066,10 @@ snapshots:
   js-tokens@4.0.0: {}
 
   js-yaml@4.1.0:
+    dependencies:
+      argparse: 2.0.1
+
+  js-yaml@4.1.1:
     dependencies:
       argparse: 2.0.1
 
@@ -7885,7 +7893,7 @@ snapshots:
       config-file-ts: 0.2.6
       dotenv: 9.0.2
       dotenv-expand: 5.1.0
-      js-yaml: 4.1.0
+      js-yaml: 4.1.1
       json5: 2.2.3
       lazy-val: 1.0.5
 
@@ -8101,7 +8109,7 @@ snapshots:
 
   socks@2.8.7:
     dependencies:
-      ip-address: 10.0.1
+      ip-address: 10.1.0
       smart-buffer: 4.2.0
 
   source-map-js@1.2.1: {}
