@@ -1,10 +1,12 @@
+import type { IpcRenderer } from 'electron'
+import type electron from './electron'
+
 declare global {
   interface Window {
     electron: {
-      sendMsg: (msg: string) => Promise<string>
-      onReplyMsg: (cb: (msg: string) => any) => void
+      [K in keyof typeof electron]: typeof electron[K] extends (...args: infer Args) => IpcRenderer
+        ? (...args: Args) => void
+        : typeof electron[K]
     }
   }
 }
-
-export { }
