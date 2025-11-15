@@ -1,10 +1,13 @@
-declare global {
-  interface Window {
-    electron: {
-      sendMsg: (msg: string) => Promise<string>
-      onReplyMsg: (cb: (msg: string) => any) => void
-    }
-  }
+import type electron from './electron'
+
+type IpcRendererAsVoid<T> = {
+  [K in keyof T]: T[K] extends (...args: infer Args) => IpcRenderer
+    ? (...args: Args) => void
+    : T[K]
 }
 
-export { }
+declare global {
+  interface Window {
+    electron: IpcRendererAsVoid<typeof electron>
+  }
+}
