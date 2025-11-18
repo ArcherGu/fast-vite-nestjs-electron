@@ -37,18 +37,18 @@ This is a template based on my repo: [fast-vite-electron](https://github.com/Arc
 
   ```bash
   # install dependencies
-  yarn # npm install
+  pnpm install
 
   # run in developer mode
-  yarn dev # npm run dev
+  pnpm dev
 
   # build
-  yarn build # npm run build
+  pnpm build
   ```
 
 ## Note for PNPM
 
-In order to use with `pnpm`, you'll need to adjust your `.npmrc` to use any one the following approaches in order for your dependencies to be bundled correctly (ref: [#6389](https://github.com/electron-userland/electron-builder/issues/6289#issuecomment-1042620422)):
+This project requires `pnpm` as the package manager. In order for your dependencies to be bundled correctly, you'll need to adjust your `.npmrc` to use any one the following approaches (ref: [#6389](https://github.com/electron-userland/electron-builder/issues/6289#issuecomment-1042620422)):
 
 ```
 node-linker=hoisted
