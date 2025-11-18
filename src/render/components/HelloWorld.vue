@@ -6,6 +6,7 @@ const { sendMsg: sendMsgToMainProcess, onReplyMsg } = window.electron
 const log = ref('')
 const msg = ref('')
 const isSending = ref(false)
+const textareaRef = ref<HTMLTextAreaElement | null>(null)
 
 async function sendMsg() {
   if (!msg.value.trim() || isSending.value)
@@ -18,11 +19,13 @@ async function sendMsg() {
     log.value += `[main]: ${data}\n`
     msg.value = ''
 
-    // Auto scroll to bottom
-    const textarea = document.querySelector('.log-output') as HTMLTextAreaElement
-    if (textarea) {
-      textarea.scrollTop = textarea.scrollHeight
-    }
+    setTimeout(() => {
+      // Auto scroll to bottom
+      const textarea = textareaRef.value
+      if (textarea) {
+        textarea.scrollTop = textarea.scrollHeight
+      }
+    }, 100)
   }
   catch (error) {
     console.error(error)
@@ -55,7 +58,10 @@ onReplyMsg((msg: string) => {
       <div class="card-body">
         <div class="log-section">
           <label class="label">Message Log</label>
-          <textarea v-model="log" class="log-output" placeholder="Message logs will appear here..." readonly />
+          <textarea
+            ref="textareaRef" v-model="log" class="log-output" placeholder="Message logs will appear here..."
+            readonly
+          />
           <div class="log-actions">
             <p class="card-description">
               Communicate with the main process
@@ -143,6 +149,7 @@ onReplyMsg((msg: string) => {
   resize: vertical;
   transition: all 0.2s ease;
   outline: none;
+  scroll-behavior: smooth;
 }
 
 .log-output:focus {
