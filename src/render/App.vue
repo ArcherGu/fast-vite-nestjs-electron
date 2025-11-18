@@ -8,11 +8,13 @@ import HelloWorld from './components/HelloWorld.vue'
       <div class="logo-container">
         <img alt="logo" src="./assets/logo.png" class="logo">
       </div>
-      <p class="app-subtitle">Modern desktop application built with Vite + NestJS + Electron</p>
+      <p class="app-subtitle">
+        Modern desktop application built with Vite + NestJS + Electron
+      </p>
     </header>
 
     <main class="app-main">
-      <HelloWorld title="Vite + Electron & esbuild" />
+      <HelloWorld />
     </main>
 
     <footer class="app-footer">
@@ -45,9 +47,9 @@ import HelloWorld from './components/HelloWorld.vue'
 
 #app {
   min-height: 100vh;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family:
+    -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
+    'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background: var(--background);
@@ -79,7 +81,9 @@ import HelloWorld from './components/HelloWorld.vue'
   height: auto;
   border-radius: 16px;
   box-shadow: var(--shadow-xl);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
   background-color: white;
 }
 
@@ -99,15 +103,15 @@ import HelloWorld from './components/HelloWorld.vue'
 }
 
 .tech-name.vite {
-  color: #646CFF;
+  color: #646cff;
 }
 
 .tech-name.nestjs {
-  color: #E0234E;
+  color: #e0234e;
 }
 
 .tech-name.electron {
-  color: #47848F;
+  color: #47848f;
 }
 
 .app-main {

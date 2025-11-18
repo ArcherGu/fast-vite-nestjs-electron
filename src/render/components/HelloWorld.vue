@@ -1,13 +1,6 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 
-const props = defineProps({
-  title: {
-    type: String,
-    default: 'Vite + Electron & Esbuild',
-  },
-})
-
 const { sendMsg: sendMsgToMainProcess, onReplyMsg } = window.electron
 
 const log = ref('')
@@ -15,7 +8,8 @@ const msg = ref('')
 const isSending = ref(false)
 
 async function sendMsg() {
-  if (!msg.value.trim() || isSending.value) return
+  if (!msg.value.trim() || isSending.value)
+    return
 
   try {
     isSending.value = true
@@ -63,8 +57,10 @@ onReplyMsg((msg: string) => {
           <label class="label">Message Log</label>
           <textarea v-model="log" class="log-output" placeholder="Message logs will appear here..." readonly />
           <div class="log-actions">
-            <p class="card-description">Communicate with the main process</p>
-            <button class="btn btn-secondary btn-sm" @click="log = ''" :disabled="!log">
+            <p class="card-description">
+              Communicate with the main process
+            </p>
+            <button class="btn btn-secondary btn-sm" :disabled="!log" @click="log = ''">
               Clear Log
             </button>
           </div>
@@ -74,8 +70,8 @@ onReplyMsg((msg: string) => {
           <label class="label">Send Message</label>
           <div class="input-group">
             <input v-model="msg" type="text" class="input" placeholder="Enter message to send to main process..."
-              @keypress="handleKeyPress" :disabled="isSending">
-            <button class="btn btn-primary" @click="sendMsg" :disabled="!msg.trim() || isSending">
+              :disabled="isSending" @keypress="handleKeyPress">
+            <button class="btn btn-primary" :disabled="!msg.trim() || isSending" @click="sendMsg">
               <span v-if="!isSending">Send</span>
               <span v-else>Sending...</span>
             </button>
