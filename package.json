@@ -10,7 +10,7 @@
     "build": "rimraf dist && vite build",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
-    "postinstall": "electron-builder install-app-deps"
+    "postinstall": "npx simple-git-hooks && electron-builder install-app-deps"
   },
   "dependencies": {
     "@doubleshot/nest-electron": "^0.2.8",

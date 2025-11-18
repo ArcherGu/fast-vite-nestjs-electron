@@ -69,8 +69,10 @@ onReplyMsg((msg: string) => {
         <div class="input-section">
           <label class="label">Send Message</label>
           <div class="input-group">
-            <input v-model="msg" type="text" class="input" placeholder="Enter message to send to main process..."
-              :disabled="isSending" @keypress="handleKeyPress">
+            <input
+              v-model="msg" type="text" class="input" placeholder="Enter message to send to main process..."
+              :disabled="isSending" @keypress="handleKeyPress"
+            >
             <button class="btn btn-primary" :disabled="!msg.trim() || isSending" @click="sendMsg">
               <span v-if="!isSending">Send</span>
               <span v-else>Sending...</span>
