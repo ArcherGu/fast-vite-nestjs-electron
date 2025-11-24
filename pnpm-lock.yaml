@@ -9,16 +9,16 @@ importers:
   .:
     dependencies:
       '@doubleshot/nest-electron':
-        specifier: ^0.2.8
+        specifier: ^0.2.10
         version: 0.2.10(@nestjs/common@11.1.9(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/core@11.1.9)(@nestjs/microservices@11.1.9)(electron@39.2.3)(rxjs@7.8.2)
       '@nestjs/common':
-        specifier: ^11.1.6
+        specifier: ^11.1.9
         version: 11.1.9(reflect-metadata@0.2.2)(rxjs@7.8.2)
       '@nestjs/core':
-        specifier: ^11.1.6
+        specifier: ^11.1.9
         version: 11.1.9(@nestjs/common@11.1.9(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/microservices@11.1.9)(reflect-metadata@0.2.2)(rxjs@7.8.2)
       '@nestjs/microservices':
-        specifier: ^11.1.6
+        specifier: ^11.1.9
         version: 11.1.9(@nestjs/common@11.1.9(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/core@11.1.9)(reflect-metadata@0.2.2)(rxjs@7.8.2)
       reflect-metadata:
         specifier: ^0.2.2
@@ -27,11 +27,11 @@ importers:
         specifier: ^7.8.2
         version: 7.8.2
       vue:
-        specifier: ^3.5.19
+        specifier: ^3.5.25
         version: 3.5.25(typescript@5.9.3)
     devDependencies:
       '@lightwing/eslint-config':
-        specifier: ^1.0.126
+        specifier: ^1.0.132
         version: 1.0.132(@vue/compiler-sfc@3.5.25)(eslint@9.39.1(jiti@2.6.1))(typescript@5.9.3)
       '@vitejs/plugin-vue':
         specifier: 6.0.2
