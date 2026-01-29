@@ -10,7 +10,7 @@ importers:
     dependencies:
       '@doubleshot/nest-electron':
         specifier: ^0.2.10
-        version: 0.2.11(@nestjs/common@11.1.12(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/core@11.1.12)(@nestjs/microservices@11.1.12)(electron@40.0.0)(rxjs@7.8.2)
+        version: 0.2.11(@nestjs/common@11.1.12(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/core@11.1.12)(@nestjs/microservices@11.1.12)(electron@40.1.0)(rxjs@7.8.2)
       '@nestjs/common':
         specifier: ^11.1.9
         version: 11.1.12(reflect-metadata@0.2.2)(rxjs@7.8.2)
@@ -40,8 +40,8 @@ importers:
         specifier: 3.5.27
         version: 3.5.27
       electron:
-        specifier: 40.0.0
-        version: 40.0.0
+        specifier: 40.1.0
+        version: 40.1.0
       electron-builder:
         specifier: 26.4.0
         version: 26.4.0(electron-builder-squirrel-windows@24.13.3(dmg-builder@26.4.0))
@@ -65,7 +65,7 @@ importers:
         version: 7.3.1(@types/node@24.10.9)(jiti@2.6.1)(tsx@4.19.2)(yaml@2.8.2)
       vite-plugin-doubleshot:
         specifier: 0.0.20
-        version: 0.0.20(@swc/core@1.11.4)(electron-builder@26.4.0(electron-builder-squirrel-windows@24.13.3(dmg-builder@26.4.0)))(electron@40.0.0)(esbuild@0.27.0)(jiti@2.6.1)(postcss@8.5.6)(tsx@4.19.2)(typescript@5.9.3)(vite@7.3.1(@types/node@24.10.9)(jiti@2.6.1)(tsx@4.19.2)(yaml@2.8.2))(yaml@2.8.2)
+        version: 0.0.20(@swc/core@1.11.4)(electron-builder@26.4.0(electron-builder-squirrel-windows@24.13.3(dmg-builder@26.4.0)))(electron@40.1.0)(esbuild@0.27.0)(jiti@2.6.1)(postcss@8.5.6)(tsx@4.19.2)(typescript@5.9.3)(vite@7.3.1(@types/node@24.10.9)(jiti@2.6.1)(tsx@4.19.2)(yaml@2.8.2))(yaml@2.8.2)
       vue-tsc:
         specifier: 3.2.4
         version: 3.2.4(typescript@5.9.3)
@@ -972,56 +972,67 @@ packages:
     resolution: {integrity: sha512-EtP8aquZ0xQg0ETFcxUbU71MZlHaw9MChwrQzatiE8U/bvi5uv/oChExXC4mWhjiqK7azGJBqU0tt5H123SzVA==}
     cpu: [arm]
     os: [linux]
+    libc: [glibc]
 
   '@rollup/rollup-linux-arm-musleabihf@4.46.2':
     resolution: {integrity: sha512-qO7F7U3u1nfxYRPM8HqFtLd+raev2K137dsV08q/LRKRLEc7RsiDWihUnrINdsWQxPR9jqZ8DIIZ1zJJAm5PjQ==}
     cpu: [arm]
     os: [linux]
+    libc: [musl]
 
   '@rollup/rollup-linux-arm64-gnu@4.46.2':
     resolution: {integrity: sha512-3dRaqLfcOXYsfvw5xMrxAk9Lb1f395gkoBYzSFcc/scgRFptRXL9DOaDpMiehf9CO8ZDRJW2z45b6fpU5nwjng==}
     cpu: [arm64]
     os: [linux]
+    libc: [glibc]
 
   '@rollup/rollup-linux-arm64-musl@4.46.2':
     resolution: {integrity: sha512-fhHFTutA7SM+IrR6lIfiHskxmpmPTJUXpWIsBXpeEwNgZzZZSg/q4i6FU4J8qOGyJ0TR+wXBwx/L7Ho9z0+uDg==}
     cpu: [arm64]
     os: [linux]
+    libc: [musl]
 
   '@rollup/rollup-linux-loongarch64-gnu@4.46.2':
     resolution: {integrity: sha512-i7wfGFXu8x4+FRqPymzjD+Hyav8l95UIZ773j7J7zRYc3Xsxy2wIn4x+llpunexXe6laaO72iEjeeGyUFmjKeA==}
     cpu: [loong64]
     os: [linux]
+    libc: [glibc]
 
   '@rollup/rollup-linux-ppc64-gnu@4.46.2':
     resolution: {integrity: sha512-B/l0dFcHVUnqcGZWKcWBSV2PF01YUt0Rvlurci5P+neqY/yMKchGU8ullZvIv5e8Y1C6wOn+U03mrDylP5q9Yw==}
     cpu: [ppc64]
     os: [linux]
+    libc: [glibc]
 
   '@rollup/rollup-linux-riscv64-gnu@4.46.2':
     resolution: {integrity: sha512-32k4ENb5ygtkMwPMucAb8MtV8olkPT03oiTxJbgkJa7lJ7dZMr0GCFJlyvy+K8iq7F/iuOr41ZdUHaOiqyR3iQ==}
     cpu: [riscv64]
     os: [linux]
+    libc: [glibc]
 
   '@rollup/rollup-linux-riscv64-musl@4.46.2':
     resolution: {integrity: sha512-t5B2loThlFEauloaQkZg9gxV05BYeITLvLkWOkRXogP4qHXLkWSbSHKM9S6H1schf/0YGP/qNKtiISlxvfmmZw==}
     cpu: [riscv64]
     os: [linux]
+    libc: [musl]
 
   '@rollup/rollup-linux-s390x-gnu@4.46.2':
     resolution: {integrity: sha512-YKjekwTEKgbB7n17gmODSmJVUIvj8CX7q5442/CK80L8nqOUbMtf8b01QkG3jOqyr1rotrAnW6B/qiHwfcuWQA==}
     cpu: [s390x]
     os: [linux]
+    libc: [glibc]
 
   '@rollup/rollup-linux-x64-gnu@4.46.2':
     resolution: {integrity: sha512-Jj5a9RUoe5ra+MEyERkDKLwTXVu6s3aACP51nkfnK9wJTraCC8IMe3snOfALkrjTYd2G1ViE1hICj0fZ7ALBPA==}
     cpu: [x64]
     os: [linux]
+    libc: [glibc]
 
   '@rollup/rollup-linux-x64-musl@4.46.2':
     resolution: {integrity: sha512-7kX69DIrBeD7yNp4A5b81izs8BqoZkCIaxQaOpumcJ1S/kmqNFjPhDu1LHeVXv0SexfHQv5cqHsxLOjETuqDuA==}
     cpu: [x64]
     os: [linux]
+    libc: [musl]
 
   '@rollup/rollup-win32-arm64-msvc@4.46.2':
     resolution: {integrity: sha512-wiJWMIpeaak/jsbaq2HMh/rzZxHVW1rU6coyeNNpMwk5isiPjSTx0a4YLSlYDwBH/WBvLz+EtsNqQScZTLJy3g==}
@@ -1078,24 +1089,28 @@ packages:
     engines: {node: '>=10'}
     cpu: [arm64]
     os: [linux]
+    libc: [glibc]
 
   '@swc/core-linux-arm64-musl@1.11.4':
     resolution: {integrity: sha512-XI+gOgcuSanejbAC5QXKTjNA3GUJi7bzHmeJbNhKpX9d349RdVwan0k9okHmhMBY7BywAg3LK0ovF9PmOLgMHg==}
     engines: {node: '>=10'}
     cpu: [arm64]
     os: [linux]
+    libc: [musl]
 
   '@swc/core-linux-x64-gnu@1.11.4':
     resolution: {integrity: sha512-wyD6noaCPFayKOvl9mTxuiQoEULAagGuO0od2VkW7h4HvlgpOAZNekZYX73WEP/b+WuePNHurZ9KGpom43IzmA==}
     engines: {node: '>=10'}
     cpu: [x64]
     os: [linux]
+    libc: [glibc]
 
   '@swc/core-linux-x64-musl@1.11.4':
     resolution: {integrity: sha512-e2vG9gUF1BRX0BWqSEHop6u14l5BtV3VS2Pmr+oquc0Ycs/zj81xhYc3ML4ByK5OxDkAaKBWryAOKTLaJA/DVg==}
     engines: {node: '>=10'}
     cpu: [x64]
     os: [linux]
+    libc: [musl]
 
   '@swc/core-win32-arm64-msvc@1.11.4':
     resolution: {integrity: sha512-rm51iljNqjCA/41gxYameuyjX1ENaTlvdxmaoPPYeUDt6hfypG93IxMJJCewaeHN9XfNxqZU7d4cupNqk+8nng==}
@@ -1171,9 +1186,6 @@ packages:
 
   '@types/ms@0.7.34':
     resolution: {integrity: sha512-nG96G3Wp6acyAgJqGasjODb+acrI7KltPiRxzHPXnP3NgI28bpQDRv53olbqGXbfcgF5aiiHmO3xpwEpS5Ld9g==}
-
-  '@types/node@22.13.9':
-    resolution: {integrity: sha512-acBjXdRJ3A6Pb3tqnw9HZmyR3Fiol3aGxRCK1x3d+6CDAMjl7I649wpSd+yNURCjbOUGu9tqtLKnTGxmK6CyGw==}
 
   '@types/node@24.10.9':
     resolution: {integrity: sha512-ne4A0IpG3+2ETuREInjPNhUGis1SFjv1d5asp8MzEAGtOZeTeHVDOYqOgqfhvseqg/iXty2hjBf1zAOb7RNiNw==}
@@ -1862,8 +1874,8 @@ packages:
   electron-to-chromium@1.5.267:
     resolution: {integrity: sha512-0Drusm6MVRXSOJpGbaSVgcQsuB4hEkMpHXaVstcPmhu5LIedxs1xNK/nIxmQIU/RPC0+1/o0AVZfBTkTNJOdUw==}
 
-  electron@40.0.0:
-    resolution: {integrity: sha512-UyBy5yJ0/wm4gNugCtNPjvddjAknMTuXR2aCHioXicH7aKRKGDBPp4xqTEi/doVcB3R+MN3wfU9o8d/9pwgK2A==}
+  electron@40.1.0:
+    resolution: {integrity: sha512-2j/kvw7uF0H1PnzYBzw2k2Q6q16J8ToKrtQzZfsAoXbbMY0l5gQi2DLOauIZLzwp4O01n8Wt/74JhSRwG0yj9A==}
     engines: {node: '>= 12.20.55'}
     hasBin: true
 
@@ -3764,9 +3776,6 @@ packages:
   unconfig@7.4.2:
     resolution: {integrity: sha512-nrMlWRQ1xdTjSnSUqvYqJzbTBFugoqHobQj58B2bc8qxHKBBHMNNsWQFP3Cd3/JZK907voM2geYPWqD4VK3MPQ==}
 
-  undici-types@6.20.0:
-    resolution: {integrity: sha512-Ny6QZ2Nju20vw1SRHe3d9jVu6gJ+4e3+MMpqu7pqE5HT6WsTSlce++GQmK5UXS8mzV8DSYHrQH+Xrf2jVcuKNg==}
-
   undici-types@7.16.0:
     resolution: {integrity: sha512-Zz+aZWSj8LE6zoxD+xrjh4VfkIG8Ya6LvYkZqtUQGJPZjYl53ypCaUwWqo7eI0x66KBGeRo+mlBEkMSeSZ38Nw==}
 
@@ -4167,7 +4176,7 @@ snapshots:
       ajv: 6.12.6
       ajv-keywords: 3.5.2(ajv@6.12.6)
 
-  '@doubleshot/builder@0.0.16(@swc/core@1.11.4)(electron-builder@26.4.0(electron-builder-squirrel-windows@24.13.3(dmg-builder@26.4.0)))(electron@40.0.0)(esbuild@0.27.0)(jiti@2.6.1)(postcss@8.5.6)(tsx@4.19.2)(typescript@5.9.3)(yaml@2.8.2)':
+  '@doubleshot/builder@0.0.16(@swc/core@1.11.4)(electron-builder@26.4.0(electron-builder-squirrel-windows@24.13.3(dmg-builder@26.4.0)))(electron@40.1.0)(esbuild@0.27.0)(jiti@2.6.1)(postcss@8.5.6)(tsx@4.19.2)(typescript@5.9.3)(yaml@2.8.2)':
     dependencies:
       bundle-require: 5.1.0(esbuild@0.27.0)
       cac: 6.7.14
@@ -4178,7 +4187,7 @@ snapshots:
       tsup: 8.5.1(@swc/core@1.11.4)(jiti@2.6.1)(postcss@8.5.6)(tsx@4.19.2)(typescript@5.9.3)(yaml@2.8.2)
       wait-on: 9.0.3
     optionalDependencies:
-      electron: 40.0.0
+      electron: 40.1.0
       electron-builder: 26.4.0(electron-builder-squirrel-windows@24.13.3(dmg-builder@26.4.0))
     transitivePeerDependencies:
       - '@microsoft/api-extractor'
@@ -4192,12 +4201,12 @@ snapshots:
       - typescript
       - yaml
 
-  '@doubleshot/nest-electron@0.2.11(@nestjs/common@11.1.12(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/core@11.1.12)(@nestjs/microservices@11.1.12)(electron@40.0.0)(rxjs@7.8.2)':
+  '@doubleshot/nest-electron@0.2.11(@nestjs/common@11.1.12(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/core@11.1.12)(@nestjs/microservices@11.1.12)(electron@40.1.0)(rxjs@7.8.2)':
     dependencies:
       '@nestjs/common': 11.1.12(reflect-metadata@0.2.2)(rxjs@7.8.2)
       '@nestjs/core': 11.1.12(@nestjs/common@11.1.12(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/microservices@11.1.12)(reflect-metadata@0.2.2)(rxjs@7.8.2)
       '@nestjs/microservices': 11.1.12(@nestjs/common@11.1.12(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/core@11.1.12)(reflect-metadata@0.2.2)(rxjs@7.8.2)
-      electron: 40.0.0
+      electron: 40.1.0
       rxjs: 7.8.2
 
   '@dprint/formatter@0.5.1': {}
@@ -5013,7 +5022,7 @@ snapshots:
 
   '@types/fs-extra@9.0.13':
     dependencies:
-      '@types/node': 22.13.9
+      '@types/node': 24.10.9
 
   '@types/http-cache-semantics@4.0.1': {}
 
@@ -5029,17 +5038,13 @@ snapshots:
 
   '@types/ms@0.7.34': {}
 
-  '@types/node@22.13.9':
-    dependencies:
-      undici-types: 6.20.0
-
   '@types/node@24.10.9':
     dependencies:
       undici-types: 7.16.0
 
   '@types/plist@3.0.5':
     dependencies:
-      '@types/node': 22.13.9
+      '@types/node': 24.10.9
       xmlbuilder: 15.1.1
     optional: true
 
@@ -5929,7 +5934,7 @@ snapshots:
 
   electron-to-chromium@1.5.267: {}
 
-  electron@40.0.0:
+  electron@40.1.0:
     dependencies:
       '@electron/get': 2.0.2
       '@types/node': 24.10.9
@@ -8212,8 +8217,6 @@ snapshots:
       quansync: 1.0.0
       unconfig-core: 7.4.2
 
-  undici-types@6.20.0: {}
-
   undici-types@7.16.0: {}
 
   unique-filename@4.0.0:
@@ -8268,9 +8271,9 @@ snapshots:
       extsprintf: 1.4.1
     optional: true
 
-  vite-plugin-doubleshot@0.0.20(@swc/core@1.11.4)(electron-builder@26.4.0(electron-builder-squirrel-windows@24.13.3(dmg-builder@26.4.0)))(electron@40.0.0)(esbuild@0.27.0)(jiti@2.6.1)(postcss@8.5.6)(tsx@4.19.2)(typescript@5.9.3)(vite@7.3.1(@types/node@24.10.9)(jiti@2.6.1)(tsx@4.19.2)(yaml@2.8.2))(yaml@2.8.2):
+  vite-plugin-doubleshot@0.0.20(@swc/core@1.11.4)(electron-builder@26.4.0(electron-builder-squirrel-windows@24.13.3(dmg-builder@26.4.0)))(electron@40.1.0)(esbuild@0.27.0)(jiti@2.6.1)(postcss@8.5.6)(tsx@4.19.2)(typescript@5.9.3)(vite@7.3.1(@types/node@24.10.9)(jiti@2.6.1)(tsx@4.19.2)(yaml@2.8.2))(yaml@2.8.2):
     dependencies:
-      '@doubleshot/builder': 0.0.16(@swc/core@1.11.4)(electron-builder@26.4.0(electron-builder-squirrel-windows@24.13.3(dmg-builder@26.4.0)))(electron@40.0.0)(esbuild@0.27.0)(jiti@2.6.1)(postcss@8.5.6)(tsx@4.19.2)(typescript@5.9.3)(yaml@2.8.2)
+      '@doubleshot/builder': 0.0.16(@swc/core@1.11.4)(electron-builder@26.4.0(electron-builder-squirrel-windows@24.13.3(dmg-builder@26.4.0)))(electron@40.1.0)(esbuild@0.27.0)(jiti@2.6.1)(postcss@8.5.6)(tsx@4.19.2)(typescript@5.9.3)(yaml@2.8.2)
       vite: 7.3.1(@types/node@24.10.9)(jiti@2.6.1)(tsx@4.19.2)(yaml@2.8.2)
     transitivePeerDependencies:
       - '@microsoft/api-extractor'
