@@ -10,7 +10,7 @@ importers:
     dependencies:
       '@doubleshot/nest-electron':
         specifier: ^0.2.11
-        version: 0.2.12(@nestjs/common@11.1.17(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/core@11.1.17)(@nestjs/microservices@11.1.17)(electron@41.0.3)(rxjs@7.8.2)
+        version: 0.2.12(@nestjs/common@11.1.17(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/core@11.1.17)(@nestjs/microservices@11.1.17)(electron@41.0.4)(rxjs@7.8.2)
       '@nestjs/common':
         specifier: ^11.1.14
         version: 11.1.17(reflect-metadata@0.2.2)(rxjs@7.8.2)
@@ -40,8 +40,8 @@ importers:
         specifier: 3.5.30
         version: 3.5.30
       electron:
-        specifier: 41.0.3
-        version: 41.0.3
+        specifier: 41.0.4
+        version: 41.0.4
       electron-builder:
         specifier: 26.8.1
         version: 26.8.1(electron-builder-squirrel-windows@26.8.1(dmg-builder@26.8.1))
@@ -65,7 +65,7 @@ importers:
         version: 8.0.2(@types/node@24.10.9)(esbuild@0.27.0)(jiti@2.6.1)(tsx@4.19.2)(yaml@2.8.3)
       vite-plugin-doubleshot:
         specifier: 0.0.21
-        version: 0.0.21(@swc/core@1.11.4)(electron-builder@26.8.1(electron-builder-squirrel-windows@26.8.1(dmg-builder@26.8.1)))(electron@41.0.3)(esbuild@0.27.0)(jiti@2.6.1)(postcss@8.5.8)(tsx@4.19.2)(typescript@6.0.2)(vite@8.0.2(@types/node@24.10.9)(esbuild@0.27.0)(jiti@2.6.1)(tsx@4.19.2)(yaml@2.8.3))(yaml@2.8.3)
+        version: 0.0.21(@swc/core@1.11.4)(electron-builder@26.8.1(electron-builder-squirrel-windows@26.8.1(dmg-builder@26.8.1)))(electron@41.0.4)(esbuild@0.27.0)(jiti@2.6.1)(postcss@8.5.8)(tsx@4.19.2)(typescript@6.0.2)(vite@8.0.2(@types/node@24.10.9)(esbuild@0.27.0)(jiti@2.6.1)(tsx@4.19.2)(yaml@2.8.3))(yaml@2.8.3)
       vue-tsc:
         specifier: 3.2.6
         version: 3.2.6(typescript@6.0.2)
@@ -2082,8 +2082,8 @@ packages:
     resolution: {integrity: sha512-bO3y10YikuUwUuDUQRM4KfwNkKhnpVO7IPdbsrejwN9/AABJzzTQ4GeHwyzNSrVO+tEH3/Np255a3sVZpZDjvg==}
     engines: {node: '>=8.0.0'}
 
-  electron@41.0.3:
-    resolution: {integrity: sha512-IDjx8liW1q+r7+MOip5W1Eo1eMwJzVObmYrd9yz2dPCkS7XlgLq3qPVMR80TpiROFp73iY30kTzMdpA6fEVs3A==}
+  electron@41.0.4:
+    resolution: {integrity: sha512-rO08CxnAsAkKPFj3OZnxFkKrlnpSL3OCOewMDj5kaohVo++7e8hIT5Sl+tNl9WkNKiLvfZSW180ueA9s5zh9dg==}
     engines: {node: '>= 12.20.55'}
     hasBin: true
 
@@ -4366,7 +4366,7 @@ snapshots:
       ajv: 6.14.0
       ajv-keywords: 3.5.2(ajv@6.14.0)
 
-  '@doubleshot/builder@0.0.17(@swc/core@1.11.4)(electron-builder@26.8.1(electron-builder-squirrel-windows@26.8.1(dmg-builder@26.8.1)))(electron@41.0.3)(esbuild@0.27.0)(jiti@2.6.1)(postcss@8.5.8)(tsx@4.19.2)(typescript@6.0.2)(yaml@2.8.3)':
+  '@doubleshot/builder@0.0.17(@swc/core@1.11.4)(electron-builder@26.8.1(electron-builder-squirrel-windows@26.8.1(dmg-builder@26.8.1)))(electron@41.0.4)(esbuild@0.27.0)(jiti@2.6.1)(postcss@8.5.8)(tsx@4.19.2)(typescript@6.0.2)(yaml@2.8.3)':
     dependencies:
       bundle-require: 5.1.0(esbuild@0.27.0)
       cac: 7.0.0
@@ -4377,7 +4377,7 @@ snapshots:
       tsup: 8.5.1(@swc/core@1.11.4)(jiti@2.6.1)(postcss@8.5.8)(tsx@4.19.2)(typescript@6.0.2)(yaml@2.8.3)
       wait-on: 9.0.4
     optionalDependencies:
-      electron: 41.0.3
+      electron: 41.0.4
       electron-builder: 26.8.1(electron-builder-squirrel-windows@26.8.1(dmg-builder@26.8.1))
     transitivePeerDependencies:
       - '@microsoft/api-extractor'
@@ -4391,12 +4391,12 @@ snapshots:
       - typescript
       - yaml
 
-  '@doubleshot/nest-electron@0.2.12(@nestjs/common@11.1.17(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/core@11.1.17)(@nestjs/microservices@11.1.17)(electron@41.0.3)(rxjs@7.8.2)':
+  '@doubleshot/nest-electron@0.2.12(@nestjs/common@11.1.17(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/core@11.1.17)(@nestjs/microservices@11.1.17)(electron@41.0.4)(rxjs@7.8.2)':
     dependencies:
       '@nestjs/common': 11.1.17(reflect-metadata@0.2.2)(rxjs@7.8.2)
       '@nestjs/core': 11.1.17(@nestjs/common@11.1.17(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/microservices@11.1.17)(reflect-metadata@0.2.2)(rxjs@7.8.2)
       '@nestjs/microservices': 11.1.17(@nestjs/common@11.1.17(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/core@11.1.17)(reflect-metadata@0.2.2)(rxjs@7.8.2)
-      electron: 41.0.3
+      electron: 41.0.4
       rxjs: 7.8.2
 
   '@dprint/formatter@0.5.1': {}
@@ -5394,8 +5394,8 @@ snapshots:
 
   '@typescript-eslint/project-service@8.56.1(typescript@6.0.2)':
     dependencies:
-      '@typescript-eslint/tsconfig-utils': 8.56.1(typescript@6.0.2)
-      '@typescript-eslint/types': 8.56.1
+      '@typescript-eslint/tsconfig-utils': 8.57.2(typescript@6.0.2)
+      '@typescript-eslint/types': 8.57.2
       debug: 4.4.3
       typescript: 6.0.2
     transitivePeerDependencies:
@@ -6157,7 +6157,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  electron@41.0.3:
+  electron@41.0.4:
     dependencies:
       '@electron/get': 2.0.2
       '@types/node': 24.10.9
@@ -8479,9 +8479,9 @@ snapshots:
       extsprintf: 1.4.1
     optional: true
 
-  vite-plugin-doubleshot@0.0.21(@swc/core@1.11.4)(electron-builder@26.8.1(electron-builder-squirrel-windows@26.8.1(dmg-builder@26.8.1)))(electron@41.0.3)(esbuild@0.27.0)(jiti@2.6.1)(postcss@8.5.8)(tsx@4.19.2)(typescript@6.0.2)(vite@8.0.2(@types/node@24.10.9)(esbuild@0.27.0)(jiti@2.6.1)(tsx@4.19.2)(yaml@2.8.3))(yaml@2.8.3):
+  vite-plugin-doubleshot@0.0.21(@swc/core@1.11.4)(electron-builder@26.8.1(electron-builder-squirrel-windows@26.8.1(dmg-builder@26.8.1)))(electron@41.0.4)(esbuild@0.27.0)(jiti@2.6.1)(postcss@8.5.8)(tsx@4.19.2)(typescript@6.0.2)(vite@8.0.2(@types/node@24.10.9)(esbuild@0.27.0)(jiti@2.6.1)(tsx@4.19.2)(yaml@2.8.3))(yaml@2.8.3):
     dependencies:
-      '@doubleshot/builder': 0.0.17(@swc/core@1.11.4)(electron-builder@26.8.1(electron-builder-squirrel-windows@26.8.1(dmg-builder@26.8.1)))(electron@41.0.3)(esbuild@0.27.0)(jiti@2.6.1)(postcss@8.5.8)(tsx@4.19.2)(typescript@6.0.2)(yaml@2.8.3)
+      '@doubleshot/builder': 0.0.17(@swc/core@1.11.4)(electron-builder@26.8.1(electron-builder-squirrel-windows@26.8.1(dmg-builder@26.8.1)))(electron@41.0.4)(esbuild@0.27.0)(jiti@2.6.1)(postcss@8.5.8)(tsx@4.19.2)(typescript@6.0.2)(yaml@2.8.3)
       vite: 8.0.2(@types/node@24.10.9)(esbuild@0.27.0)(jiti@2.6.1)(tsx@4.19.2)(yaml@2.8.3)
     transitivePeerDependencies:
       - '@microsoft/api-extractor'
