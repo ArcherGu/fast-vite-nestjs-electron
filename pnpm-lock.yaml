@@ -9,16 +9,16 @@ importers:
   .:
     dependencies:
       '@doubleshot/nest-electron':
-        specifier: ^0.2.11
+        specifier: ^0.2.13
         version: 0.2.13(@nestjs/common@11.1.18(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/core@11.1.18)(@nestjs/microservices@11.1.18)(electron@41.2.0)(rxjs@7.8.2)
       '@nestjs/common':
-        specifier: ^11.1.14
+        specifier: ^11.1.18
         version: 11.1.18(reflect-metadata@0.2.2)(rxjs@7.8.2)
       '@nestjs/core':
-        specifier: ^11.1.14
+        specifier: ^11.1.18
         version: 11.1.18(@nestjs/common@11.1.18(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/microservices@11.1.18)(reflect-metadata@0.2.2)(rxjs@7.8.2)
       '@nestjs/microservices':
-        specifier: ^11.1.14
+        specifier: ^11.1.18
         version: 11.1.18(@nestjs/common@11.1.18(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/core@11.1.18)(reflect-metadata@0.2.2)(rxjs@7.8.2)
       reflect-metadata:
         specifier: ^0.2.2
@@ -27,11 +27,11 @@ importers:
         specifier: ^7.8.2
         version: 7.8.2
       vue:
-        specifier: ^3.5.29
+        specifier: ^3.5.32
         version: 3.5.32(typescript@6.0.2)
     devDependencies:
       '@lightwing/eslint-config':
-        specifier: ^1.0.147
+        specifier: ^1.0.153
         version: 1.0.153(@typescript-eslint/rule-tester@8.56.1(eslint@10.2.0(jiti@2.6.1))(typescript@6.0.2))(@typescript-eslint/typescript-estree@8.58.1(typescript@6.0.2))(@typescript-eslint/utils@8.58.1(eslint@10.2.0(jiti@2.6.1))(typescript@6.0.2))(@vue/compiler-sfc@3.5.32)(eslint@10.2.0(jiti@2.6.1))(typescript@6.0.2)
       '@vitejs/plugin-vue':
         specifier: 6.0.5

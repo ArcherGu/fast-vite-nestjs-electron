@@ -13,16 +13,16 @@
     "postinstall": "npx simple-git-hooks && electron-builder install-app-deps"
   },
   "dependencies": {
-    "@doubleshot/nest-electron": "^0.2.11",
-    "@nestjs/common": "^11.1.14",
-    "@nestjs/core": "^11.1.14",
-    "@nestjs/microservices": "^11.1.14",
+    "@doubleshot/nest-electron": "^0.2.13",
+    "@nestjs/common": "^11.1.18",
+    "@nestjs/core": "^11.1.18",
+    "@nestjs/microservices": "^11.1.18",
     "reflect-metadata": "^0.2.2",
     "rxjs": "^7.8.2",
-    "vue": "^3.5.29"
+    "vue": "^3.5.32"
   },
   "devDependencies": {
-    "@lightwing/eslint-config": "^1.0.147",
+    "@lightwing/eslint-config": "^1.0.153",
     "@vitejs/plugin-vue": "6.0.5",
     "@vue/compiler-sfc": "3.5.32",
     "electron": "41.2.0",
