@@ -32,7 +32,7 @@
     "rimraf": "6.1.3",
     "simple-git-hooks": "2.13.1",
     "typescript": "6.0.3",
-    "vite": "8.0.8",
+    "vite": "8.0.9",
     "vite-plugin-doubleshot": "0.0.22",
     "vue-tsc": "3.2.7"
   },
