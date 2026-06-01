@@ -8,6 +8,13 @@ const config = {
   },
   publish: null,
   npmRebuild: false,
+  mac: {
+    identity: null,
+    notarize: false,
+  },
+  dmg: {
+    sign: false,
+  },
   files: [
     'dist/main/**/*',
     'dist/preload/**/*',
