@@ -1,8 +1,19 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
-    "config:base"
+    "config:recommended"
   ],
+  "dependencyDashboard": true,
   "automerge": true,
-  "automergeStrategy": "squash"
+  "automergeStrategy": "squash",
+  "packageRules": [
+    {
+      "description": "Wait for npm packages to pass pnpm minimumReleaseAge",
+      "matchDatasources": [
+        "npm"
+      ],
+      "minimumReleaseAge": "1 day",
+      "internalChecksFilter": "strict"
+    }
+  ]
 }
