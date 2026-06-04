@@ -10,7 +10,7 @@ importers:
     dependencies:
       '@doubleshot/nest-electron':
         specifier: ^0.2.14
-        version: 0.2.14(@nestjs/common@11.1.24(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/core@11.1.24)(@nestjs/microservices@11.1.24)(electron@42.3.1)(rxjs@7.8.2)
+        version: 0.2.14(@nestjs/common@11.1.24(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/core@11.1.24)(@nestjs/microservices@11.1.24)(electron@42.3.2)(rxjs@7.8.2)
       '@nestjs/common':
         specifier: ^11.1.24
         version: 11.1.24(reflect-metadata@0.2.2)(rxjs@7.8.2)
@@ -40,8 +40,8 @@ importers:
         specifier: 3.5.35
         version: 3.5.35
       electron:
-        specifier: 42.3.1
-        version: 42.3.1
+        specifier: 42.3.2
+        version: 42.3.2
       electron-builder:
         specifier: 26.8.1
         version: 26.8.1(electron-builder-squirrel-windows@26.8.1)
@@ -65,7 +65,7 @@ importers:
         version: 8.0.16(@types/node@25.9.1)(esbuild@0.28.0)(jiti@2.7.0)(yaml@2.9.0)
       vite-plugin-doubleshot:
         specifier: 0.0.23
-        version: 0.0.23(electron-builder@26.8.1(electron-builder-squirrel-windows@26.8.1))(electron@42.3.1)(esbuild@0.28.0)(typescript@6.0.3)(vite@8.0.16(@types/node@25.9.1)(esbuild@0.28.0)(jiti@2.7.0)(yaml@2.9.0))(vue-tsc@3.3.3(typescript@6.0.3))
+        version: 0.0.23(electron-builder@26.8.1(electron-builder-squirrel-windows@26.8.1))(electron@42.3.2)(esbuild@0.28.0)(typescript@6.0.3)(vite@8.0.16(@types/node@25.9.1)(esbuild@0.28.0)(jiti@2.7.0)(yaml@2.9.0))(vue-tsc@3.3.3(typescript@6.0.3))
       vue-tsc:
         specifier: 3.3.3
         version: 3.3.3(typescript@6.0.3)
@@ -1709,9 +1709,10 @@ packages:
     resolution: {integrity: sha512-bO3y10YikuUwUuDUQRM4KfwNkKhnpVO7IPdbsrejwN9/AABJzzTQ4GeHwyzNSrVO+tEH3/Np255a3sVZpZDjvg==}
     engines: {node: '>=8.0.0'}
 
-  electron@42.3.1:
-    resolution: {integrity: sha512-srUkulADc2QNJKlhxYU+wSaGEQ/Wbz/F3ko3DzUhNyvtWkP0XCTdGwKAOX1q4z1bVlWYZT7LV7APFmUAGTFykg==}
+  electron@42.3.2:
+    resolution: {integrity: sha512-R8qL6TMQ+u5r/l1mL6zWqqK3eQo6Bqi4ScmysgODcy+SNR76HQhvbZUEL/9GqNuF0fNFJxphz/bh/TC4jW8NbA==}
     engines: {node: '>= 22.12.0'}
+    deprecated: This version of Electron has a critical bug in Buffer handling, please upgrade to 42.3.3
     hasBin: true
 
   emoji-regex@10.6.0:
@@ -3898,7 +3899,7 @@ snapshots:
       ajv: 6.15.0
       ajv-keywords: 3.5.2(ajv@6.15.0)
 
-  '@doubleshot/builder@0.0.22(electron-builder@26.8.1(electron-builder-squirrel-windows@26.8.1))(electron@42.3.1)(esbuild@0.28.0)(typescript@6.0.3)(vue-tsc@3.3.3(typescript@6.0.3))':
+  '@doubleshot/builder@0.0.22(electron-builder@26.8.1(electron-builder-squirrel-windows@26.8.1))(electron@42.3.2)(esbuild@0.28.0)(typescript@6.0.3)(vue-tsc@3.3.3(typescript@6.0.3))':
     dependencies:
       bundle-require: 5.1.0(esbuild@0.28.0)
       cac: 7.0.0
@@ -3909,7 +3910,7 @@ snapshots:
       tsdown: 0.22.1(typescript@6.0.3)(vue-tsc@3.3.3(typescript@6.0.3))
       wait-on: 9.0.10
     optionalDependencies:
-      electron: 42.3.1
+      electron: 42.3.2
       electron-builder: 26.8.1(electron-builder-squirrel-windows@26.8.1)
     transitivePeerDependencies:
       - '@arethetypeswrong/core'
@@ -3929,12 +3930,12 @@ snapshots:
       - unrun
       - vue-tsc
 
-  '@doubleshot/nest-electron@0.2.14(@nestjs/common@11.1.24(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/core@11.1.24)(@nestjs/microservices@11.1.24)(electron@42.3.1)(rxjs@7.8.2)':
+  '@doubleshot/nest-electron@0.2.14(@nestjs/common@11.1.24(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/core@11.1.24)(@nestjs/microservices@11.1.24)(electron@42.3.2)(rxjs@7.8.2)':
     dependencies:
       '@nestjs/common': 11.1.24(reflect-metadata@0.2.2)(rxjs@7.8.2)
       '@nestjs/core': 11.1.24(@nestjs/common@11.1.24(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/microservices@11.1.24)(reflect-metadata@0.2.2)(rxjs@7.8.2)
       '@nestjs/microservices': 11.1.24(@nestjs/common@11.1.24(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/core@11.1.24)(reflect-metadata@0.2.2)(rxjs@7.8.2)
-      electron: 42.3.1
+      electron: 42.3.2
       rxjs: 7.8.2
 
   '@dprint/formatter@0.5.1': {}
@@ -5430,7 +5431,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  electron@42.3.1:
+  electron@42.3.2:
     dependencies:
       '@electron/get': 5.0.0
       '@types/node': 24.12.4
@@ -7538,9 +7539,9 @@ snapshots:
       extsprintf: 1.4.1
     optional: true
 
-  vite-plugin-doubleshot@0.0.23(electron-builder@26.8.1(electron-builder-squirrel-windows@26.8.1))(electron@42.3.1)(esbuild@0.28.0)(typescript@6.0.3)(vite@8.0.16(@types/node@25.9.1)(esbuild@0.28.0)(jiti@2.7.0)(yaml@2.9.0))(vue-tsc@3.3.3(typescript@6.0.3)):
+  vite-plugin-doubleshot@0.0.23(electron-builder@26.8.1(electron-builder-squirrel-windows@26.8.1))(electron@42.3.2)(esbuild@0.28.0)(typescript@6.0.3)(vite@8.0.16(@types/node@25.9.1)(esbuild@0.28.0)(jiti@2.7.0)(yaml@2.9.0))(vue-tsc@3.3.3(typescript@6.0.3)):
     dependencies:
-      '@doubleshot/builder': 0.0.22(electron-builder@26.8.1(electron-builder-squirrel-windows@26.8.1))(electron@42.3.1)(esbuild@0.28.0)(typescript@6.0.3)(vue-tsc@3.3.3(typescript@6.0.3))
+      '@doubleshot/builder': 0.0.22(electron-builder@26.8.1(electron-builder-squirrel-windows@26.8.1))(electron@42.3.2)(esbuild@0.28.0)(typescript@6.0.3)(vue-tsc@3.3.3(typescript@6.0.3))
       vite: 8.0.16(@types/node@25.9.1)(esbuild@0.28.0)(jiti@2.7.0)(yaml@2.9.0)
     transitivePeerDependencies:
       - '@arethetypeswrong/core'
