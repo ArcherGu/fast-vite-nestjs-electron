@@ -34,7 +34,7 @@
     "typescript": "6.0.3",
     "vite": "8.1.2",
     "vite-plugin-doubleshot": "0.0.24",
-    "vue-tsc": "3.3.5"
+    "vue-tsc": "3.3.6"
   },
   "simple-git-hooks": {
     "pre-commit": "npx lint-staged"
