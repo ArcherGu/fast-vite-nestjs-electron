@@ -10,7 +10,7 @@ importers:
     dependencies:
       '@doubleshot/nest-electron':
         specifier: ^0.2.14
-        version: 0.2.14(@nestjs/common@11.1.28(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/core@11.1.28)(@nestjs/microservices@11.1.28)(electron@43.1.0)(rxjs@7.8.2)
+        version: 0.2.15(@nestjs/common@11.1.28(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/core@11.1.28)(@nestjs/microservices@11.1.28)(electron@43.1.0)(rxjs@7.8.2)
       '@nestjs/common':
         specifier: ^11.1.24
         version: 11.1.28(reflect-metadata@0.2.2)(rxjs@7.8.2)
@@ -255,8 +255,8 @@ packages:
       electron-builder:
         optional: true
 
-  '@doubleshot/nest-electron@0.2.14':
-    resolution: {integrity: sha512-ebj1I6psE08mV6d9N5I5TI2TEWaPr7LFL692TVmDI5WNKC/qQ/6DbbBCEj21GlEKr9xfY/kuMXIvo2Bv4Uq5LQ==}
+  '@doubleshot/nest-electron@0.2.15':
+    resolution: {integrity: sha512-WLohmQHYk5iMkNkwdds37FmSj7ILE1BnI87DFlJ8GU88EsSYDabKyCEuP7z1xDIjXmW8kfezLUdlEnkz0T6Oog==}
     peerDependencies:
       '@nestjs/common': '>=8.0.0'
       '@nestjs/core': '>=8.0.0'
@@ -4195,7 +4195,7 @@ snapshots:
       - unrun
       - vue-tsc
 
-  '@doubleshot/nest-electron@0.2.14(@nestjs/common@11.1.28(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/core@11.1.28)(@nestjs/microservices@11.1.28)(electron@43.1.0)(rxjs@7.8.2)':
+  '@doubleshot/nest-electron@0.2.15(@nestjs/common@11.1.28(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/core@11.1.28)(@nestjs/microservices@11.1.28)(electron@43.1.0)(rxjs@7.8.2)':
     dependencies:
       '@nestjs/common': 11.1.28(reflect-metadata@0.2.2)(rxjs@7.8.2)
       '@nestjs/core': 11.1.28(@nestjs/common@11.1.28(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/microservices@11.1.28)(reflect-metadata@0.2.2)(rxjs@7.8.2)
@@ -5075,8 +5075,8 @@ snapshots:
 
   '@typescript-eslint/project-service@8.60.0(@typescript/typescript6@6.0.2)':
     dependencies:
-      '@typescript-eslint/tsconfig-utils': 8.62.0(@typescript/typescript6@6.0.2)
-      '@typescript-eslint/types': 8.62.0
+      '@typescript-eslint/tsconfig-utils': 8.60.0(@typescript/typescript6@6.0.2)
+      '@typescript-eslint/types': 8.60.0
       debug: 4.4.3
       typescript: '@typescript/typescript6@6.0.2'
     transitivePeerDependencies:
