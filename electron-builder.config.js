@@ -6,6 +6,9 @@ const config = {
   directories: {
     output: 'dist/electron',
   },
+  linux: {
+    target: ['AppImage'],
+  },
   publish: null,
   npmRebuild: false,
   mac: {
