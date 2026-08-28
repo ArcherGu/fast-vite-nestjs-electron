@@ -14,9 +14,9 @@
   },
   "dependencies": {
     "@doubleshot/nest-electron": "^0.2.14",
-    "@nestjs/common": "^11.1.24",
-    "@nestjs/core": "^11.1.24",
-    "@nestjs/microservices": "^11.1.24",
+    "@nestjs/common": "^12.0.0",
+    "@nestjs/core": "^12.0.0",
+    "@nestjs/microservices": "^12.0.0",
     "reflect-metadata": "^0.2.2",
     "rxjs": "^7.8.2",
     "vue": "^3.5.35"
