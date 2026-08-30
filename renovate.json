@@ -14,6 +14,16 @@
       ],
       "minimumReleaseAge": "1 day",
       "internalChecksFilter": "strict"
+    },
+    {
+      "description": "Keep security overrides within their intended major version",
+      "matchDepTypes": [
+        "pnpm.overrides"
+      ],
+      "matchUpdateTypes": [
+        "major"
+      ],
+      "enabled": false
     }
   ]
 }
