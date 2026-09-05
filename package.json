@@ -27,7 +27,7 @@
     "@typescript/native": "npm:typescript@7.0.2",
     "@vitejs/plugin-vue": "6.0.8",
     "@vue/compiler-sfc": "3.5.42",
-    "electron": "44.1.1",
+    "electron": "44.2.0",
     "electron-builder": "26.15.3",
     "eslint": "10.9.1",
     "lint-staged": "17.4.1",
