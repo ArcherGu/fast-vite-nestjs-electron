@@ -232,10 +232,10 @@ importers:
         version: 8.3.2(@types/node@25.9.1)(esbuild@0.28.2)(jiti@2.7.0)(yaml@2.9.0)
       vite-plugin-doubleshot:
         specifier: 0.0.26
-        version: 0.0.26(@typescript/typescript6@6.0.2)(@volar/typescript@2.4.28(@typescript/typescript6@6.0.2))(debug@4.4.3(supports-color@7.2.0))(electron-builder@26.15.3(electron-builder-squirrel-windows@26.15.3)(supports-color@7.2.0))(electron@44.5.1(supports-color@7.2.0))(esbuild@0.28.2)(supports-color@7.2.0)(vite@8.3.2(@types/node@25.9.1)(esbuild@0.28.2)(jiti@2.7.0)(yaml@2.9.0))(vue-tsc@3.3.11(@typescript/typescript6@6.0.2))
+        version: 0.0.26(@typescript/typescript6@6.0.2)(@volar/typescript@2.4.28(@typescript/typescript6@6.0.2))(debug@4.4.3(supports-color@7.2.0))(electron-builder@26.15.3(electron-builder-squirrel-windows@26.15.3)(supports-color@7.2.0))(electron@44.5.1(supports-color@7.2.0))(esbuild@0.28.2)(supports-color@7.2.0)(vite@8.3.2(@types/node@25.9.1)(esbuild@0.28.2)(jiti@2.7.0)(yaml@2.9.0))(vue-tsc@3.3.12(@typescript/typescript6@6.0.2))
       vue-tsc:
-        specifier: 3.3.11
-        version: 3.3.11(@typescript/typescript6@6.0.2)
+        specifier: 3.3.12
+        version: 3.3.12(@typescript/typescript6@6.0.2)
 
 packages:
 
@@ -1649,14 +1649,8 @@ packages:
       typescript:
         optional: true
 
-  '@vue/compiler-core@3.5.42':
-    resolution: {integrity: sha512-2Ye1ilMtKXxl8qZUrQ5j0CdgenFp/HFQmta6rfRyfEsTG69L6Wk+tWuNoHYHMx9E8tF2Slvdg1FuwDvAXdy1LQ==}
-
   '@vue/compiler-core@3.5.43':
     resolution: {integrity: sha512-zdiLhnbe1QQqgDT8xZMpNmyqZ3qlI+/Q/FHQco57Kwl/b05HhCzN6eVGN9QU9rbga4CrS0H5SYY8VGHZCt/1Hg==}
-
-  '@vue/compiler-dom@3.5.42':
-    resolution: {integrity: sha512-qbhQZEFmycr+ni/qyuccS4sucNN7VAbDfbkvNxWOX2VfgFm90MNs3/UhRNKoPMEIVn0F8gdlYjLPvqxHwHeQOA==}
 
   '@vue/compiler-dom@3.5.43':
     resolution: {integrity: sha512-PEZoAk3NQmsn/ejMzSOCyTYqwGqczrWm70PuhBKjjv1+TCoQAaO/zOqNwjV+honlNstT5ILxtc+8r8UUfj+iEQ==}
@@ -1667,8 +1661,8 @@ packages:
   '@vue/compiler-ssr@3.5.43':
     resolution: {integrity: sha512-GF62orf7KiJX9RqrHNGrYBudsQGD0OhJ5nDs90O8UiDuS40+YMYomiXu6w6EuvtXuRDc3MSNis3EaaSKAVSWpg==}
 
-  '@vue/language-core@3.3.11':
-    resolution: {integrity: sha512-QJmpliwAVpC/OxubIByPAhNzsQPRc8/gxlN2qnVzVfIMjMDz/9RnXRFoetjz5yEgXVXyp4LqhXq3V53PjmNzFw==}
+  '@vue/language-core@3.3.12':
+    resolution: {integrity: sha512-k7uIKR0n4CBidk233y7cac9osnDQ5WRidTl6nsrNvpZ3nf8cx9iJxRVsRzVsoPRHbowT/iKgGMTS9RGov3jeIA==}
 
   '@vue/reactivity@3.5.43':
     resolution: {integrity: sha512-G/c9GyOZNI2jVaaS6OX1EF1SSFSv7H0ERqNTl4+DTFMlZmB5eVAB53aLQNam/7NL2NPtaDD7RdVrzf8uJzMuOA==}
@@ -1681,9 +1675,6 @@ packages:
 
   '@vue/server-renderer@3.5.43':
     resolution: {integrity: sha512-l2Ygjv9NehV94PSBxNWsAHC0j/eIIKbn92mBuWXAPGLnn6HfJ6MH5ubsd+Nk0YoZ5FRuxWI1P2VSoh+dbPQhCQ==}
-
-  '@vue/shared@3.5.42':
-    resolution: {integrity: sha512-2rPxex1jQf4jvl9MOHl6YaXCPcrNqz/FstMOEh3QWY+/OME9nQTvl9WYeCwhW7AFjaR0SnngZGlp/wkR6rkI6g==}
 
   '@vue/shared@3.5.43':
     resolution: {integrity: sha512-uksS7YGMR5NZyr4JNq0Rp+QyLns0ueaz20KwzIPW9R0LH1Vnt4E+XUM29PNseEbf1www2gOuhuDi5AKOIXag9Q==}
@@ -3507,10 +3498,6 @@ packages:
   picocolors@1.1.1:
     resolution: {integrity: sha512-xceH2snhtb5M9liqDsmEw56le376mTZkEX/jEb/RxNFyegNul7eNslCXP9FDj/Lcu0X8KEyMceP2ntpaHrDEVA==}
 
-  picomatch@4.0.5:
-    resolution: {integrity: sha512-RvwwcruNjI1ncT5xRakeyS9Lf8lcItv34KD+aif+VH9kduAyfYBipGh12274xtenIPZ119/R9BdTBa8gAwSh0A==}
-    engines: {node: '>=12'}
-
   picomatch@4.0.7:
     resolution: {integrity: sha512-qcJu88Q2IWqJsDD529JKMdwGm/dvInW4HvQnRwiH9JtihJvzGOscDtHE3x1pBKeUOTysQ8kVmLnJ2kJu7yhcGA==}
     engines: {node: '>=12'}
@@ -4136,8 +4123,8 @@ packages:
     peerDependencies:
       eslint: ^8.57.0 || ^9.0.0 || ^10.0.0
 
-  vue-tsc@3.3.11:
-    resolution: {integrity: sha512-gOb0B9rtU2+f1dszwPqSH5kAieIF9ReeLhD3kSRNHv5WZZUQz/JdVXW0RTdqhNTMlQkqKzrTTviqKr/4FYZraQ==}
+  vue-tsc@3.3.12:
+    resolution: {integrity: sha512-kbpaz18O9jPVkXVHD1BEjpUXM6WhXSu+62L1sGGr6Wbzd8GbvkBQWjoj3KZ/C0aq2MZllce7UdtWzwCIYsBMGA==}
     hasBin: true
     peerDependencies:
       typescript: '>=5.0.0'
@@ -4444,7 +4431,7 @@ snapshots:
       fast-wrap-ansi: 0.2.2
       sisteransi: 1.0.5
 
-  '@doubleshot/builder@0.0.25(@typescript/typescript6@6.0.2)(@volar/typescript@2.4.28(@typescript/typescript6@6.0.2))(debug@4.4.3(supports-color@7.2.0))(electron-builder@26.15.3(electron-builder-squirrel-windows@26.15.3)(supports-color@7.2.0))(electron@44.5.1(supports-color@7.2.0))(esbuild@0.28.2)(supports-color@7.2.0)(vue-tsc@3.3.11(@typescript/typescript6@6.0.2))':
+  '@doubleshot/builder@0.0.25(@typescript/typescript6@6.0.2)(@volar/typescript@2.4.28(@typescript/typescript6@6.0.2))(debug@4.4.3(supports-color@7.2.0))(electron-builder@26.15.3(electron-builder-squirrel-windows@26.15.3)(supports-color@7.2.0))(electron@44.5.1(supports-color@7.2.0))(esbuild@0.28.2)(supports-color@7.2.0)(vue-tsc@3.3.12(@typescript/typescript6@6.0.2))':
     dependencies:
       bundle-require: 5.1.0(esbuild@0.28.2)
       cac: 7.0.0
@@ -4452,7 +4439,7 @@ snapshots:
       colorette: 2.0.20
       joycon: 3.1.1
       resolve-from: 5.0.0
-      tsdown: 0.22.14(@typescript/typescript6@6.0.2)(@volar/typescript@2.4.28(@typescript/typescript6@6.0.2))(vue-tsc@3.3.11(@typescript/typescript6@6.0.2))
+      tsdown: 0.22.14(@typescript/typescript6@6.0.2)(@volar/typescript@2.4.28(@typescript/typescript6@6.0.2))(vue-tsc@3.3.12(@typescript/typescript6@6.0.2))
       wait-on: 9.1.0(debug@4.4.3(supports-color@7.2.0))(supports-color@7.2.0)
     optionalDependencies:
       electron: 44.5.1(supports-color@7.2.0)
@@ -5561,14 +5548,6 @@ snapshots:
     optionalDependencies:
       typescript: '@typescript/typescript6@6.0.2'
 
-  '@vue/compiler-core@3.5.42':
-    dependencies:
-      '@babel/parser': 7.29.8
-      '@vue/shared': 3.5.42
-      entities: 7.0.1
-      estree-walker: 2.0.2
-      source-map-js: 1.2.1
-
   '@vue/compiler-core@3.5.43':
     dependencies:
       '@babel/parser': 7.29.8
@@ -5576,11 +5555,6 @@ snapshots:
       entities: 7.0.1
       estree-walker: 2.0.2
       source-map-js: 1.2.1
-
-  '@vue/compiler-dom@3.5.42':
-    dependencies:
-      '@vue/compiler-core': 3.5.42
-      '@vue/shared': 3.5.42
 
   '@vue/compiler-dom@3.5.43':
     dependencies:
@@ -5604,15 +5578,15 @@ snapshots:
       '@vue/compiler-dom': 3.5.43
       '@vue/shared': 3.5.43
 
-  '@vue/language-core@3.3.11':
+  '@vue/language-core@3.3.12':
     dependencies:
       '@volar/language-core': 2.4.28
-      '@vue/compiler-dom': 3.5.42
-      '@vue/shared': 3.5.42
+      '@vue/compiler-dom': 3.5.43
+      '@vue/shared': 3.5.43
       alien-signals: 3.2.1
       muggle-string: 0.4.1
       path-browserify: 1.0.1
-      picomatch: 4.0.5
+      picomatch: 4.0.7
 
   '@vue/reactivity@3.5.43':
     dependencies:
@@ -5635,8 +5609,6 @@ snapshots:
       '@vue/compiler-ssr': 3.5.43
       '@vue/runtime-dom': 3.5.43
       '@vue/shared': 3.5.43
-
-  '@vue/shared@3.5.42': {}
 
   '@vue/shared@3.5.43': {}
 
@@ -7754,8 +7726,6 @@ snapshots:
 
   picocolors@1.1.1: {}
 
-  picomatch@4.0.5: {}
-
   picomatch@4.0.7: {}
 
   pkg-types@1.3.1:
@@ -7938,7 +7908,7 @@ snapshots:
       sprintf-js: 1.1.3
     optional: true
 
-  rolldown-plugin-dts@0.27.14(@typescript/typescript6@6.0.2)(@volar/typescript@2.4.28(@typescript/typescript6@6.0.2))(rolldown@1.2.5)(vue-tsc@3.3.11(@typescript/typescript6@6.0.2)):
+  rolldown-plugin-dts@0.27.14(@typescript/typescript6@6.0.2)(@volar/typescript@2.4.28(@typescript/typescript6@6.0.2))(rolldown@1.2.5)(vue-tsc@3.3.12(@typescript/typescript6@6.0.2)):
     dependencies:
       dts-resolver: 3.0.0
       get-tsconfig: 5.0.0-beta.5
@@ -7950,7 +7920,7 @@ snapshots:
     optionalDependencies:
       '@volar/typescript': 2.4.28(@typescript/typescript6@6.0.2)
       typescript: '@typescript/typescript6@6.0.2'
-      vue-tsc: 3.3.11(@typescript/typescript6@6.0.2)
+      vue-tsc: 3.3.12(@typescript/typescript6@6.0.2)
     transitivePeerDependencies:
       - oxc-resolver
 
@@ -8189,7 +8159,7 @@ snapshots:
 
   ts-pattern@5.9.0: {}
 
-  tsdown@0.22.14(@typescript/typescript6@6.0.2)(@volar/typescript@2.4.28(@typescript/typescript6@6.0.2))(vue-tsc@3.3.11(@typescript/typescript6@6.0.2)):
+  tsdown@0.22.14(@typescript/typescript6@6.0.2)(@volar/typescript@2.4.28(@typescript/typescript6@6.0.2))(vue-tsc@3.3.12(@typescript/typescript6@6.0.2)):
     dependencies:
       ansis: 4.3.1
       cac: 7.0.0
@@ -8200,7 +8170,7 @@ snapshots:
       obug: 2.1.4
       picomatch: 4.0.7
       rolldown: 1.2.5
-      rolldown-plugin-dts: 0.27.14(@typescript/typescript6@6.0.2)(@volar/typescript@2.4.28(@typescript/typescript6@6.0.2))(rolldown@1.2.5)(vue-tsc@3.3.11(@typescript/typescript6@6.0.2))
+      rolldown-plugin-dts: 0.27.14(@typescript/typescript6@6.0.2)(@volar/typescript@2.4.28(@typescript/typescript6@6.0.2))(rolldown@1.2.5)(vue-tsc@3.3.12(@typescript/typescript6@6.0.2))
       tinyexec: 1.3.0
       tinyglobby: 0.2.17
       tree-kill: 1.2.2
@@ -8341,9 +8311,9 @@ snapshots:
 
   verkit@0.3.2: {}
 
-  vite-plugin-doubleshot@0.0.26(@typescript/typescript6@6.0.2)(@volar/typescript@2.4.28(@typescript/typescript6@6.0.2))(debug@4.4.3(supports-color@7.2.0))(electron-builder@26.15.3(electron-builder-squirrel-windows@26.15.3)(supports-color@7.2.0))(electron@44.5.1(supports-color@7.2.0))(esbuild@0.28.2)(supports-color@7.2.0)(vite@8.3.2(@types/node@25.9.1)(esbuild@0.28.2)(jiti@2.7.0)(yaml@2.9.0))(vue-tsc@3.3.11(@typescript/typescript6@6.0.2)):
+  vite-plugin-doubleshot@0.0.26(@typescript/typescript6@6.0.2)(@volar/typescript@2.4.28(@typescript/typescript6@6.0.2))(debug@4.4.3(supports-color@7.2.0))(electron-builder@26.15.3(electron-builder-squirrel-windows@26.15.3)(supports-color@7.2.0))(electron@44.5.1(supports-color@7.2.0))(esbuild@0.28.2)(supports-color@7.2.0)(vite@8.3.2(@types/node@25.9.1)(esbuild@0.28.2)(jiti@2.7.0)(yaml@2.9.0))(vue-tsc@3.3.12(@typescript/typescript6@6.0.2)):
     dependencies:
-      '@doubleshot/builder': 0.0.25(@typescript/typescript6@6.0.2)(@volar/typescript@2.4.28(@typescript/typescript6@6.0.2))(debug@4.4.3(supports-color@7.2.0))(electron-builder@26.15.3(electron-builder-squirrel-windows@26.15.3)(supports-color@7.2.0))(electron@44.5.1(supports-color@7.2.0))(esbuild@0.28.2)(supports-color@7.2.0)(vue-tsc@3.3.11(@typescript/typescript6@6.0.2))
+      '@doubleshot/builder': 0.0.25(@typescript/typescript6@6.0.2)(@volar/typescript@2.4.28(@typescript/typescript6@6.0.2))(debug@4.4.3(supports-color@7.2.0))(electron-builder@26.15.3(electron-builder-squirrel-windows@26.15.3)(supports-color@7.2.0))(electron@44.5.1(supports-color@7.2.0))(esbuild@0.28.2)(supports-color@7.2.0)(vue-tsc@3.3.12(@typescript/typescript6@6.0.2))
       vite: 8.3.2(@types/node@25.9.1)(esbuild@0.28.2)(jiti@2.7.0)(yaml@2.9.0)
     transitivePeerDependencies:
       - '@arethetypeswrong/core'
@@ -8393,10 +8363,10 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  vue-tsc@3.3.11(@typescript/typescript6@6.0.2):
+  vue-tsc@3.3.12(@typescript/typescript6@6.0.2):
     dependencies:
       '@volar/typescript': 2.4.28(@typescript/typescript6@6.0.2)
-      '@vue/language-core': 3.3.11
+      '@vue/language-core': 3.3.12
       typescript: '@typescript/typescript6@6.0.2'
 
   vue@3.5.43(@typescript/typescript6@6.0.2):
