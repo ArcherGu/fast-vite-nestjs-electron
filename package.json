@@ -1,7 +1,7 @@
 {
   "name": "fast-vite-nestjs-electron",
   "version": "0.0.1",
-  "packageManager": "pnpm@12.16.1",
+  "packageManager": "pnpm@12.18.0",
   "description": "Vite + Electron with Doubleshot, so fast! ⚡",
   "main": "dist/main/index.js",
   "scripts": {
@@ -26,15 +26,15 @@
     "@lightwing/eslint-config": "^1.0.160",
     "@typescript/native": "npm:typescript@7.0.2",
     "@vitejs/plugin-vue": "6.0.10",
-    "@vue/compiler-sfc": "3.5.44",
-    "electron": "45.2.0",
+    "@vue/compiler-sfc": "3.5.45",
+    "electron": "45.2.3",
     "electron-builder": "26.18.0",
     "eslint": "10.14.0",
     "lint-staged": "17.6.0",
-    "rimraf": "6.1.3",
+    "rimraf": "6.1.4",
     "simple-git-hooks": "2.14.0",
     "typescript": "npm:@typescript/typescript6@6.0.2",
-    "vite": "8.3.5",
+    "vite": "8.3.6",
     "vite-plugin-doubleshot": "0.0.26",
     "vue-tsc": "3.3.14"
   },
