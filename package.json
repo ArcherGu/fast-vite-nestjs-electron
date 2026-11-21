@@ -26,7 +26,7 @@
     "@lightwing/eslint-config": "^1.0.160",
     "@typescript/native": "npm:typescript@7.0.2",
     "@vitejs/plugin-vue": "6.0.11",
-    "@vue/compiler-sfc": "3.5.45",
+    "@vue/compiler-sfc": "3.5.46",
     "electron": "45.4.1",
     "electron-builder": "26.18.0",
     "eslint": "10.15.0",
